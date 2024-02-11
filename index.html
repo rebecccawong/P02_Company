@@ -5,19 +5,438 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>P02: Company</title>
-
     <link rel="stylesheet" href="stylesheet/main.css">
 </head>
 
 <body>
 <main>
     <header>
+        <h1>P02: Style Sheet</h1>
     </header>
 
+    <nav>
+        <a class="nav" href="#interactive_elements">Interactive Elements</a>
+        <a class="top-nav" href="#text_elements">Text Elements</a>
+        <a class="top-nav" href="#combined_elements">Combined Elements</a>
+        <a class="top-nav" href="#brand">Brand Identity</a>
+        <a class="top-nav" href="#citations">Citations</a>
+    </nav>
 
 
+    <!-- START OF INTERACTIVE ELEMENTS -->
+    <section id="interactive_elements">
+        <h2>Interactive Elements</h2>
+    
+        <section class="element">
+            <h3 id="in-text-links">In-text links</h3>
+
+            <h4>CSS Selector</h4>
+            <p>.</p>
+
+            <h4>Sample Code</h4>
+            <code>&lt;div class="something"&gt;</code>
+
+            <h4>Rendered Element</h4>
+            <p>In-text <a href="in-text-links" class="intext-link">in-text link</a></p>
+        </section>
+
+        <section class="element">
+            <h3>Default Button</h3>
+
+            <h4>CSS Selector</h4>
+            <p>.</p>
+
+            <h4>Sample Code</h4>
+            <code>&lt;div class="something"&gt;</code>
+
+            <h4>Rendered Element</h4>
+            <button class="submit-button">Default</button>
+        </section>
+
+        <section class="element">
+            <h3>Submit and Reset Button</h3>
+
+            <h4>CSS Selector</h4>
+            <p>.</p>
+
+            <h4>Sample Code</h4>
+            <code>&lt;div class="something"&gt;</code>
+
+            <h4>Rendered Element</h4>
+            <button class="submit-button">Submit</button>
+            <button class="reset-button">Reset</button>
+        </section>
+
+        <section class="element">
+            <h3>Text Input WWith Label</h3>
+
+            <h4>CSS Selector</h4>
+            <p>.</p>
+
+            <h4>Sample Code</h4>
+            <code>&lt;div class="something"&gt;</code>
+
+            <h4>Rendered Element</h4>
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" placeholder="Jane"><br><br>
+        </section>
+
+        <section class="element">
+            <h3>Radio Button With Label</h3>
+
+            <h4>CSS Selector</h4>
+            <p>.</p>
+
+            <h4>Sample Code</h4>
+            <code>&lt;div class="something"&gt;</code>
+
+            <h4>Rendered Element</h4>
+            <h5>Select a shipping option:</h5>
+            <div class="shipping-selections">
+                <input type="radio" name="regular" value="REGULAR" class="shipping-methods-input">
+                <label for="shipping-options" class="shopping-methods-label">Regular(5-7 business days)</label><br>
+
+                <input type="radio" name="express" value="EXPRESS" class="shipping-methods-input">
+                <label for="shipping-options" class="shopping-methods-label">Express(1-2 business days)</label><br>
+
+                <input type="radio" name="pick-up" value="PICK-UP" class="shipping-methods-input">
+                <label for="pick-up-option" class="shopping-methods-label">Pick-up</label><br>
+            </div>
+            
+        </section>
+
+        <section class="element">
+            <h3>Image as a Link</h3>
+
+            <h4>CSS Selector</h4>
+            <p>.</p>
+
+            <h4>Sample Code</h4>
+            <code>&lt;div class="something"&gt;</code>
+
+            <h4>Rendered Element</h4>
+            <a href="https://canvas.sfu.ca/courses/82339/assignments/943579"><img class="linked-image" src="images/screenshot.png" alt="Screenshot of assignment due"></a>
+        </section>
+
+    </section>
+    <!-- END OF INTERACTIVE ELEMENTS -->
+
+    <!-- TEXT ELEMENTS -->
+    <section id="text_elements">
+        <h2>Text Elements</h2>
+    
+        <section class="element">
+          <h3>Headings</h3>
+    
+          <h4>CSS selector:</h4>
+          <p>h1</p>
+          <p>h2</p>
+          <p>h3</p>
+          <p>h4</p>
+          <p>h5</p>
+    
+          <h4>Sample code:</h4>
+          <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+    
+          <h4>Rendered element:</h4>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+        </section>
+    </section>
+    
+    <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;The list above is not a list of 'pages' required. It provides an overview of the content required in both P01 and P02. Please also keep in mind that this content should be integrated as appropriate for your product or service. Having a user be able to provide feedback will look very different for a specific product as opposed to a service.&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>The list above is not a list of 'pages' required. It provides an overview of the content required in both P01 and P02. Please also keep in mind that this content should be integrated as appropriate for your product or service. Having a user be able to provide feedback will look very different for a specific product as opposed to a service.</p>
+    </section>
+
+    <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;The list above is not a list of 'pages' required. It provides an overview of the content required in both P01 and P02. Please also keep in mind that this content should be integrated as appropriate for your product or service. Having a user be able to provide feedback will look very different for a specific product as opposed to a service.&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <ol id="ordered-list">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ol>
+    </section>
+    <!-- END OF TEXT ELEMENTS -->
+
+    <!-- COMBINED ELEMENTS -->
+    <section id="combined-elements">
+        <h2>COMBINED ELEMENTS</h2>
+        <section class="element">
+            <h3>Main Navigation</h3>
+            <h4>CSS selectors:</h4>
+            <p>#page-nav</p>
+            <p>.nav-item</p>
+            <p>.submission-pages</p>
+            <p>.top-nav</p>
+    
+            <h4>Sample code:</h4>
+            <code>&lt;nav id="page-nav"&gt;</code>
+            <code>&lt;a href="index.html" class="nav-item"&gt;&lt;li&gt;Home&lt;/li&gt;&lt;/a&gt;</code>
+            <code>&lt;a href="products.html" class="nav-item"&gt;&lt;li&gt;Products&lt;/li&gt;&lt;/a&gt;</code>
+            <code>&lt;a href="events.html" class="nav-item"&gt;&lt;li&gt;Events&lt;/li&gt;&lt;/a&gt;</code>
+            <code>&lt;a href="process.html" class="nav-item"&gt;&lt;li&gt;Purchasing Process&lt;/li&gt;&lt;/a&gt;</code>
+            <code>&lt;a href="about.html" class="nav-item"&gt;&lt;li&gt;About&lt;/li&gt;&lt;/a&gt;</code>
+            <code>&lt;/nav&gt;</code>
+    
+            <h4>Rendered element:</h4>
+            <nav class="page-nav">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="products.html" class="nav-item">Products</a>
+            <a href="events.html" class="nav-item">Events</a>
+            <a href="process.html" class="nav-item">Purchasing Process</a>
+            <a href="about.html" class="nav-item">About</a>
+            </nav>
+        </section>
+
+        <section class="element">
+            <!-- Navigation -->
+            <h3>Product Listing</h3>
+            <h4>CSS selectors:</h4>
+            <p>.</p>
+      
+            <h4>Sample code:</h4>
+            <code>&lt;div&gt;</code>
+      
+            <h4>Rendered element:</h4>
+            <div class="single-product">
+                <a href="product-listings.html"><img class="listing-img" src="images/screenshot.png" alt="Product image"></a>
+    
+                <div class="listing-text">
+                  <div class="listing-text-and-icon">
+                    <a href="product-listings.html" id="listing-title-id-1">
+                      <p class="listing-title">Screenshot</p>
+                    </a>
+                  </div>
+                  <p class="listing-price">$100</p>
+                  <p class="listing-price">100% Cotton</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="element">
+            <h3>Payment Form</h3>
+            <h4>CSS selectors:</h4>
+            <p>.payment-form</p>
+            <p>.payment-module</p>
+            <p>.payment-form-names</p>
+            <p>.form-name</p>
+            <p>.first-name</p>
+            <p>#first-name</p>
+            <p>.last-name</p>
+            <p>#last-name</p>
+            <p>.form-email</p>
+            <p>#email</p>
+            <p>.phone-number</p>
+            <p>#phone-number</p>
+            <p>.address-line-1</p>
+            <p>#address-line-1</p>
+            <p>.address-line-2</p>
+            <p>#address-line-2</p>
+            <p>.city</p>
+            <p>#city</p>
+            <p>.region</p>
+            <p>#region</p>
+            <p>.postal-code</p>
+            <p>#postal-code</p>
+
+            <h4>Sample code of one payment module:</h4>
+            <code>&lt;form action="payment" method="post"&gt;</code>
+            <code>&lt;div class="payment-module"&gt;</code>
+            <code>&lt;div class="form-name"&gt;</code>
+            <code>&lt;label for="first-name"&gt;Full Name:&lt;/label&gt;</code>
+            <code>&lt;input type="text-input" id="first-name" name="full-name"&gt;&lt;br&gt;&lt;br&gt;</code>
+            <code>&lt;/div&gt;&lt;/div&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <h1 class="cart-header" id="payment-id">Payment</h1>
+            <div class="payment">
+                <form action="payment" method="post" autocomplete="on">
+                    <div class="form-module-flex">
+                        <div class="payment-module">
+                            <div class="form-name">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="Jane"><br><br>
+                            </div>
+                        </div>
+
+                        <div class="payment-module">
+                            <div class="form-name">
+                                <label for="first-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Doe"><br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-module">
+                        <div class="form-full-address">
+                            <label for="address-line-1">Address</label>
+                            <input type="text" id="address-line-1" name="address-line-1" placeholder="123 Bacon Avenue" required>
+                            <input type="text" id="address-line-2" name="address-line-2" placeholder="#100"><br><br>
+                        </div>
+
+                        <div class="form-module-flex">
+                            <div class="form-city">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="Eggs" required><br><br>
+                            </div>
+
+                            <div class="form-region">
+                                <label for="region">Region</label>
+                                <select id="region" name="region" required>
+                                    <option value="">Choose option</option>
+                                    <option value="alta">Alberta</option>
+                                    <option value="bc">British Columbia</option>
+                                    <option value="man">Manitoba</option>
+                                    <option value="nb">New Brunswick</option>
+                                    <option value="nl">Newfoundland and Labrador</option>
+                                    <option value="ns">Nova Scotia</option>
+                                    <option value="nl">Nunavut</option>
+                                    <option value="ont">Ontario</option>
+                                    <option value="pei">Prince Edward Island</option>
+                                    <option value="nque">Quebec</option>
+                                    <option value="sask">Saskatchewan</option>
+                                    <option value="nwt">The Northwest Territories</option>
+                                    <option value="yt">The Yukon</option>
+                                </select><br><br>
+                            </div>
+
+                            <div class="form-postal-code">
+                            <label for="postal-code">Postal code</label>
+                            <input type="text" id="postal-code" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
+                                autocapitalize="characters"><br><br>
+                            </div>
+                        </div>
+
+                        <div class="payment-module">
+                            <div class="form-phone-number">
+                                <label for="phone-number">Phone number</label>
+                                <input type="tel" id="phone-number" name="phone-number" placeholder="123-123-1234" required maxlength="12"><br><br>
+                            </div>
+                        </div>
+
+                        <div class="payment-module">
+                            <div class="form-email">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="email@domain.com" required><br><br>
+                            </div>
+                        </div>
+
+                        <a class="submit-button" href="#">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="element">
+            <h3 id="checkout-cart">Checkout Cart</h3>
 
 
+            <h4>CSS selectors:</h4>
+            <p>.cart</p>
+
+            <h4>Sample code</h4>
+            <code>&lt;div class="cart"&gt;</code>
+
+            <h4>Rendered element</h4>
+            <div class="cart">
+                <div class="cart-item cart-grid checkout-titles divider-bottom">
+                    <div class="cart-item-module name-img ">
+                      <h4 class="cart-item-name cart-titles cart-item-1">Item</h4>
+                    </div>
+          
+                    <div class="cart-item-module name-remove">
+                      <h4 class="cart-item-name cart-titles cart-item-2">Name</h4>
+                    </div>
+          
+                    <div class="cart-item-module amount-number">
+                      <h4 class="cart-item-name cart-titles cart-item-3">Amount</h4>
+                    </div>
+          
+                    <div class="cart-item-module item-price">
+                      <h4 class="cart-item-name cart-titles cart-item-4">Price</h4>
+                    </div>
+                  </div>
+          
+                  <div class="cart-item cart-grid cart-flex-item">
+                    <div class="cart-item-module">
+                      <img class="cart-image" id="elephant-img" src="img/elephant.jpg" alt="Elephant">
+                    </div>
+          
+                    <div class="cart-item-module name-remove">
+                      <div class="cart-item-name">Elephant</div>
+                      <a href="#">
+                        <p class="internal-link">Remove</p>
+                      </a>
+                    </div>
+          
+                    <div class="cart-item-module amount-number">
+                      <input type="number" id="amount-input-1" name="amount-input" value="1" min="0" max="100" required><br><br>
+                    </div>
+          
+                    <div class="cart-item-module item-price">
+                      <div class="cart-item-number">$12</div>
+                    </div>
+                  </div>
+          
+                  <div class="cart-item cart-grid">
+                    <div class="cart-item-module">
+                      <img class="cart-image" id="teddy-bear-img" src="img/teddy-bear.jpg" alt="Teddy bear">
+                    </div>
+          
+                    <div class="cart-item-module name-remove">
+                      <div class="cart-item-name">Teddy Bear</div>
+                      <a href="#">
+                        <p class="internal-link">Remove</p>
+                      </a>
+                    </div>
+          
+                    <div class="cart-item-module amount-number">
+                      <input type="number" id="amount-input-2" name="amount-input" value="1" min="0" max="100" required><br><br>
+                    </div>
+          
+                    <div class="cart-item-module item-price">
+                      <div class="cart-item-price">$10</div>
+                    </div>
+                  </div>
+          
+                  <div class="subtotal">
+                    <div class="divider cart-grid cart-flex-item checkout-titles subtotal-box">
+                      <h4 class="sub-total-text">Sub-Total</h4>
+                      <div class="sub-total-price">$22</div>
+                    </div>
+                  </div>
+          
+                  <div class="shipping">
+                    <div class="cart-grid cart-flex-item checkout-titles shipping-box">
+                      <h4 class="sub-total-text">Shipping</h4>
+                      <a href="#payment-id">
+                        <div class="internal-link" id="calculate-link">Calculate</div>
+                      </a>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </section>
 </main>
 </body>
 </html>
