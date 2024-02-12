@@ -163,6 +163,7 @@
   
     background-color: orangered;
   }
+
   nav a:hover, nav a:focus {
     text-decoration: none;
   }
@@ -199,10 +200,7 @@
       /*added focus state to in-text link
       LEARNED FROM https://zellwk.com/blog/style-hover-focus-active-states/*/
   }
-  
-  
-  
-  
+
   .radio-button{
         padding: 1rem;
       border-width: 0rem;
@@ -218,9 +216,9 @@
   
   a img:hover, a img:focus {
       opacity: 0.8;
-      border: 3px solid;
-      border-color: #8BA895;
-      padding: 2px;
+      /* border: 3px solid;
+      border-color: #8BA895; */
+      /* padding: 2px; */
   }
   
   
@@ -373,6 +371,46 @@
   span.price {
     float: right;
     color: grey;
+  }
+
+  /* PRODUCTS */
+  .shop-heading-names{
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+  }
+
+  .description-ahref{
+    font-size: 0.7rem;
+  }
+
+
+
+  /* BRANDING */
+
+  .colour-teal{
+    color: #B6CDB8;
+  }
+
+  .colour-olive{
+    color: #AC9D76;
+  }
+
+  .colour-tan{
+    color: #E39371;
+  }
+
+  .colour-off-white{
+    color: #FFF2EC;
+    background-color: #010100;
+  }
+
+  .art-direction-images{
+    display: flex;
+  }
+
+  .art-direction-img{
+    width:20em;
+    height: 100%;
   }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
