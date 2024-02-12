@@ -7,9 +7,7 @@
 
 @font-face {
     font-family: 'PPNeueMontreal-Book';
-    /* Name to reference the font */
-    src: url('path/to/PPNeueMontreal-Book.otf') format('opentype');
-    /* Path to the font file */
+    src: url(../fonts/PPNeueMontreal-Book.otf);
 }
 
 @font-face {
