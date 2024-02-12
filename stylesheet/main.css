@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'Univers';
-    src: url('UniversLTStd-Light.otf') format('opentype');
+    src: url(../fonts/UniversLTStd-Light.otf);
 }
 
 
