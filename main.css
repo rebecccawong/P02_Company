@@ -1,0 +1,467 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+
+
+@font-face {
+  font-family: 'PPNeueMontreal-Book'; /* Name to reference the font */
+  src: url('path/to/PPNeueMontreal-Book.otf') format('opentype'); /* Path to the font file */
+}
+
+@font-face {
+    font-family: 'Univers';
+    src: url('UniversLTStd-Light.otf') format('opentype');
+}
+
+
+body {
+    
+     background-color: whitesmoke;
+
+  font-family:  'PPNeueMontreal-Book', monospace;
+    /*Changed default font to Monaco - monospace 
+    Learned from: https://www.w3schools.com/css/css_font.asp*/
+    
+ 
+  padding: 2rem;
+    
+
+}
+
+.logo {
+     color: #8BA895;
+    width: 170px; /* Adjust width as needed */
+    height: 120px; /* Maintain aspect ratio */
+    padding: 0px; /* Adjust padding as needed */
+}
+
+.logo-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.text-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h1 {
+     color: black;
+     font-family: 'Univers', serif;
+  margin: 2rem;
+
+}
+h2 {
+    color: #8BA895;
+   font-family: 'Univers', serif;
+    
+    
+    
+
+}
+
+h3 {
+     color: #E39371;
+  font-family: 'Univers', serif;
+  margin-top: 1rem;
+}
+
+h4 {
+     
+  font-family: 'Univers', serif;
+  margin-bottom: 0.25rem;
+}
+
+
+h5 {
+     color: black;
+   font-family: 'Univers', serif;
+  margin-bottom: 0.25rem;
+}
+
+h6 {
+     
+ font-family: 'Univers', serif;
+  margin-bottom: 0.25rem;
+}
+
+
+
+
+p {
+    
+    font-family: 'PPNeueMontreal-Book', sans-serif;
+    /* Shortened default width of paragraph but made sure it was responsive (did font too) 
+    learned from: https://css-tricks.com/viewport-sized-typography/*/
+     width: 50vw;
+ font-size: 2vmin; 
+/*Changed paragraph margins to 10
+    
+    LEARNED FROM https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css*/
+  margin-top: 1rem;
+    
+}
+
+
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: black;
+  background-color: #E39371;
+  text-decoration: none;
+  border-radius: 0.25em;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+      color: lightgoldenrodyellow;
+  background-color: #8BA895;
+}
+
+.button{
+  display: inline-block;
+  border-width: 0rem;
+  padding: 0.5rem;
+  color: black;
+  background-color: #E39371;
+  text-decoration: none;
+  border-radius: 0.25em;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+
+.button:hover, .button:focus {
+
+  background-color: #8BA895;
+}
+.button-reset{
+  display: inline-block;
+  border-width: 0rem;
+  padding: 0.5rem;
+  color: black;
+  background-color: #E39371;
+  text-decoration: none;
+  border-radius: 0.25em;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+
+.button-reset:hover, .button-reset:focus {
+
+  background-color: orangered;
+}
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+section {
+margin-top: 1rem;
+    /*Added space between sections
+    Learned from: https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css*/
+}
+
+
+.in-text-link{
+    background-color: #dedede;
+}
+
+.in-text-link:hover {
+  background-color: #aaa;
+    
+    /*Added hover state to in-text link
+    
+    LEARNED FROM: https://zellwk.com/blog/style-hover-focus-active-states/*/
+}
+
+.in-text-link:focus {
+  outline: lightskyblue;
+  box-shadow: 0 0 0 3px lightskyblue;
+    /*added focus state to in-text link
+    LEARNED FROM https://zellwk.com/blog/style-hover-focus-active-states/*/
+}
+
+
+
+
+.radio-button{
+      padding: 1rem;
+    border-width: 0rem;
+     border-radius: 0.25em;
+    background-color: floralwhite;
+ font-family: 'PPNeueMontreal-Book', sans-serif;
+}
+
+a:hover, a:focus {
+    color: mediumseagreen;
+}
+
+
+a img:hover, a img:focus {
+    opacity: 0.8;
+    border: 3px solid;
+    border-color: #8BA895;
+    padding: 2px;
+}
+
+
+/* STYLED THE TEXT INPUT 
+
+LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/*/
+
+.input{
+    width: 27rem;
+      padding: 50px 20px 50px 20px;
+  background: #f0f0f2;
+}
+.submit-name{
+    
+     
+  
+}
+.submit-name .btn{
+    font-family: 'PPNeueMontreal-Book', sans-serif;
+  margin-left: 6rem;
+    
+    background-color: #E39371;
+  border: 0;
+  color: black;
+  cursor: pointer;
+
+   border-radius: 0.25em;
+  padding: 8px 16px;
+  
+}
+
+.submit-name .btn:focus, .submit-name .btn:hover{
+   font-family: 'PPNeueMontreal-Book', sans-serif;
+  margin-left: 6rem;
+      border-radius: 0.25em;
+    background-color: blanchedalmond;
+  border: 0;
+  color: #010100;
+  cursor: pointer;
+ 
+  padding: 8px 16px;
+  
+}
+
+.text-input{
+    margin-bottom: 2rem;
+    font-family: 'PPNeueMontreal-Book', sans-serif;
+}
+
+.text-input:hover {
+   font-family: 'PPNeueMontreal-Book', sans-serif;
+    background: #dedede;
+    
+}
+
+.text-input:focus {
+  font-family: 'PPNeueMontreal-Book', sans-serif;
+     background: lightskyblue;
+    
+}
+
+
+.input-label{
+    
+    
+}
+
+.nav-bar ul{
+  list-style-type: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: floralwhite;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bar ul li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover, .nav-bar ul li a:focus{
+  display: block;
+  color: lightgoldenrodyellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Payment from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
+
+/* Style for form rows */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+/* Style for form columns */
+.col-50 {
+  flex: 50%;
+  padding: 0 10px;
+}
+
+.col-75 {
+  flex: 75%;
+  padding: 0 10px;
+}
+
+/* Style for form fields */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select {
+  width: calc(100% - 24px); /* Adjust the width as needed */
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container {
+    font-family: 'PPNeueMontreal-Book', sans-serif;
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+
+icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+
+
+.checkout btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.Shop button{
+        margin-left: 10rem;
+}
+
+
+
+.proceed-button {
+    
+    
+  margin-top: 1rem;
+  margin-left: 42rem; 
+  display: inline-block;
+  border-width: 0rem;
+  padding: 0.5rem;
+  color: black;
+  background-color: #E39371;
+  text-decoration: none;
+  border-radius: 0.25em;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.proceed-button:hover,
+.proceed-button:focus {
+  background-color: #8BA895;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .proceed-button {
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    width: 80%; 
+  }
+}
+
+.Shopcontainer {
+  max-width: 80%; 
+padding-top: 2rem;
+  margin: 0 auto;
+    
+}
+
+
+.Shop img {
+width:250px;height:250px;
+  max-width: 100%; 
+
+
+}
+
+
+.Shop {
+  width: 30%; 
+  margin: 0 auto; 
+  margin-bottom: 20px; 
+  display: inline-block; 
+  vertical-align: top; 
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%; 
+    padding: 0 20px; 
+  }
+  
+  .Shop {
+      
+    width: 100%;
+  }
+}
+
+.product_bar{
+   padding-top: 2rem;
+ padding-top: 2rem;
+}
+
+
+/* Used https://www.w3schools.com/css/css_rwd_intro.asp to learn responsiveness*/
