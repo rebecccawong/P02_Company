@@ -1,660 +1,638 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <title>P01 - Style Guide Template</title>
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
 
-  <link href="stylesheet/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <header>
+<header>
     <div class="logo-container">
-      <img class="logo" src="images/flufffibre.png" alt="flufffibre logo">
+        <img class="logo" src="flufffibre.png" alt="flufffibre logo">
     </div>
     <div class="text-container">
-      <h2>Style Guide</h2>
-      <p>Rebecca Wong & Mark Duinkerke</p>
+        <h2>Style Guide</h2>
+        <p>Rebecca Wong & Mark Duinkerke</p>
     </div>
-  </header>
+</header>
+
+      
+      
+    <section class="nav-bar">
+           <ul>
+            <li> <a class="button-nav" href="index.html">Home</a> </li>
+            <li> <a class="button-nav" href="about.html">About</a> </li>
+         <li>    <a class="button-nav" href="products.html">Products</a> </li>
+         <li>   <a class="button-nav" href="cart.html">Shopping Cart</a> </li>
+        </ul>
+           
+     </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
 
 
-
-  <section class="nav-bar">
-    <ul>
-      <li> <a class="button-nav" href="index.html">Home</a> </li>
-      <li> <a class="button-nav" href="about.html">About</a> </li>
-      <li> <a class="button-nav" href="products.html">Products</a> </li>
-      <li> <a class="button-nav" href="cart.html">Shopping Cart</a> </li>
-    </ul>
-
-  </section>
-
-  <!-- INTERACTIVE ELEMENTS SECTION // -->
-  <section id="interactive_elements">
-    <h2>Interactive Elements</h2>
-
-
-    <section class="element">
-      <h3>In-text link</h3>
-      <h4> CSS selector</h4>
-      <p>.in-text-link</p>
-      <h4>Sample code</h4>
+      <section class="element">
+        <h3>In-text link</h3>
+          <h4> CSS selector</h4>
+          <p>.in-text-link</p>
+          <h4>Sample code</h4>
       <code>&lt;a href="#" class="in-text-link"&gt;In-text link&lt;/a&gt;</code>
-      <h4>Example</h4>
-      <a class="in-text-link" href="#">In-text link</a>
-      <!-- I found out how to do in text link here: https://www.w3schools.com/html/html_links.asp -->
-    </section>
+    <h4>Example</h4>
+          <a class="in-text-link" href="#">In-text link</a>
+           <!-- I found out how to do in text link here: https://www.w3schools.com/html/html_links.asp -->
+      </section>
 
 
-    <!-- Default Button styling section -->
-    <section class="element">
+      <!-- Default Button styling section -->
+      <section class="element">
 
-      <h3>Navigation Link</h3>
+        <h3>Navigation Link</h3>
 
-      <h4>CSS selector:</h4>
+        <h4>CSS selector:</h4>
+          
+        <p>.button-nav</p>
 
-      <p>.button-nav</p>
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Navigation Button&lt;/a&gt;</code>
 
-      <h4>Sample code:</h4>
-      <code>&lt;a href="#" class="button"&gt;Navigation Button&lt;/a&gt;</code>
+        <h4>Example</h4>
+        <a class="button-nav" href="#">Navigation Button</a>
 
-      <h4>Example</h4>
-      <a class="button-nav" href="#">Navigation Button</a>
-
-    </section>
+      </section>
 
 
-    <section class="element">
-      <h3>Submit/Reset Buttons</h3>
-      <h4>Css selector:</h4>
-      <p>.button</p>
-      <h4>Sample Code</h4>
-      <code>
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+          <h4>Css selector:</h4>
+          <p>.button</p>
+          <h4>Sample Code</h4>
+          <code>
            &lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;%lt; button type="reset" value="Reset" &gt; Reset&lt;/button&gt;
           </code>
-      <h4>Example</h4>
-      <button class="button" type="submit" value="Submit">Submit</button>
-      <button class="button-reset" type="reset" value="Reset">Reset</button>
-      <!--Learnt here: https://www.w3schools.com/tags/att_button_type.asp -->
+          <h4>Example</h4>
+  <button class="button" type="submit" value="Submit">Submit</button>
+  <button class ="button-reset" type="reset" value="Reset">Reset</button>
+          <!--Learnt here: https://www.w3schools.com/tags/att_button_type.asp -->
 
+          
+      </section>
 
-    </section>
-
-    <!-- CHANGED THE TEXT INPUT 
+<!-- CHANGED THE TEXT INPUT 
 
 LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
-    <section class="element">
-      <h3>Text Input Field with Label</h3>
-      <h4>Css selector:</h4>
-      <p>.text-input and input-label</p>
-      <h4>Sample code:</h4>
-      <code>&lt;label for="fname"&gt;What is your first name:&lt;/label&gt; &lt;input type="text" id="fname" name="fname" placeholder="i.e. John Doe"&gt;</code>
-      <h4>Example</h4>
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+          <h4>Css selector:</h4>
+          <p>.text-input and input-label</p>
+               <h4>Sample code:</h4>
+          <code>&lt;label for="fname"&gt;What is your first name:&lt;/label&gt; &lt;input type="text" id="fname" name="fname" placeholder="i.e. John Doe"&gt;</code>
+          <h4>Example</h4>
+          
+          <fieldset class="input">
+              
+          <label class= input-label for="fname">What is your first name:</label> <input class= text-input type="text" id="fname" name="fname" placeholder="i.e. John Doe">
+                       <div>
+                           
+                               <label>
+      <input type="checkbox" name="remember"> This is my only name
+    </label>
+                
+    
+  </div>
+              <p> </p>
+               <button class="button" type="submit" value="Submit">Submit</button>
+              
+              
+        </fieldset>
+          
+ 
+          
+         <!-- I found out how to do input w label here: https://www.w3schools.com/tags/att_input_type_text.asp -->
+      </section>
 
-      <fieldset class="input">
 
-        <label class=input-label for="fname">What is your first name:</label> <input class=text-input type="text"
-          id="fname" name="fname" placeholder="i.e. John Doe">
-        <div>
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+           <h4>Css selector:</h4>
+          <p>.radio-button</p>
+               <h4>Sample code:</h4>
+          <code>          &lt;fieldset&gt;
+  &lt;legend&gt;Select a shipment method:&lt;/legend&gt;
 
-          <label>
-            <input type="checkbox" name="remember"> This is my only name
-          </label>
+  &lt;div&gt;
+    &lt;input type="radio" id="regular(5-7businessdays)" name="drone" value="regular(5-7businessdays)" checked &gt;
+    &lt;label for="regular(5-7businessdays)"&gt;Regular(5-7 business days)&lt;/label&gt;
+  &lt;/div&gt;
 
+  &lt;div&gt;
+    &lt;input type="radio" id="express(1-2business days)" name="drone" value="express(1-2businessdays)" &gt;
+    &lt;label for="express(1-2businessdays)"&gt;Express(1-2 business days)&lt;/label&gt;
+  &lt;/div&gt;
 
-        </div>
-        <p> </p>
-        <button class="button" type="submit" value="Submit">Submit</button>
-
-
-      </fieldset>
-
-
-
-      <!-- I found out how to do input w label here: https://www.w3schools.com/tags/att_input_type_text.asp -->
-    </section>
-
-
-    <section class="element">
-      <h3>Radio Button with Label</h3>
-      <h4>Css selector:</h4>
-      <p>.radio-button</p>
-      <h4>Sample code:</h4>
-      <code>          &lt;fieldset&gt;
-  &lt;legend&gt;Select a shipment method:&lt;/legend&gt;<br>
-
-  &lt;div&gt;<br>
-    &lt;input type="radio" id="regular(5-7businessdays)" name="drone" value="regular(5-7businessdays)" checked &gt;<br>
-    &lt;label for="regular(5-7businessdays)"&gt;Regular (5-7 business days)&lt;/label&gt;<br>
-  &lt;/div&gt;<br>
-
-  &lt;div&gt;<br>
-    &lt;input type="radio" id="express(1-2business days)" name="drone" value="express(1-2businessdays)" &gt;<br>
-    &lt;label for="express(1-2businessdays)"&gt;Express (1-2 business days)&lt;/label&gt;<br>
-  &lt;/div&gt;<br>
-
-  &lt;div&gt; <br>
-    &lt;input type="radio" id="pick-up" name="drone" value="pick-up" /&gt;<br>
-    &lt;label for="pick-up"&gt;Pickup&lt;/label&gt;<br>
-  &lt;/div&gt;<br>
+  &lt;div&gt;
+    &lt;input type="radio" id="pick-up" name="drone" value="pick-up" /&gt;
+    &lt;label for="pick-up"&gt;Pickup&lt;/label&gt;
+  &lt;/div&gt;
 &lt;/fieldset&gt;
           </code>
-      <h4>Example</h4>
-      <fieldset class=radio-button>
+          <h4>Example</h4>
+          <fieldset class=radio-button>
+              
+  <legend>Select a shipment method:</legend>
 
-        <legend>Select a shipment method:</legend>
+  <div>
+    <input type="radio" id="regular(5-7businessdays)" name="drone" value="regular(5-7 business days)" checked >
+    <label for="regular(5-7businessdays)">Regular(5-7 business days)</label>
+  </div>
 
-        <div>
-          <input type="radio" id="regular(5-7businessdays)" name="drone" value="regular(5-7 business days)" checked>
-          <label for="regular(5-7businessdays)">Regular (5-7 business days)</label>
-        </div>
+  <div>
+    <input type="radio" id="express(1-2businessdays)" name="drone" value="express(1-2businessdays)">
+    <label for="express(1-2businessdays)">Express(1-2 business days)</label>
+  </div>
 
-        <div>
-          <input type="radio" id="express(1-2businessdays)" name="drone" value="express(1-2businessdays)">
-          <label for="express(1-2businessdays)">Express (1-2 business days)</label>
-        </div>
-
-        <div>
-          <input type="radio" id="pick-up" name="drone" value="pick-up">
-          <label for="pick-up">Pick-up (ree)</label>
-        </div>
-      </fieldset>
-      <!--Learnt here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
-    </section>
+  <div>
+    <input type="radio" id="pick-up" name="drone" value="pick-up">
+    <label for="pick-up">Pick-up</label>
+  </div>
+</fieldset>
+                    <!--Learnt here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+      </section>
 
 
-    <section class="element">
-      <h3>Image as a Link</h3>
-      <h4>Css selector:</h4>
-      <p>.image-link</p>
-      <h4>Sample code:</h4>
-      <code>&lt;a href="#"&gt;&lt;img src="frame.png" alt="Picture Link" style="width:400px;height:400px;"&gt;&lt;/a&gt;</code>
-      <h4>Example</h4>
-      <a class="image-link" href="#"><img src="images/item1.png" alt="Picture link"></a>
-
+      <section class="element">
+        <h3>Image as a Link</h3>
+           <h4>Css selector:</h4>
+          <p>.image-link</p>
+               <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;&lt;img src="frame.png" alt="Picture Link" style="width:400px;height:400px;"&gt;&lt;/a&gt;</code>
+          <h4>Example</h4>
+          <a class = image-link href="#"><img src="frame.png" alt="Picture link" style="width:400px;height:400px;"></a>
+      
       <!-- I found out how to make a photo link here: https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML-->
+      </section>
+
+
     </section>
-
-
-  </section>
-  <!-- // INTERACTIVE ELEMENTS SECTION -->
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
 
-  <!-- TEXT ELEMENTS SECTION // -->
-  <section id="text_elements">
-    <h2>Text Elements</h2>
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
 
-    <section class="element">
-      <h3>Headings</h3>
-      <h4>Sample code:</h4>
-      <code>&lt;h2&gt;Header 1&lt;/h2&gt;<br>
-&lt;h3&gt;Header 2&lt;/h3&gt;<br>
-&lt;h4&gt;Header 3&lt;/h4&gt;<br>
-&lt;h5&gt;Header 4&lt;/h5&gt;<br>
+      <section class="element">
+        <h3>Headings</h3>
+                <h4>Sample code:</h4>
+          <code>&lt;h2&gt;Header 1&lt;/h2&gt;
+&lt;h3&gt;Header 2&lt;/h3&gt;
+&lt;h4&gt;Header 3&lt;/h4&gt;
+&lt;h5&gt;Header 4&lt;/h5&gt;
 &lt;h6&gt;Header 5&lt;/h6&gt; </code>
-      <h4>Examples:</h4>
-      <h2> Header 1</h2>
-      <h3> Header 2</h3>
-      <h4> Header 3</h4>
-      <h5> Header 4</h5>
-      <h6> Header 5</h6>
-      <!--I learned about headers here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements -->
-    </section>
+                <h4>Examples:</h4>
+          <h2> Header 1</h2>
+           <h3> Header 2</h3>
+          <h4> Header 3</h4>
+             <h5> Header 4</h5>
+               <h6> Header 5</h6>
+                <!--I learned about headers here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements -->
+      </section>
 
-    <section class="element">
-      <h3>Paragraphs</h3>
-      <h4>Sample code:</h4>
-      <code> &lt;p&gt;Paragraph&lt;/p&gt;</code>
-      <h4>Example:</h4>
-      <p>Paragraph</p>
+      <section class="element">
+        <h3>Paragraphs</h3>
+                 <h4>Sample code:</h4>
+          <code> &lt;p&gt;Paragraph&lt;/p&gt;</code>
+                <h4>Example:</h4>
+          <p>Paragraph</p>
+      
+      </section>
 
-    </section>
-
-    <section class="element">
-      <h3>Numbered Lists</h3>
-      <h4>Sample code:</h4>
-      <code>&lt;ol&gt;
+      <section class="element">
+        <h3>Numbered Lists</h3>
+                   <h4>Sample code:</h4>
+          <code>&lt;ol&gt;
   &lt;li&gt;90% Cotton&lt;/li&gt;
   &lt;li&gt;5% Alpaca&lt;/li&gt;
   &lt;li&gt;5% Wool&lt;/li&gt;
 &lt;/ol&gt; </code>
-      <h4>Example:</h4>
-      <ol>
-        <li>90% Cotton</li>
-        <li>5% Alpaca</li>
-        <li>5% Wool</li>
-      </ol>
+                <h4>Example:</h4>
+          <ol>
+  <li>90% Cotton</li>
+  <li>5% Alpaca</li>
+  <li>5% Wool</li>
+</ol>
+      </section>
+
     </section>
-
-  </section>
-  <!-- // TEXT ELEMENTS SECTION -->
+    <!-- // TEXT ELEMENTS SECTION -->
 
 
 
-  <!-- COMBINED ELEMENTS SECTION // -->
-  <section id="combined_elements">
-    <h2>Combined Elements</h2>
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
 
-    <section class="element">
-      <h3>Main Navigation</h3>
-
-      <h4>Sample code:</h4>
+      <section class="element">
+        <h3>Main Navigation</h3>
+          
+          <h4>Sample code:</h4>
       <code>&lt;a class="button-nav" href="#"&gt;Home&lt;/a&gt;
 &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;
 &lt;a class="button-nav" href="#"&gt;Account&lt;/a&gt;
 &lt;a class="button-nav" href="#"&gt;Shopping Cart&lt;/a&gt;</code>
-      <h4>Example:</h4>
-
-      <section class="nav-bar">
-        <ul>
-          <li> <a class="button-nav" href="#">Home</a> </li>
-          <li> <a class="button-nav" href="#">About</a> </li>
-          <li> <a class="button-nav" href="#">Account</a> </li>
-          <li> <a class="button-nav" href="#">Shopping Cart</a> </li>
+    <h4>Example:</h4>
+          
+       <section class="nav-bar">
+           <ul>
+                 <li> <a class="button-nav" href="#">Home</a> </li>
+                  <li> <a class="button-nav" href="#">About</a> </li>
+         <li>    <a class="button-nav" href="#">Account</a> </li>
+         <li>    <a class="button-nav" href="#">Shopping Cart</a> </li>
         </ul>
-
+           
+        </section>
+          
       </section>
 
-    </section>
-
-    <section class="element">
-      <h3>Product Listing</h3>
-
-      <h4>Sample code:</h4>
+      <section class="element">
+        <h3>Product Listing</h3>
+          
+          <h4>Sample code:</h4>
       <code>&lt;h4&gt;Backpack&lt;/h4&gt;
 &lt;a&gt;&lt;img src="backpack.png" alt="Backpack" style="width:200px;height:200px;"&gt;&lt;/a&gt;
 &lt;h4&gt;105$&lt;/h4&gt;
 &lt;a href="#"&gt;Description&lt;/a&gt;</code>
-      <h4>Example:</h4>
+    <h4>Example:</h4>
+          
 
-      <div class="Shop">
-        <h4 class="shop-item-names">Grey Sweater</h4>
-        <a href="#"><img src="images/item1.png" alt="Grey sweater"></a>
-        <h4>$105</h4>
-        <a href="#" class="description-ahref">Description</a>
-        <p>100% Wool</p>
-        <p>Made in Canada</p>
-        <button class="button" type="submit" value="Add to Cart">Add To Cart</button>
-      </div>
+          
+          
+              <div class="Shop">
+      <h4>Sweater 1</h4>
+      <p> </p>
+      <a href="#"><img src="product1.png" alt="sweater1"></a>
+      <h4>105$</h4>
+      <p> <a href="#">Description</a> </p>
+      <p>100% Cotton</p>
+      <p>Made in Canada</p>
+      <button class="button" type="submit" value="Add to Cart">Add To Cart</button>
+    </div>
+          
+      </section>
 
-    </section>
+      <section class="element">
+        <h3>Payment Form</h3>
+           <h4>Sample code:</h4>
+      <code>&lt;div class="checkout"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-75"&gt;
+      &lt;div class="container"&gt;
+        &lt;form action="/action_page.php"&gt;
 
-    <section class="element">
-      <h3>Payment Form</h3>
-      <h4>Sample code:</h4>
-      <code>&lt;div class="checkout"&gt;<br>
-  &lt;div class="row"&gt;<br>
-    &lt;div class="col-75"&gt;<br>
-      &lt;div class="container"&gt;<br>
-        &lt;form action="/action_page.php"&gt;<br>
+          &lt;div class="row"&gt;
+            &lt;div class="col-50"&gt;
+              &lt;h3&gt;Shipping&lt;/h3&gt;
+              &lt;div class="payment"&gt;
+                &lt;form action="payment" method="post" autocomplete="on"&gt;
+                  &lt;div class="form-module-flex"&gt;
+                    &lt;div class="payment-module"&gt;
+                      &lt;div class="form-name"&gt;
+                        &lt;label for="first-name"&gt;First Name&lt;/label&gt;
+                        &lt;input type="text" id="first-name" name="first-name" placeholder="Jane"&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
 
-          &lt;div class="row"&gt;<br>
-            &lt;div class="col-50"&gt;<br>
-              &lt;h3&gt;Shipping&lt;/h3&gt;<br>
-              &lt;div class="payment"&gt;<br>
-                &lt;form action="payment" method="post" autocomplete="on"&gt;<br>
-                  &lt;div class="form-module-flex"&gt;<br>
-                    &lt;div class="payment-module"&gt;<br>
-                      &lt;div class="form-name"&gt;<br>
-                        &lt;label for="first-name"&gt;First Name&lt;/label&gt;<br>
-                        &lt;input type="text" id="first-name" name="first-name" placeholder="Jane"&gt;&lt;br&gt;&lt;br&gt;<br>
-                      &lt;/div&gt;<br>
-                    &lt;/div&gt;<br>
+                    &lt;div class="payment-module"&gt;
+                      &lt;div class="form-name"&gt;
+                        &lt;label for="first-name"&gt;Last Name&lt;/label&gt;
+                        &lt;input type="text" id="last-name" name="last-name" placeholder="Doe"&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
 
-                    &lt;div class="payment-module"&gt;<br>
-                      &lt;div class="form-name"&gt;<br>
-                        &lt;label for="first-name"&gt;Last Name&lt;/label&gt;<br>
-                        &lt;input type="text" id="last-name" name="last-name" placeholder="Doe"&gt;&lt;br&gt;&lt;br&gt;<br>
-                      &lt;/div&gt;<br>
-                    &lt;/div&gt;<br>
-                  &lt;/div&gt;<br><br>
+                  &lt;div class="payment-module"&gt;
+                    &lt;div class="form-full-address"&gt;
+                      &lt;label for="address-line-1"&gt;Address&lt;/label&gt;
+                      &lt;input type="text" id="address-line-1" name="address-line-1" placeholder="123 Bacon Avenue" required&gt;
+                      &lt;input type="text" id="address-line-2" name="address-line-2" placeholder="#100"&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;/div&gt;
 
-                  &lt;div class="payment-module"&gt;<br>
-                    &lt;div class="form-full-address"&gt;<br>
-                      &lt;label for="address-line-1"&gt;Address&lt;/label&gt;<br>
-                      &lt;input type="text" id="address-line-1" name="address-line-1" placeholder="123 Bacon Avenue" required&gt;<br>
-                      &lt;input type="text" id="address-line-2" name="address-line-2" placeholder="#100"&gt;&lt;br&gt;&lt;br&gt;<br>
-                    &lt;/div&gt;<br>
+                    &lt;div class="form-module-flex"&gt;
+                      &lt;div class="form-city"&gt;
+                        &lt;label for="city"&gt;City&lt;/label&gt;
+                        &lt;input type="text" id="city" name="city" placeholder="Eggs" required&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;/div&gt;
 
-                    &lt;div class="form-module-flex"&gt;<br>
-                      &lt;div class="form-city"&gt;<br>
-                        &lt;label for="city"&gt;City&lt;/label&gt;<br>
-                        &lt;input type="text" id="city" name="city" placeholder="Eggs" required&gt;&lt;br&gt;&lt;br&gt;<br>
-                      &lt;/div&gt;<br>
+                      &lt;div class="form-region"&gt;
+                        &lt;label for="region"&gt;Province&lt;/label&gt;
+                        &lt;select id="region" name="region" required&gt;
+                          &lt;option value=""&gt;Choose option&lt;/option&gt;
+                          &lt;option value="alta"&gt;Alberta&lt;/option&gt;
+                          &lt;option value="bc"&gt;British Columbia&lt;/option&gt;
+                          &lt;option value="man"&gt;Manitoba&lt;/option&gt;
+                          &lt;option value="nb"&gt;New Brunswick&lt;/option&gt;
+                          &lt;option value="nl"&gt;Newfoundland and Labrador&lt;/option&gt;
+                          &lt;option value="ns"&gt;Nova Scotia&lt;/option&gt;
+                          &lt;option value="nl"&gt;Nunavut&lt;/option&gt;
+                          &lt;option value="ont"&gt;Ontario&lt;/option&gt;
+                          &lt;option value="pei"&gt;Prince Edward Island&lt;/option&gt;
+                          &lt;option value="nque"&gt;Quebec&lt;/option&gt;
+                          &lt;option value="sask"&gt;Saskatchewan&lt;/option&gt;
+                          &lt;option value="nwt"&gt;The Northwest Territories&lt;/option&gt;
+                          &lt;option value="yt"&gt;The Yukon&lt;/option&gt;
+                        &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;/div&gt;
 
-                      &lt;div class="form-region"&gt;<br>
-                        &lt;label for="region"&gt;Province&lt;/label&gt;<br>
-                        &lt;select id="region" name="region" required&gt;<br>
-                          &lt;option value=""&gt;Choose option&lt;/option&gt;<br>
-                          &lt;option value="alta"&gt;Alberta&lt;/option&gt;<br>
-                          &lt;option value="bc"&gt;British Columbia&lt;/option&gt;<br>
-                          &lt;option value="man"&gt;Manitoba&lt;/option&gt;<br>
-                          &lt;option value="nb"&gt;New Brunswick&lt;/option&gt;<br>
-                          &lt;option value="nl"&gt;Newfoundland and Labrador&lt;/option&gt;<br>
-                          &lt;option value="ns"&gt;Nova Scotia&lt;/option&gt;<br>
-                          &lt;option value="nl"&gt;Nunavut&lt;/option&gt;<br>
-                          &lt;option value="ont"&gt;Ontario&lt;/option&gt;<br>
-                          &lt;option value="pei"&gt;Prince Edward Island&lt;/option&gt;<br>
-                          &lt;option value="nque"&gt;Quebec&lt;/option&gt;<br>
-                          &lt;option value="sask"&gt;Saskatchewan&lt;/option&gt;<br>
-                          &lt;option value="nwt"&gt;The Northwest Territories&lt;/option&gt;<br>
-                          &lt;option value="yt"&gt;The Yukon&lt;/option&gt;<br>
-                        &lt;/select&gt;&lt;br&gt;&lt;br&gt;<br>
-                      &lt;/div&gt;<br>
+                      &lt;div class="form-postal-code"&gt;
+                        &lt;label for="postal-code"&gt;Postal code&lt;/label&gt;
+                        &lt;input type="text" id="postal-code" name="postal-code" placeholder="1A2 3B4" required maxlength="7" autocapitalize="characters"&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
 
-                      &lt;div class="form-postal-code"&gt;<br>
-                        &lt;label for="postal-code"&gt;Postal code&lt;/label&gt;<br>
-                        &lt;input type="text" id="postal-code" name="postal-code" placeholder="1A2 3B4" required maxlength="7" autocapitalize="characters"&gt;&lt;br&gt;&lt;br&gt;<br>
-                      &lt;/div&gt;<br>
-                    &lt;/div&gt;<br>
+                    &lt;div class="payment-module"&gt;
+                      &lt;div class="form-phone-number"&gt;
+                        &lt;label for="phone-number"&gt;Phone number&lt;/label&gt;
+                        &lt;input type="tel" id="phone-number" name="phone-number" placeholder="123-123-1234" required maxlength="12"&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
 
-                    &lt;div class="payment-module"&gt;<br>
-                      &lt;div class="form-phone-number"&gt;<br>
-                        &lt;label for="phone-number"&gt;Phone number&lt;/label&gt;<br>
-                        &lt;input type="tel" id="phone-number" name="phone-number" placeholder="123-123-1234" required maxlength="12"&gt;&lt;br&gt;&lt;br&gt;<br>
-                      &lt;/div&gt;<br>
-                    &lt;/div&gt;<br><br>
+                    &lt;div class="payment-module"&gt;
+                      &lt;div class="form-email"&gt;
+                        &lt;label for="email"&gt;Email address&lt;/label&gt;
+                        &lt;input type="email" id="email" name="email" placeholder="email@domain.com" required&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
 
-                    &lt;div class="payment-module"&gt;<br>
-                      &lt;div class="form-email"&gt;<br>
-                        &lt;label for="email"&gt;Email address&lt;/label&gt;<br>
-                        &lt;input type="email" id="email" name="email" placeholder="email@domain.com" required&gt;&lt;br&gt;&lt;br&gt;<br>
-                      &lt;/div&gt;<br>
-                    &lt;/div&gt;<br><br>
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
 
-                  &lt;/div&gt;<br>
-                &lt;/form&gt;<br>
-              &lt;/div&gt;<br>
-            &lt;/div&gt;<br><br>
+            &lt;div class="col-50"&gt;
+              &lt;h3&gt;Payment&lt;/h3&gt;
+              &lt;div class="payment"&gt;
+                &lt;form action="payment" method="post" autocomplete="on"&gt;
+                  &lt;div class="form-module-flex"&gt;
+                    &lt;div class="payment-module"&gt;
+                      &lt;div class="form-name"&gt;
+                        &lt;label for="first-name"&gt;Name On Card:&lt;/label&gt;
+                        &lt;input type="text" id="first-name" name="first-name" placeholder="Jane Doe"&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
 
-            &lt;div class="col-50"&gt;<br>
-              &lt;h3&gt;Payment&lt;/h3&gt;<br>
-              &lt;div class="payment"&gt;<br>
-                &lt;form action="payment" method="post" autocomplete="on"&gt;<br>
-                  &lt;div class="form-module-flex"&gt;<br>
-                    &lt;div class="payment-module"&gt;<br>
-                      &lt;div class="form-name"&gt;<br>
-                        &lt;label for="first-name"&gt;Name On Card:&lt;/label&gt;<br>
-                        &lt;input type="text" id="first-name" name="first-name" placeholder="Jane Doe"&gt;&lt;br&gt;&lt;br&gt;<br>
-                      &lt;/div&gt;<br>
-                    &lt;/div&gt;<br><br>
+                    &lt;div class="payment-module"&gt;
+                      &lt;div class="form-card"&gt;
+                        &lt;label for="card number"&gt;Credit Card Number:&lt;/label&gt;
+                        &lt;input type="text" id="card number" name="card number" placeholder="111-222-333-444"&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
 
-                    &lt;div class="payment-module"&gt;<br>
-                      &lt;div class="form-card"&gt;<br>
-                        &lt;label for="card number"&gt;Credit Card Number:&lt;/label&gt;<br>
-                        &lt;input type="text" id="card number" name="card number" placeholder="111-222-333-444"&gt;&lt;br&gt;&lt;br&gt;<br>
-                      &lt;/div&gt;<br>
-                    &lt;/div&gt;<br><br>
+                  &lt;/div&gt;
 
-                  &lt;/div&gt;<br><br>
-
-                  &lt;div class="payment-module"&gt;<br>
-                    &lt;div class="expiry"&gt;<br>
-                      &lt;label for="exp-month"&gt;Expiry Month:&lt;/label&gt;<br>
+                  &lt;div class="payment-module"&gt;
+                    &lt;div class="expiry"&gt;
+                      &lt;label for="exp-month"&gt;Expiry Month:&lt;/label&gt;
                       &lt;input type="text" id="exp-month" name</code>
-      <h4>Example:</h4>
-      <div class="checkout">
+    <h4>Example:</h4>
+         <div class="checkout">
+          <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
         <div class="row">
-          <div class="col-75">
-            <div class="container">
-              <form action="/action_page.php">
-
-                <div class="row">
-                  <div class="col-50">
-                    <h3>Shipping</h3>
-                    <div class="payment">
-
-                      <div class="form-module-flex">
-                        <div class="payment-module">
-                          <div class="form-name">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="Jane"><br><br>
-                          </div>
-                        </div>
-
-                        <div class="payment-module">
-                          <div class="form-name">
-                            <label for="first-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Doe"><br><br>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="payment-module">
-                        <div class="form-full-address">
-                          <label for="address-line-1">Address</label>
-                          <input type="text" id="address-line-1" name="address-line-1" placeholder="123 Bacon Avenue"
-                            required>
-                          <input type="text" id="address-line-2" name="address-line-2" placeholder="#100"><br><br>
-                        </div>
-
-                        <div class="form-module-flex">
-                          <div class="form-city">
-                            <label for="city">City</label>
-                            <input type="text" id="city" name="city" placeholder="Eggs" required><br><br>
-                          </div>
-
-                          <div class="form-region">
-                            <label for="region">Province</label>
-                            <select id="region" name="region" required>
-                              <option value="">Choose option</option>
-                              <option value="alta">Alberta</option>
-                              <option value="bc">British Columbia</option>
-                              <option value="man">Manitoba</option>
-                              <option value="nb">New Brunswick</option>
-                              <option value="nl">Newfoundland and Labrador</option>
-                              <option value="ns">Nova Scotia</option>
-                              <option value="nl">Nunavut</option>
-                              <option value="ont">Ontario</option>
-                              <option value="pei">Prince Edward Island</option>
-                              <option value="nque">Quebec</option>
-                              <option value="sask">Saskatchewan</option>
-                              <option value="nwt">The Northwest Territories</option>
-                              <option value="yt">The Yukon</option>
-                            </select><br><br>
-                          </div>
-
-                          <div class="form-postal-code">
-                            <label for="postal-code">Postal code</label>
-                            <input type="text" id="postal-code" name="postal-code" placeholder="1A2 3B4" required
-                              maxlength="7" autocapitalize="characters"><br><br>
-                          </div>
-                        </div>
-
-                        <div class="payment-module">
-                          <div class="form-phone-number">
-                            <label for="phone-number">Phone number</label>
-                            <input type="tel" id="phone-number" name="phone-number" placeholder="123-123-1234" required
-                              maxlength="12"><br><br>
-                          </div>
-                        </div>
-
-                        <div class="payment-module">
-                          <div class="form-email">
-                            <label for="email">Email address</label>
-                            <input type="email" id="email" name="email" placeholder="email@domain.com" required><br><br>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="col-50">
-                    <h3>Payment</h3>
-                    <div class="payment">
-
-                      <div class="form-module-flex">
-                        <div class="payment-module">
-                          <div class="form-name">
-                            <label for="first-name">Name On Card:</label>
-                            <input type="text" id="full-name" name="first-name" placeholder="Jane Doe"><br><br>
-                          </div>
-                        </div>
-
-                        <div class="payment-module">
-                          <div class="form-card">
-                            <label for="card-number">Credit Card Number:</label>
-                            <input type="text" id="card-number" name="card-number"
-                              placeholder="111-222-333-444"><br><br>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="payment-module">
-                        <div class="expiry">
-                          <label for="exp-month">Expiry Month:</label>
-                          <input type="text" id="exp-month" name="exp-month" placeholder="02" required>
-                          <label for="exp-year">Expiry Year:</label>
-                          <input type="text" id="exp-year" name="exp-year" placeholder="2025"><br><br>
-                        </div>
-
-                        <div class="form-module-flex">
-                          <div class="CVV">
-                            <label for="cvv">CVV:</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="123" required><br><br>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
+          <div class="col-50">
+   <h3>Shipping</h3>
+ <div class="payment">
+         
+            <div class="form-module-flex">
+              <div class="payment-module">
+                <div class="form-name">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" name="first-name" placeholder="Jane"><br><br>
                 </div>
-                <p> </p>
-                <button class="button-reset" type="reset" value="Reset">Reset</button>
+              </div>
 
-                <p> </p>
-                <label>
-                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                </label>
-                <p> </p>
-
-
-                <fieldset class=radio-button>
-                  <legend>Select a shipment method:</legend>
-
-                  <div>
-                    <input type="radio" id="regular(5-7businessdays)1" name="drone" value="regular(5-7 business days)"
-                      checked>
-                    <label for="regular(5-7businessdays)">Regular (5-7 business days)</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" id="express(1-2businessdays)1" name="drone" value="express(1-2 business days)">
-                    <label for="express(1-2businessdays)">Express (1-2 business days)</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" id="pick-up1" name="drone" value="pick-up">
-                    <label for="pick-up">Pickup (Free)</label>
-                  </div>
-                </fieldset>
-                <p> </p>
-
-
-
-                <button class="button" type="submit" value="Submit">Submit</button>
-              </form>
+              <div class="payment-module">
+                <div class="form-name">
+                  <label for="first-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" placeholder="Doe"><br><br>
+                </div>
+              </div>
             </div>
 
+            <div class="payment-module">
+              <div class="form-full-address">
+                <label for="address-line-1">Address</label>
+                <input type="text" id="address-line-1" name="address-line-1" placeholder="123 Bacon Avenue" required>
+                <input type="text" id="address-line-2" name="address-line-2" placeholder="#100"><br><br>
+              </div>
+
+              <div class="form-module-flex">
+                <div class="form-city">
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" placeholder="Eggs" required><br><br>
+                </div>
+
+                <div class="form-region">
+                  <label for="region">Province</label>
+                  <select id="region" name="region" required>
+                    <option value="">Choose option</option>
+                    <option value="alta">Alberta</option>
+                    <option value="bc">British Columbia</option>
+                    <option value="man">Manitoba</option>
+                    <option value="nb">New Brunswick</option>
+                    <option value="nl">Newfoundland and Labrador</option>
+                    <option value="ns">Nova Scotia</option>
+                    <option value="nl">Nunavut</option>
+                    <option value="ont">Ontario</option>
+                    <option value="pei">Prince Edward Island</option>
+                    <option value="nque">Quebec</option>
+                    <option value="sask">Saskatchewan</option>
+                    <option value="nwt">The Northwest Territories</option>
+                    <option value="yt">The Yukon</option>
+                  </select><br><br>
+                </div>
+
+                <div class="form-postal-code">
+                  <label for="postal-code">Postal code</label>
+                  <input type="text" id="postal-code" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
+                    autocapitalize="characters"><br><br>
+                </div>
+              </div>
+
+              <div class="payment-module">
+                <div class="form-phone-number">
+                  <label for="phone-number">Phone number</label>
+                  <input type="tel" id="phone-number" name="phone-number" placeholder="123-123-1234" required
+                    maxlength="12"><br><br>
+                </div>
+              </div>
+
+              <div class="payment-module">
+                <div class="form-email">
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" name="email" placeholder="email@domain.com" required><br><br>
+                </div>
+              </div>
+
+    
+            </div>
+          
+        </div>
+          </div>
+
+          <div class="col-50">
+               <h3>Payment</h3>
+ <div class="payment">
+       
+            <div class="form-module-flex">
+              <div class="payment-module">
+                <div class="form-name">
+                  <label for="first-name">Name On Card:</label>
+                  <input type="text" id="full-name" name="first-name" placeholder="Jane Doe"><br><br>
+                </div>
+              </div>
+
+              <div class="payment-module">
+                <div class="form-card">
+                  <label for="card-number">Credit Card Number:</label>
+                  <input type="text" id="card-number" name="card-number" placeholder="111-222-333-444"><br><br>
+                </div>
+              </div>
+                
+                            
+            </div>
+
+            <div class="payment-module">
+              <div class="expiry">
+                <label for="exp-month">Expiry Month:</label>
+                <input type="text" id="exp-month" name="exp-month" placeholder="02" required>
+                   <label for="exp-year">Expiry Year:</label>
+                <input type="text" id="exp-year" name="exp-year" placeholder="2025"><br><br>
+              </div>
+
+              <div class="form-module-flex">
+                <div class="CVV">
+                  <label for="cvv">CVV:</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="123" required><br><br>
+                </div>
+                </div>
+
+
+    
+            </div>
+    
+        </div>
           </div>
 
         </div>
-
-      </div>
-    </section>
-
-    <!--// Learned from: https://www.w3schools.com/howto/howto_css_checkout_form.asp--->
-
-
-
-    <section class="element">
-
-      <h3>Checkout Cart</h3>
-
-      <h4>Sample code:</h4>
-      <code>&lt;div class="col-25"&gt;<br>
-  &lt;div class="container"&gt;<br>
-    &lt;h4&gt;Shopping Cart<br>
-      &lt;span class="price" style="color:black"&gt;<br>
-        &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;<br>
-        &lt;b&gt; &lt;/b&gt;<br>
-          &lt;h4&gt; &lt;/h4&gt;<br>
-      &lt;/span&gt;<br>
-    &lt;/h4&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;Backpack&lt;/a&gt; &lt;span class="price"&gt;$109&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;Wool Sweater&lt;/a&gt; &lt;span class="price"&gt;$51&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;T-Shirt&lt;/a&gt; &lt;span class="price"&gt;$20&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;Sticker&lt;/a&gt; &lt;span class="price"&gt;$2&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;hr&gt;<br>
-    &lt;p&gt;Total &lt;span class="price" style="color:black"&gt;&lt;b&gt;$182&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;<br>
-  &lt;/div&gt;<br>
-&lt;/div&gt;</code>
-      <h4>Example:</h4>
-      <div class="col-25">
-        <div class="container">
-          <h4>Shopping Cart
-            <span class="price" style="color:black">
-              <i class="fa fa-shopping-cart"></i>
-              <b> </b>
-            </span>
-
-          </h4>
           <p> </p>
-          <p><a href="#">Backpack</a> <span class="price">$109</span></p>
-          <p><a href="#">Wool Sweater</a> <span class="price">$51</span></p>
-          <p><a href="#">T-Shirt</a> <span class="price">$20</span></p>
-          <p><a href="#">Sticker</a> <span class="price">$2</span></p>
-          <hr>
-          <p>Total <span class="price" style="color:black"><b>$182</b></span></p>
-          <button class="proceed-button" style="text-align: right;" type="submit" value="Proceed">Proceed</button>
-        </div>
+          <button class ="button-reset" type="reset" value="Reset">Reset</button>
+          
+          <p> </p>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+                  <p> </p>
+          
+          
+                                        <fieldset class=radio-button>
+  <legend>Select a shipment method:</legend>
 
+  <div>
+    <input type="radio" id="regular(5-7businessdays)1" name="drone" value="regular(5-7 business days)" checked >
+    <label for="regular(5-7businessdays)">Regular(5-7 business days)</label>
+  </div>
+
+  <div>
+    <input type="radio" id="express(1-2businessdays)1" name="drone" value="express(1-2 business days)">
+    <label for="express(1-2businessdays)">Express(1-2 business days)</label>
+  </div>
+
+  <div>
+    <input type="radio" id="pick-up1" name="drone" value="pick-up">
+    <label for="pick-up">Pickup</label>
+  </div>
+</fieldset>
+          <p> </p>
+
+
+          
+     <button class="button" type="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+        
       </div>
+        </section>
+        
+<!--// Learned from: https://www.w3schools.com/howto/howto_css_checkout_form.asp--->
+        
+        
+
+      <section class="element">
+          
+        <h3>Checkout Cart</h3>
+          
+                    <h4>Sample code:</h4>
+      <code>&lt;div class="col-25"&gt;
+  &lt;div class="container"&gt;
+    &lt;h4&gt;Shopping Cart
+      &lt;span class="price" style="color:black"&gt;
+        &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;
+        &lt;b&gt; &lt;/b&gt;
+          &lt;h4&gt; &lt;/h4&gt;
+      &lt;/span&gt;
+    &lt;/h4&gt;
+    &lt;p&gt;&lt;a href="#"&gt;Backpack&lt;/a&gt; &lt;span class="price"&gt;$109&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="#"&gt;Wool Sweater&lt;/a&gt; &lt;span class="price"&gt;$51&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="#"&gt;T-Shirt&lt;/a&gt; &lt;span class="price"&gt;$20&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="#"&gt;Sticker&lt;/a&gt; &lt;span class="price"&gt;$2&lt;/span&gt;&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Total &lt;span class="price" style="color:black"&gt;&lt;b&gt;$182&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+    <h4>Example:</h4>
+          <div class="col-25">
+    <div class="container">
+      <h4>Shopping Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b> </b>
+          
+        </span>
+           
+      </h4>
+        <p> </p>
+      <p><a href="#">Backpack</a> <span class="price">$109</span></p>
+      <p><a href="#">Wool Sweater</a> <span class="price">$51</span></p>
+      <p><a href="#">T-Shirt</a> <span class="price">$20</span></p>
+      <p><a href="#">Sticker</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$182</b></span></p>
+      <button class="proceed-button"  style="text-align: right;" type="submit" value="Proceed">Proceed</button>
+    </div>
+
+  </div>
+      </section>
+
     </section>
-
-  </section>
-  <!-- // COMBINED ELEMENTS SECTION -->
-
-  <section id="citations">
-    <h2>Citations</h2>
-    <ul>
-      <li>Patagonia. Online store. n.d.. <strong>Navy sweater [Image]</strong>. Retrieved from <a
-          href="https://www.patagonia.ca/product/womens-recycled-wool-crewneck-sweater/51025.html">https://www.patagonia.ca/product/womens-recycled-wool-crewneck-sweater/51025.html</a>.
-      </li>
-
-      <li>Superibosk. Online store. n.d.. <strong>Grey sweater [Image]</strong>. Retrieved from <a
-          href="https://superibosk.live/product_details/48360839.html">https://superibosk.live/product_details/48360839.html</a>.
-      </li>
-
-      <li>Sustainability Mag. Blog. 2021. <strong>Afends Branding [Image]</strong>. Retrieved from <a
-          href="https://sustainabilitymag.com/top10/top-10-sustainable-clothing-brands">https://sustainabilitymag.com/top10/top-10-sustainable-clothing-brands</a>.
-      </li>
-
-      <li>Sustainable Jungle. Blog. n.d.. <strong>Model in tan sweater [Image]</strong>. Retrieved from <a
-          href="https://www.sustainablejungle.com/sustainable-fashion/gender-neutral-clothing/">https://www.sustainablejungle.com/sustainable-fashion/gender-neutral-clothing/</a>.
-      </li>
-
-      <li>Sustainably Chic. Blog. n.d.. <strong>Model in grey sweater [Image]</strong>. Retrieved from <a
-          href="https://www.sustainably-chic.com/blog/climate-neutral-certified-brandss">https://www.sustainably-chic.com/blog/climate-neutral-certified-brandss</a>.
-      </li>
-
-      <li>Zara. Online store. n.d.. <strong>Blue sweater [Image]</strong>. Retrieved from <a
-          href="https://www.zara.com/ca/en/extrasoft-100-wool-knit-sweater-p09598146.html">https://www.zara.com/ca/en/extrasoft-100-wool-knit-sweater-p09598146.html</a>.
-      </li>
-    </ul>
-  </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
 
 
 
 
-</body>
-
+  </body>
 </html>
