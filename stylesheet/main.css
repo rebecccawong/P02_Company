@@ -301,7 +301,7 @@ a img:focus {
     margin-bottom: 1rem;
     padding: 1rem;
     overflow: hidden;
-    background-color: floralwhite;
+    background-color: #fffaf0;
     display: flex;
     justify-content: space-around;
 }
@@ -317,7 +317,7 @@ a img:focus {
 .nav-bar ul li a:hover,
 .nav-bar ul li a:focus {
     display: block;
-    color: lightgoldenrodyellow;
+    color: #fafad2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
