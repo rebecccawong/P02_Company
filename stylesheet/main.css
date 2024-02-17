@@ -24,7 +24,7 @@ body {
     /*Changed default font to Monaco - monospace 
       Learned from: https://www.w3schools.com/css/css_font.asp*/
 
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 h1 {
@@ -46,7 +46,6 @@ h3 {
 }
 
 h4 {
-
     font-family: 'Univers', serif;
     margin-bottom: 0.25rem;
 }
@@ -59,7 +58,6 @@ h5 {
 }
 
 h6 {
-
     font-family: 'Univers', serif;
     margin-bottom: 0.25rem;
 }
@@ -77,23 +75,7 @@ p {
     margin-top: 1rem;
 }
 
-
-.logo {
-    color: #8BA895;
-    width: 170px;
-    /* Adjust width as needed */
-    height: 120px;
-    /* Maintain aspect ratio */
-    padding: 0px;
-    /* Adjust padding as needed */
-}
-
-.logo-container {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    /* Adjust margin as needed */
-}
+/* STYLE GUIDE */
 
 .text-container {
     display: inline-block;
@@ -176,7 +158,7 @@ code {
 
 
 section {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     /*Added space between sections
       Learned from: https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css*/
 }
@@ -286,32 +268,6 @@ a img:focus {
 
 .input-label {}
 
-.nav-bar ul {
-    list-style-type: none;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    overflow: hidden;
-    background-color: #fffaf0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav-bar ul li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.nav-bar ul li a:hover,
-.nav-bar ul li a:focus {
-    display: block;
-    color: #fafad2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
 /* Payment from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
 
@@ -459,6 +415,110 @@ span.price {
 .proceed-button:focus {
     background-color: #8BA895;
 }
+
+/* END OF STYLE GUIDE */
+
+/* INDEX / LANDING PAGE */
+
+.header{
+    display: flex;
+    background-color: #fffaf0;
+    width: 100%;
+    margin: 0;
+}
+
+.logo {
+    color: #8BA895;
+    /* Adjust width as needed */
+    height: 5em;
+    width: auto;
+    /* Maintain aspect ratio */
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    /* Adjust padding as needed */
+    margin: 2em;
+    margin-right: 8.5em;
+}
+
+.logo-container {
+    display: inline-block;
+    vertical-align: middle;
+    /* margin-right: 10em; */
+    /* Adjust margin as needed */
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    /* background-color: #fffaf0; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    /* padding: 14px 16px; */
+    padding: 1em 1.5em;
+    margin: 2em;
+    text-decoration: none;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a:focus {
+    color: #fafad2;
+}
+
+.shopping-cart-icon{
+    width: 3em;
+    align-items: center;
+    display: inline-block;
+    margin: 4em;
+}
+
+.index-hero .hero-image{
+    background-image: url(../images/index-hero.png);
+    background-size: cover;
+    z-index: -1;
+    padding-bottom: 30em;
+    margin: 0;
+}
+
+.hero-text{
+    color: #FFFAF0;
+}
+
+.hero-title{
+
+}
+
+.hero-cta{
+
+}
+
+/* END OF INDEX / LANDING PAGE */
+
+/* ABOUT PAGE */
+
+
+
+/* END OF ABOUT PAGE */
+
+
+/* EVENTS PAGE */
+
+
+/* END OF EVENTS PAGE */
+
+
+/* CONTACT PAGE */
+
+
+/* END OF CONTACT PAGE */
 
 /* Responsive adjustments */
 @media (max-width: 800px) {
