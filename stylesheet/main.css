@@ -11,8 +11,18 @@
 }
 
 @font-face {
+    font-family: 'PPNeueMontreal-Medium';
+    src: url(../fonts/PPNeueMontreal-Medium.otf);
+}
+
+@font-face {
     font-family: 'Univers';
     src: url(../fonts/UniversLTStd-Light.otf);
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Bold';
+    src: url(../fonts/PPNeueMontreal-Bold.otf);
 }
 
 
@@ -30,36 +40,22 @@ body {
 h1 {
     color: black;
     font-family: 'Univers', serif;
-    margin: 2rem;
+    font-size: 1.7em;
+    /* margin: 2rem; */
 
 }
 
 h2 {
-    color: #8BA895;
+    color: black;
+    font-size: 1.5em;
     font-family: 'Univers', serif;
 }
 
 h3 {
-    color: #E39371;
-    font-family: 'Univers', serif;
-    margin-top: 1rem;
-}
-
-h4 {
-    font-family: 'Univers', serif;
-    margin-bottom: 0.25rem;
-}
-
-
-h5 {
     color: black;
-    font-family: 'Univers', serif;
-    margin-bottom: 0.25rem;
-}
-
-h6 {
-    font-family: 'Univers', serif;
-    margin-bottom: 0.25rem;
+    font-family: 'PPNeueMontreal-Bold', serif;
+    /* margin-top: 1rem; */
+    font-size: 1em;
 }
 
 p {
@@ -68,11 +64,11 @@ p {
     /* Shortened default width of paragraph but made sure it was responsive (did font too) 
       learned from: https://css-tricks.com/viewport-sized-typography/*/
     width: 50vw;
-    font-size: 2vmin;
+    /* font-size: 2vmin; */
     /*Changed paragraph margins to 10
       
       LEARNED FROM https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css*/
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 /* STYLE GUIDE */
@@ -89,12 +85,15 @@ p {
     border-top-color: black;
 }
 
+.nav {
+    font-family: 'PPNeueMontreal-Book';
+}
 
 .button-nav {
     display: inline-block;
     padding: 0.5rem;
     color: black;
-    background-color: #E39371;
+    /* background-color: #E39371; */
     text-decoration: none;
     border-radius: 0.25em;
     transition-property: background-color;
@@ -103,51 +102,36 @@ p {
 
 .button-nav:hover,
 .button-nav:focus {
-    color: lightgoldenrodyellow;
-    background-color: #8BA895;
+    color: #E39371;
+    /* background-color: #8BA895; */
 }
 
-.button {
+.button-submit, .button-reset {
+    font-family: 'PPNeueMontreal-Medium';
     display: inline-block;
     border-width: 0rem;
     padding: 0.5rem;
     color: black;
-    background-color: #E39371;
+    background-color: #EAD5BC;
     text-decoration: none;
     border-radius: 0.25em;
     transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 
-.button:hover,
-.button:focus {
+.button-submit:hover,
+.button-submit:focus {
 
-    background-color: #8BA895;
+    color: #FFF2EC;
+    background-color: #697F6B;
 }
-
-.button-reset {
-    display: inline-block;
-    border-width: 0rem;
-    padding: 0.5rem;
-    color: black;
-    background-color: #E39371;
-    text-decoration: none;
-    border-radius: 0.25em;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-}
-
 
 .button-reset:hover,
 .button-reset:focus {
 
-    background-color: orangered;
-}
-
-nav a:hover,
-nav a:focus {
-    text-decoration: none;
+    color: #FFF2EC;
+    background-color: #E39371;
 }
 
 code {
@@ -165,13 +149,14 @@ section {
 
 
 .in-text-link {
-    background-color: #dedede;
-    color: #AC9D76;
+    /* background-color: #dedede; */
+    color: #000;
 }
 
 .in-text-link:hover {
-    background-color: #aaa;
-    color: #FFF2EC;
+    /* background-color: #aaa; */
+    color: #697F6B;
+    text-decoration: none;
 
     /*Added hover state to in-text link
       
@@ -186,16 +171,16 @@ section {
 }
 
 .radio-button {
-    padding: 1rem;
+    /* padding: 1rem;
     border-width: 0rem;
     border-radius: 0.25em;
     background-color: floralwhite;
-    font-family: 'PPNeueMontreal-Book', sans-serif;
+    font-family: 'PPNeueMontreal-Book', sans-serif; */
 }
 
 a:hover,
 a:focus {
-    color: mediumseagreen;
+    /* color: mediumseagreen; */
 }
 
 
@@ -448,6 +433,8 @@ span.price {
     /* Adjust margin as needed */
 }
 
+/* NAVIGATION */
+
 .nav-bar ul {
     list-style-type: none;
     margin-bottom: 1rem;
@@ -470,8 +457,39 @@ span.price {
 
 .nav-bar ul li a:hover,
 .nav-bar ul li a:focus {
-    color: #fafad2;
+    color: #E39371;
 }
+
+/* END OF NAVIGATION */
+
+/* FOOTER */
+
+.footer-bar ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    /* background-color: #fffaf0; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.footer-bar ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    /* padding: 14px 16px; */
+    padding: 1em 1.5em;
+    margin: 2em;
+    text-decoration: none;
+}
+
+.footer-bar ul li a:hover,
+.footer-bar ul li a:focus {
+    color: #E39371;
+}
+
+/* END OF FOOTER */
 
 .shopping-cart-icon{
     width: 3em;
