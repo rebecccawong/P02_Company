@@ -464,30 +464,51 @@ span.price {
 
 /* FOOTER */
 
-.footer-bar ul {
-    list-style-type: none;
-    margin-bottom: 1rem;
-    padding: 1rem;
+.footer{
+    background: #FFFAF0;
     overflow: hidden;
-    /* background-color: #fffaf0; */
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.footer-flex{
     display: flex;
-    /* justify-content: space-around; */
+    /* background-color: #697F6B; */
 }
 
-.footer-bar ul li a {
-    display: block;
-    color: black;
-    text-align: center;
-    /* padding: 14px 16px; */
-    padding: 1em 1.5em;
-    margin: 2em;
+#footer-section0{
+    /* background-color: #45a049; */
+}
+
+#footer-section1{
+    margin-left: 10%;
+    right: 0;
+    width: 15%;
+    /* background-color: rgb(221, 73, 97); */
+}
+
+#footer-section2{
+    flex: 0;
+    width: 10%;
+    /* background-color: #943ed5; */
+}
+
+.footer-header{
+    color: #000;
+    transition: color 0.5s ease;
+}
+
+.footer-link-text{
+    color: #000;
     text-decoration: none;
+    transition: color 0.5s ease;
+    /* padding: 0; */
 }
 
-.footer-bar ul li a:hover,
-.footer-bar ul li a:focus {
+.footer-link-text:hover, .footer-link-text:focus, .footer-header:hover, .footer-header:focus{
     color: #E39371;
 }
+
 
 /* END OF FOOTER */
 
