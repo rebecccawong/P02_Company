@@ -433,6 +433,65 @@ span.price {
     /* Adjust margin as needed */
 }
 
+.index-headers{
+    margin-left: 2em;
+    margin-top: 4em;
+}
+
+.Shop .in-text-link{
+    font-family: 'PPNeueMontreal-Bold', serif;
+    color: #000;
+    vertical-align: middle;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.Shop .in-text-link:hover, .Shop .in-text-link:focus{
+    color: #D07E5A;
+}
+
+.shop-col-flex{
+    display: flex;
+}
+
+.shop-col-flex .material{
+    width: 60%;
+    vertical-align: bottom;
+}
+
+.shop-col-flex .button-submit {
+    margin-left: 0;
+}
+
+.index-our-story{
+    margin-top: 2rem;
+}
+
+.index-our-story .our-story{
+    display: flex;
+    margin-left: 2em;
+}
+
+.our-story-img{
+    width: 100%
+}
+
+.our-story-div{
+    margin-left: 1em;
+}
+
+.our-story .our-story-p{
+    align-items: center;
+    font-size: 1.2rem;
+    max-width: 70%;
+    margin-top: 0;
+}
+
+.our-story .in-text-link:hover, .our-story .in-text-link:focus{
+    color: #D07E5A; 
+    transition: color 0.5s;
+}
+
 /* NAVIGATION */
 
 .nav-bar ul {
@@ -523,20 +582,46 @@ span.price {
     background-image: url(../images/index-hero.png);
     background-size: cover;
     z-index: -1;
-    padding-bottom: 30em;
+    padding-bottom: 10rem;
+    margin: 0;
+}
+
+.index-hero h3{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+.index-hero h2{
     margin: 0;
 }
 
 .hero-text{
     color: #FFFAF0;
+    padding-top: 15em;
+    /* background-color: pink; */
+    text-align: right;
+    right: 10rem;
+    transition: color 0.5s ease;
+}
+
+.hero-text:hover, .hero-text:focus{
+    color: #D07E5A;
+    transition: color 0.5s ease;
+}
+
+.hero-link{
+    text-decoration: none;
 }
 
 .hero-title{
-
+    width: 90%;
+    /* background-color: #E39371; */
 }
 
 .hero-cta{
-
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    /* background-color: #45a049; */
 }
 
 /* END OF INDEX / LANDING PAGE */
@@ -574,25 +659,26 @@ span.price {
 }
 
 .Shopcontainer {
-    max-width: 80%;
+    max-width: 90%;
     padding-top: 2rem;
     margin: 0 auto;
-
 }
 
 
 .Shop img {
-    width: 250px;
-    height: 250px;
+    /* width: 250px;
+    height: 250px; */
+    width: 90%;
     max-width: 100%;
 }
 
 .Shop {
-    width: 30%;
-    margin: 0 auto;
+    width: 20%;
+    /* margin: 0 auto; */
     margin-bottom: 20px;
     display: inline-block;
     vertical-align: top;
+    margin-right: 2rem;
 }
 
 @media (max-width: 800px) {
