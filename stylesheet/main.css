@@ -433,7 +433,7 @@ span.price {
     /* Adjust margin as needed */
 }
 
-.index-headers, .login-headers{
+.index-headers, .login-headers, .contact-headers{
     margin-left: 2rem;
     margin-top: 4rem;
 }
@@ -640,6 +640,34 @@ span.price {
 
 
 /* CONTACT PAGE */
+.contact-hero .hero-image{
+    background-image: url(../images/contact-hero.jpg);
+    background-size: cover;
+    z-index: -1;
+    padding-bottom: 20rem;
+    margin: 0;
+}
+
+.contact-hero .hero-image h2{
+    color: #FFFAF0;
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    margin-left: 2em;
+    /* background-color: #45a049; */
+    text-align: left;
+}
+
+.contact-form{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    padding-bottom: 3rem;
+}
+
+#message{
+    width: 40rem;
+    height: 10rem;
+}
 
 
 /* END OF CONTACT */
