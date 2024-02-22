@@ -329,8 +329,116 @@ span.price {
 }
 
 /* CART */
+
+.cart-item{
+    display: flex;
+    align-items: top;
+    margin-bottom: 3rem;
+}
+
+.cart-image{
+    width: 10rem;
+    margin-right: 10rem;
+    background-color: #45a049;
+    padding: 0;
+}
+
+.amount-input{
+    height: 2rem;
+    width: 4rem;
+    margin-right: 10rem;
+}
+
+.cart-total-price{
+    color: #000;
+    font-family: 'PPNeueMontreal-Medium';
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.cart-name-remove{
+    width: 25rem;
+    margin-top: 0;
+    padding: 0;
+}
+
+.cart-item-name{
+    font-family: 'PPNeueMontreal-Medium';
+}
+
+.cart-item-remove{
+    margin-top: -0.5rem;
+}
+
 .cart-headings{
     margin-top: 2rem;
+}
+
+.cart-total{
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: #898a8c;
+}
+
+.total-price{
+    margin-left: 20rem;
+    font-size: 1.22rem;
+}
+
+.total-price-number{
+    margin-left: 4rem;
+    font-family: 'PPNeueMontreal-Medium';
+}
+
+.cart-container{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+#first-name-cart, #last-name-cart{
+    width: 19.5rem;
+}
+
+#first-name-cart{
+    margin-right: 1rem;
+}
+
+#email-cart, #address-line-1-cart, #address-line-2-cart, #phone-number-cart{
+    width: 40rem;
+}
+
+#city-cart{
+    width: 20rem;
+    margin-right: 1rem;
+}
+
+#province-cart{
+    margin-right: 1rem;
+}
+
+#postal-code-cart{
+    width: 5.5rem;
+}
+
+#full-name-cart, #card-number-cart{
+    width: 40rem;
+    margin-right: 1rem;
+}
+
+#expiry-month-cart{
+    width: 15rem;
+    margin-right: 1rem;
+}
+
+#expiry-year-cart{
+    width: 15rem;
+    margin-right: 1rem;
+}
+
+#cvv-cart{
+    width: 8rem;
 }
 
 
@@ -433,7 +541,7 @@ span.price {
     /* Adjust margin as needed */
 }
 
-.index-headers, .login-headers, .contact-headers{
+.index-headers, .login-headers, .contact-headers, .cart-headers{
     margin-left: 2rem;
     margin-top: 4rem;
 }
@@ -730,6 +838,7 @@ span.price {
 #first-name-signin, #last-name-signin{
     width: 19.5rem;
 }
+
 #email, #password, #address-line-1, #address-line-2, #phone-number{
     width: 40rem;
 }

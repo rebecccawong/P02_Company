@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products</title>
+  <title>Cart</title>
 
   <link href="stylesheet/main.css" rel="stylesheet">
 
@@ -15,9 +15,10 @@
 
   <header>
     <div class="header">
-      <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png" alt="Fluff and Fibre logo"></a>
-      
-      
+      <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png"
+          alt="Fluff and Fibre logo"></a>
+
+
       <div class="nav-bar">
         <ul>
           <li> <a class="button-nav" href="products.html">Products</a> </li>
@@ -28,7 +29,8 @@
         </ul>
       </div>
 
-      <a href="cart.html" class="shopping-cart-href"><img class="shopping-cart-icon" src="../P02_company/images/shopping-cart.png"> </a>
+      <a href="cart.html" class="shopping-cart-href"><img class="shopping-cart-icon"
+          src="../P02_company/images/shopping-cart.png" alt="Cart"> </a>
 
     </div>
   </header>
@@ -37,60 +39,87 @@
 
   <section class="cartelement">
 
-    <h3>Checkout Cart</h3>
+    <h2 class="cart-headers">Checkout Cart</h2>
 
-    <div class="col-25">
-      <div class="container">
+    <div class="cart-container">
 
-        <p> </p>
-        <p><a href="#">Backpack</a> <span class="price">$109</span></p>
-        <p><a href="#">Wool Sweater</a> <span class="price">$51</span></p>
-        <p><a href="#">T-Shirt</a> <span class="price">$20</span></p>
-        <p><a href="#">Sticker</a> <span class="price">$2</span></p>
-        <hr>
-        <p>Total <span class="price" style="color:black"><b>$182</b></span></p>
-        <!-- <button class="proceed-button" style="text-align: right;"
-          onclick="window.location.href='payment.html'">Proceed</button> -->
+      <div class="cart-item">
+        <a href="#"><img class="cart-image" src="images/item1.png"></a>
+        <div class="cart-name-remove">
+          <p class="cart-item-name">Grey Sweater</p>
+          <a href="#"><p class="cart-item-remove">Remove</p></a>
+        </div>
+        <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100" ><br><br>
+        <p class="cart-price">$109</p>
       </div>
+
+      <div class="cart-item">
+        <a href="#"><img class="cart-image" src="images/item2.png"></a>
+        <div class="cart-name-remove">
+          <p class="cart-item-name">Navy Sweater</p>
+          <a href="#"><p class="cart-item-remove">Remove</p></a>
+        </div>
+        <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100" ><br><br>
+        <p class="cart-price">$120</p>
+      </div>
+
+      <div class="cart-item">
+        <a href="#"><img class="cart-image" src="images/item5.png"></a>
+        <div class="cart-name-remove">
+          <p class="cart-item-name">Striped Green and Black Sweater</p>
+          <a href="#"><p class="cart-item-remove">Remove</p></a>
+        </div>
+        <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100" ><br><br>
+        <p class="cart-price">$150</p>
+      </div>
+
+      <div class="cart-item cart-total">
+        <p class="total-price">Total Price</p>
+        <p class="total-price-number">$379</p>
+      </div>
+
 
     </div>
 
+    <!-- </div> -->
 
-    <h3 class="cart-headings">Shipping</h3>
-    <div class="container">
+
+    <h2 class="cart-headers">Shipping</h2>
+    <div class="cart-container">
       <div class="payment">
         <div class="form-module-flex">
           <div class="payment-module">
             <div class="form-name">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" placeholder="Jane"><br><br>
+              <label for="first-name">First Name</label><br>
+              <input type="text" id="first-name-cart" name="first-name" placeholder="Jane"><br><br>
             </div>
           </div>
 
           <div class="payment-module">
             <div class="form-name">
-              <label for="first-name">Last Name</label>
-              <input type="text" id="last-name" name="last-name" placeholder="Doe"><br><br>
+              <label for="first-name">Last Name</label><br>
+              <input type="text" id="last-name-cart" name="last-name" placeholder="Doe"><br><br>
             </div>
           </div>
         </div>
 
         <div class="payment-module">
           <div class="form-full-address">
-            <label for="address-line-1">Address</label>
-            <input type="text" id="address-line-1" name="address-line-1" placeholder="123 Bacon Avenue" required>
-            <input type="text" id="address-line-2" name="address-line-2" placeholder="#100"><br><br>
+            <label for="address-line-1">Address</label><br>
+            <input type="text" id="address-line-1-cart" name="address-line-1" placeholder="123 Bacon Avenue"
+              required><br>
+            <input type="text" id="address-line-2-cart" name="address-line-2" placeholder="#100"><br><br>
           </div>
 
           <div class="form-module-flex">
             <div class="form-city">
-              <label for="city">City</label>
-              <input type="text" id="city" name="city" placeholder="Eggs" required><br><br>
+              <label for="city">City</label><br>
+              <input type="text" id="city-cart" name="city" placeholder="Eggs" required><br><br>
             </div>
 
             <div class="form-region">
-              <label for="region">Province</label>
-              <select id="region" name="region" required>
+              <label for="region">Province</label><br>
+              <select id="region-cart" name="region" required>
                 <option value="">Choose option</option>
                 <option value="alta">Alberta</option>
                 <option value="bc">British Columbia</option>
@@ -109,24 +138,24 @@
             </div>
 
             <div class="form-postal-code">
-              <label for="postal-code">Postal code</label>
-              <input type="text" id="postal-code" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
+              <label for="postal-code">Postal code</label><br>
+              <input type="text" id="postal-code-cart" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
                 autocapitalize="characters"><br><br>
             </div>
           </div>
 
           <div class="payment-module">
             <div class="form-phone-number">
-              <label for="phone-number">Phone number</label>
-              <input type="tel" id="phone-number" name="phone-number" placeholder="123-123-1234" required
+              <label for="phone-number">Phone number</label><br>
+              <input type="tel" id="phone-number-cart" name="phone-number" placeholder="123-123-1234" required
                 maxlength="12"><br><br>
             </div>
           </div>
 
           <div class="payment-module">
             <div class="form-email">
-              <label for="email">Email address</label>
-              <input type="email" id="email" name="email" placeholder="email@domain.com" required><br><br>
+              <label for="email">Email address</label><br>
+              <input type="email" id="email-cart" name="email" placeholder="email@domain.com" required><br><br>
             </div>
           </div>
         </div>
@@ -135,131 +164,126 @@
     </div>
     <!-- end of container -->
 
-    <h3 class="cart-headings">Payment</h3>
-    <div class="container">
+    <h2 class="cart-headers">Payment</h2>
+    <div class="cart-container">
       <div class="col-50">
 
         <div class="payment">
 
-          <div class="form-module-flex">
-            <div class="payment-module">
-              <div class="form-name">
-                <label for="first-name">Name On Card:</label>
-                <input type="text" id="full-name" name="first-name" placeholder="Jane Doe"><br><br>
-              </div>
+          <div class="payment-module">
+            <div class="form-name">
+              <label for="first-name">Name On Card:</label><br>
+              <input type="text" id="full-name-cart" name="first-name" placeholder="Jane Doe"><br><br>
             </div>
-
-            <div class="payment-module">
-              <div class="form-card">
-                <label for="card-number">Credit Card Number:</label>
-                <input type="text" id="card-number" name="card-number" placeholder="111-222-333-444"><br><br>
-              </div>
-            </div>
-
-
           </div>
 
           <div class="payment-module">
-            <div class="expiry">
-              <label for="exp-month">Expiry Month:</label>
-              <input type="text" id="exp-month" name="exp-month" placeholder="02" required>
-              <label for="exp-year">Expiry Year:</label>
-              <input type="text" id="exp-year" name="exp-year" placeholder="2025"><br><br>
-            </div>
-
-            <div class="form-module-flex">
-              <div class="CVV">
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" placeholder="123" required><br><br>
-              </div>
+            <div class="form-card">
+              <label for="card-number">Credit Card Number:</label><br>
+              <input type="text" id="card-number-cart" name="card-number" placeholder="111-222-333-444"><br><br>
             </div>
           </div>
+
+          
+            <div class="form-module-flex">
+              <div class="payment-module">
+                <label for="exp-month">Expiry Month:</label><br>
+              <input type="text" id="expiry-month-cart" name="exp-month" placeholder="02" required>
+              </div>
+
+              <div class="payment-module">
+                <label for="exp-year">Expiry Year:</label><br>
+              <input type="text" id="expiry-year-cart" name="exp-year" placeholder="2025">
+              </div>
+
+              <div class="payment-module">
+                <label for="cvv">CVV:</label><br>
+                <input type="text" id="cvv-cart" name="cvv" placeholder="123" required><br><br>
+              </div>
+                
+            </div>
 
         </div>
       </div>
     </div>
 
+    <div class="cart-container">
+      <label>
+        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+      </label>
+      <p> </p>
+
+
+      <fieldset class=radio-button>
+        <legend>Select a shipment method:</legend>
+
+        <div>
+          <input type="radio" id="regular(5-7businessdays)1" name="drone" value="regular(5-7 business days)" checked>
+          
+          <label for="regular(5-7businessdays)1">Regular (5-7 business days)</label>
+        </div>
+
+        <div>
+          <input type="radio" id="express(1-2businessdays)1" name="drone" value="express(1-2 business days)">
+          <label for="express(1-2businessdays)1">Express (1-2 business days)</label>
+        </div>
+
+        <div>
+          <input type="radio" id="pick-up1" name="drone" value="pick-up">
+          <label for="pick-up1">Pickup (Free)</label>
+        </div>
+      </fieldset>
+      <p> </p>
+
+      <button class="button-submit" type="submit" value="Submit">Submit</button>
+
     </div>
-    <p> </p>
-    <button class="button-reset" type="reset" value="Reset">Reset</button>
-
-    <p> </p>
-    <label>
-      <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-    </label>
-    <p> </p>
-
-
-
-    <fieldset class=radio-button>
-      <legend>Select a shipment method:</legend>
-
-      <div>
-        <input type="radio" id="regular(5-7businessdays)1" name="drone" value="regular(5-7 business days)" checked>
-        <label for="regular(5-7businessdays)1">Regular (5-7 business days)</label>
-      </div>
-
-      <div>
-        <input type="radio" id="express(1-2businessdays)1" name="drone" value="express(1-2 business days)">
-        <label for="express(1-2businessdays)1">Express (1-2 business days)</label>
-      </div>
-
-      <div>
-        <input type="radio" id="pick-up1" name="drone" value="pick-up">
-        <label for="pick-up1">Pickup (Free)</label>
-      </div>
-    </fieldset>
-    <p> </p>
-
-
-
-    <button class="button" type="submit" value="Submit">Submit</button>
-    </form>
   </section>
-  </body>
+</body>
 
-  <section class="footer footer-flex">
+<section class="footer footer-flex">
 
-    <div class="footer-section footer-section0" id="footer-section0">
-      <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png" alt="Fluff and Fibre logo"></a>
-    </div>
+  <div class="footer-section footer-section0" id="footer-section0">
+    <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png"
+        alt="Fluff and Fibre logo"></a>
+  </div>
 
-    <div class="footer-section footer-section1" id="footer-section1">
-      <a href="products.html" class="footer-link-header">
-        <p class="footer-header">Products</p>
-      </a>
-      <a href="products.html" class="footer-link-text">
-        <p class="footer-links">Sweaters</p>
-      </a>
-      <a href="products.html" class="footer-link-text">
-        <p class="footer-links">Pants</p>
-      </a>
-      <a href="products.html" class="footer-link-text">
-        <p class="footer-links">Shoes</p>
-      </a>
-      <a href="products.html" class="footer-link-text">
-        <p class="footer-links">Accessories</p>
-      </a>
-    </div>
+  <div class="footer-section footer-section1" id="footer-section1">
+    <a href="products.html" class="footer-link-header">
+      <p class="footer-header">Products</p>
+    </a>
+    <a href="products.html" class="footer-link-text">
+      <p class="footer-links">Sweaters</p>
+    </a>
+    <a href="products.html" class="footer-link-text">
+      <p class="footer-links">Pants</p>
+    </a>
+    <a href="products.html" class="footer-link-text">
+      <p class="footer-links">Shoes</p>
+    </a>
+    <a href="products.html" class="footer-link-text">
+      <p class="footer-links">Accessories</p>
+    </a>
+  </div>
 
-    <div class="footer-section footer-section2" id="footer-section2">
-      <a href="about.html" class="footer-link-header">
-        <p class="footer-header">About</p>
-      </a>
-      <a href="about.html" class="footer-link-text">
-        <p class="footer-links">Our Story</p>
-      </a>
-      <a href="about.html" class="footer-link-text">
-        <p class="footer-links">Shipping Policy</p>
-      </a>
-      <a href="contact.html" class="footer-link-text">
-        <p class="footer-links">Contact Us</p>
-      </a>
-      <a href="about.html" class="footer-link-text">
-        <p class="footer-links">Privacy Policy</p>
-      </a>
-    </div>
+  <div class="footer-section footer-section2" id="footer-section2">
+    <a href="about.html" class="footer-link-header">
+      <p class="footer-header">About</p>
+    </a>
+    <a href="about.html" class="footer-link-text">
+      <p class="footer-links">Our Story</p>
+    </a>
+    <a href="about.html" class="footer-link-text">
+      <p class="footer-links">Shipping Policy</p>
+    </a>
+    <a href="contact.html" class="footer-link-text">
+      <p class="footer-links">Contact Us</p>
+    </a>
+    <a href="about.html" class="footer-link-text">
+      <p class="footer-links">Privacy Policy</p>
+    </a>
+  </div>
 
-  </section>
-  
-  </html>
+</section>
+
+</html>
