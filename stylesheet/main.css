@@ -705,7 +705,6 @@ span.price {
 .hero-text{
     color: #FFFAF0;
     padding-top: 15em;
-    /* background-color: pink; */
     text-align: right;
     right: 10rem;
     transition: color 0.5s ease;
