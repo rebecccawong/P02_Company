@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>P01 - Style Guide Template</title>
+    <title>Login</title>
 
     <link href="stylesheet/main.css" rel="stylesheet">
 
@@ -36,12 +36,104 @@
 
     <section class="login-hero">
         <div class="hero-image">
-            <a href="products.html" class="hero-link">
-                <h2 class="hero-text hero-title">Login or Create Account</h2>
-            </a>
+            <img class="hero-text hero-logo" src="images/flufffibre.png">
+            <h2 class="hero-text hero-title">Login or<br>Create Account</h2>
         </div>
 
     </section>
+
+    <h2 class="login-headers">Login</h2>
+
+    <div class="sign-in-form">
+        <div class="form-name">
+            <label for="first-name">Email</label><br>
+            <input type="text" id="email" name="email"><br><br>
+        </div>
+        <div class="form-name">
+            <label for="first-name">Password</label><br>
+            <input type="text" id="password" name="password"><br><br>
+        </div>
+        <label>
+            <input type="checkbox" name="remember">Remember this device
+        </label>
+
+        <br><br>
+        <a href="products.html" class="redirect-products"><button class="button-submit">Login</button></a>
+    </div>
+
+    <h2 class="login-headers">Create Account</h2>
+
+    <div class="sign-in-form no-divider">
+        <div class="signin-flex">
+            <div class="form-name first-name-form">
+                <label for="first-name">First Name</label><br>
+                <input type="text" id="first-name-signin" name="first-name" placeholder="Jane"><br><br>
+            </div>
+
+            <div class="form-name">
+                <label for="first-name">Last Name</label><br>
+                <input type="text" id="last-name-signin" name="last-name" placeholder="Doe"><br><br>
+            </div>
+        </div>
+
+        <div class="form-name">
+            <label for="first-name">Email</label><br>
+            <input type="text" id="email" name="email"><br><br>
+        </div>
+        <div class="form-name">
+            <label for="first-name">Password</label><br>
+            <input type="text" id="password" name="password"><br><br>
+        </div>
+
+        <div class="form-full-address">
+            <label for="address-line-1">Address</label><br>
+            <input type="text" id="address-line-1" name="address-line-1" placeholder="123 Bacon Avenue" required>
+            <br><input type="text" id="address-line-2" name="address-line-2" placeholder="#100"><br><br>
+        </div>
+
+        <div class="form-module-flex">
+            <div class="form-city">
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city" placeholder="Eggs" required><br><br>
+            </div>
+
+            <div class="form-region">
+                <label for="region">Province</label><br>
+                <select id="region" name="region" required>
+                    <option value="">Choose option</option>
+                    <option value="alta">Alberta</option>
+                    <option value="bc">British Columbia</option>
+                    <option value="man">Manitoba</option>
+                    <option value="nb">New Brunswick</option>
+                    <option value="nl">Newfoundland and Labrador</option>
+                    <option value="ns">Nova Scotia</option>
+                    <option value="nl">Nunavut</option>
+                    <option value="ont">Ontario</option>
+                    <option value="pei">Prince Edward Island</option>
+                    <option value="nque">Quebec</option>
+                    <option value="sask">Saskatchewan</option>
+                    <option value="nwt">The Northwest Territories</option>
+                    <option value="yt">The Yukon</option>
+                </select>
+            </div>
+
+            <div class="form-postal-code">
+                <label for="postal-code">Postal code</label><br>
+                <input type="text" id="postal-code" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
+                    autocapitalize="characters"><br><br>
+            </div>
+        </div>
+
+        <div class="form-phone-number">
+            <label for="phone-number">Phone number</label><br>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="123-123-1234" required
+                maxlength="12"><br><br>
+        </div>
+
+        <br>
+        <a href="products.html" class="redirect-products"><button class="button-submit">Create Account</button></a>
+    </div>
+
 
 
 
