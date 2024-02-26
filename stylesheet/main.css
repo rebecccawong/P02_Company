@@ -781,6 +781,11 @@ span.price {
 
 /* LOGIN / CREATE ACCOUNT */
 
+.hero-logo{
+    padding-top: 0;
+    padding-left: 2rem;
+}
+
 .login-hero .hero-image{
     background-image: url(../images/login-hero.jpg);
     background-size: cover;
