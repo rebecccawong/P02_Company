@@ -612,7 +612,7 @@ span.price {
     margin: 0;
 }
 
-.about-hero .hero-image h2{
+.contact-hero .hero-image h2{
     color: #FFFAF0;
     margin: 0;
     padding: 0;
@@ -661,6 +661,12 @@ span.price {
 }
 
 .hero-title{
+
+}
+
+.hero-cta{
+    margin-top: -0.005em;
+    margin-left: 2rem;
 
 }
 
@@ -1345,6 +1351,8 @@ span.price {
 
 .shop-col-flex{
     display: flex;
+    align-items: center;
+    margin-top: -0.75rem;
 }
 
 .shop-col-flex .material{
@@ -1507,6 +1515,13 @@ span.price {
 .hero-title{
     width: 90%;
     /* background-color: #E39371; */
+}
+
+.hero-cta{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    /* background-color: #45a049; */
 }
 
 /* END OF INDEX / LANDING PAGE */
