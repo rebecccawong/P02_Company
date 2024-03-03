@@ -330,8 +330,9 @@ span.price {
     font-size: 0.7rem;
 }
 
-.shop-item-names{
-    
+.product-grid-img{
+    width: 30rem;
+    height: 30rem;
 }
 
 
@@ -611,12 +612,31 @@ span.price {
     margin: 0;
 }
 
+.about-hero .hero-image h2{
+    color: #FFFAF0;
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    margin-left: 2em;
+    /* background-color: #45a049; */
+    text-align: left;
+}
+
 .event-hero .hero-image{
     background-image: url(../images/clothing-swap.png);
     background-size: cover;
     z-index: -1;
     padding-bottom: 20em;
     margin: 0;
+}
+
+.event-hero .hero-image h2{
+    color: #000;
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    margin-left: 2em;
+    text-align: left;
 }
 
 .products-hero .hero-image{
@@ -627,17 +647,20 @@ span.price {
     margin: 0;
 }
 
+.products-hero .hero-image h2{
+    color: #FFFAF0;
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    margin-left: 2em;
+    text-align: left;
+}
+
 .hero-text{
     color: #FFFAF0;
 }
 
 .hero-title{
-
-}
-
-.hero-cta{
-    /* margin-top: -0.005em; */
-    /* margin-left: 2rem; */
 
 }
 
@@ -1484,13 +1507,6 @@ span.price {
 .hero-title{
     width: 90%;
     /* background-color: #E39371; */
-}
-
-.hero-cta{
-    margin: 0;
-    padding: 0;
-    width: 90%;
-    /* background-color: #45a049; */
 }
 
 /* END OF INDEX / LANDING PAGE */
