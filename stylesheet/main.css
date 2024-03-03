@@ -664,6 +664,12 @@ span.price {
 
 }
 
+.hero-cta{
+    /* margin-top: -0.005em; */
+    /* margin-left: 2rem; */
+
+}
+
 .hero-logo{
     margin-left: 1rem;
      margin-top: 1rem;
@@ -1507,6 +1513,13 @@ span.price {
 .hero-title{
     width: 90%;
     /* background-color: #E39371; */
+}
+
+.hero-cta{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    /* background-color: #45a049; */
 }
 
 /* END OF INDEX / LANDING PAGE */
