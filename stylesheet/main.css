@@ -1820,6 +1820,10 @@ span.price {
 
 /* THANK YOU FORM */
 
+.thank-you{
+    margin: 4rem;
+}
+
 /* END OF THANK YOU FORM */
 
 /* Responsive adjustments */
