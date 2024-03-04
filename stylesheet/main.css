@@ -1125,7 +1125,7 @@ span.price {
     display: flex;
     align-items: top;
     margin-bottom: 3rem;
-}
+} 
 
 .cart-image{
     width: 10rem;
@@ -1136,7 +1136,7 @@ span.price {
 
 .amount-input{
     height: 2rem;
-    width: 4rem;
+    width: 6rem;
     margin-right: 10rem;
 }
 
@@ -1232,7 +1232,24 @@ span.price {
     width: 8rem;
 }
 
+@media (max-width: 900px) {
+    .cart-item{
+        background-color: #697F6B;
+    }
 
+    .cart-image{
+        margin-right: 5rem;
+        width: 5rem;
+    }
+
+    .amount-input{
+        margin-right: 5rem;
+    }
+
+    .cart-name-remove{
+        width: 10rem;    
+    }
+}
 
 /* BRANDING */
 
