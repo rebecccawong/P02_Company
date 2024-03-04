@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Grey Sweater</title>
 
     <link href="stylesheet/main.css" rel="stylesheet">
 
@@ -19,7 +19,6 @@
               <li><a class="button-nav" href="products.html">Products</a></li>
               <li><a class="button-nav" href="about.html">About</a></li>
               <li><a class="button-nav" href="events.html">Events</a></li>
-              <!-- <li><p> </p></li> -->
               <li><a class="button-nav" href="styleguide.html">Style Guide</a></li>
               <li><a class="button-nav" href="login.html">Account</a></li>
              <li><a class="button-nav bag-link" href="cart.html"><img src="images/bag.png" alt="Shopping Bag"></a></li>
@@ -33,8 +32,81 @@
         </div>
 
         <div class="product-details-info">
+
+            <div class="product-details-top">
+                <h1 class="product-details-name">Grey Sweater</h1>
+                <div class="review-stars">
+                    <img class="five-stars" src="images/5-stars.png" alt="5 star review" id="five-stars">
+                    <a href="#reviews" class="num-reviews-ahref"><p class="num-reviews">3 reviews</p></a>
+                </div>
+    
+                <div class="product-price-amount-cart">
+                    <p class="product-details-price">$105</p>
+                    <input type="number" class="product-amounts" name="amount-input" value="1" min="0" max="50">
+                    <a href="cart.html"><button class="button-submit" type="submit" value="Add to Cart">Add To Cart</button></a>
+                </div>
+    
+                <p class="product-size-heading">Size</p>
+                    
+                <div class="size-options">
+                    <button class="button-submit button-size" type="submit" value="Add to Cart">XS</button>
+                    <button class="button-submit button-size" type="submit" value="Add to Cart">S</button>
+                    <button class="button-submit button-size" type="submit" value="Add to Cart">M</button>
+                    <button class="button-submit button-size" type="submit" value="Add to Cart">L</button>
+                    <button class="button-submit button-size" type="submit" value="Add to Cart">XL</button>
+                </div>
+            </div>
+
+            <div class="product-details-bottom">
+                <h2>Description</h2>
+                <p class="product-description">This sweater can be worn out during cold days or for keeping warm at home! This versatile piece can be dressed up for a night out, or dressed down for a casual day at the store.</p>
+
+                <h2>Specifications & Care</h2>
+                <p class="product-description">100% wool. Hand wash only.</p>
+            </div>            
             
         </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <h2>Reviews</h2>
+
+        <div class="review-block">
+            <img class="stars-reviews" src="images/5-stars.png" alt="5 star review">
+            <h3 class="review-heading">Soft and Holds Up!</h3>
+            <p>I was recommended this sweater from a friend, and was pleasantly surprised at the quality! It’s very soft and insulating for the fall. I also machine washed it even though you aren’t supposed to (oops) but it still kept it’s great quality!</p>
+            <div class="review-info">
+                <p class="review-details review-name">Fluff & Fibre Customer</p>
+                <p class="review-details review-size">Size: M</p>
+                <p class="review-details review-date">Posted: Oct. 12, 2023</p>
+                <p class="review-details review-location">Vancouver, BC</p>
+            </div>
+        </div>
+
+        <div class="review-block">
+            <img class="stars-reviews" src="images/5-stars.png" alt="5 star review">
+            <h3 class="review-heading">Cute and Comfy</h3>
+            <p>Was gifted this sweater by my mother for Christmas, and I haven’t taken it off since! Very soft and warm, even my sister is asking to borrow it!</p>
+            <div class="review-info">
+                <p class="review-details review-name">cutiegirl10001</p>
+                <p class="review-details review-size">Size: S</p>
+                <p class="review-details review-date">Posted: Dec. 26, 2023</p>
+                <p class="review-details review-location">Victoria, BC</p>
+            </div>
+        </div>
+
+        <div class="review-block">
+            <img class="stars-reviews" src="images/5-stars.png">
+            <h3 class="review-heading">Nice.</h3>
+            <p>Nice and comfy. Very Good. Thank you.</p>
+            <div class="review-info">
+                <p class="review-details review-name">stevejohnson33</p>
+                <p class="review-details review-size">Size: L</p>
+                <p class="review-details review-date">Posted: Jan. 13, 2024</p>
+                <p class="review-details review-location">Surrey, BC</p>
+            </div>
+        </div>
+
     </section>
 </body>
 

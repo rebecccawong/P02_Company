@@ -330,8 +330,9 @@ span.price {
     font-size: 0.7rem;
 }
 
-.shop-item-names{
-    
+.product-grid-img{
+    width: 30rem;
+    height: 30rem;
 }
 
 
@@ -611,6 +612,16 @@ span.price {
     margin: 0;
 }
 
+.contact-hero .hero-image h2{
+    color: #FFFAF0;
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    margin-left: 2em;
+    /* background-color: #45a049; */
+    text-align: left;
+}
+
 .event-hero .hero-image{
     background-image: url(../images/clothing-swap.png);
     background-size: cover;
@@ -619,12 +630,30 @@ span.price {
     margin: 0;
 }
 
+.event-hero .hero-image h2{
+    color: #000;
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    margin-left: 2em;
+    text-align: left;
+}
+
 .products-hero .hero-image{
     background-image: url(../images/hero.png);
     background-size: cover;
     z-index: -1;
     padding-bottom: 20em;
     margin: 0;
+}
+
+.products-hero .hero-image h2{
+    color: #FFFAF0;
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    margin-left: 2em;
+    text-align: left;
 }
 
 .hero-text{
@@ -636,8 +665,8 @@ span.price {
 }
 
 .hero-cta{
-    /* margin-top: -0.005em; */
-    /* margin-left: 2rem; */
+    margin-top: -0.005em;
+    margin-left: 2rem;
 
 }
 
@@ -1093,7 +1122,7 @@ span.price {
     display: flex;
     align-items: top;
     margin-bottom: 3rem;
-}
+} 
 
 .cart-image{
     width: 10rem;
@@ -1104,7 +1133,7 @@ span.price {
 
 .amount-input{
     height: 2rem;
-    width: 4rem;
+    width: 6rem;
     margin-right: 10rem;
 }
 
@@ -1200,7 +1229,24 @@ span.price {
     width: 8rem;
 }
 
+@media (max-width: 900px) {
+    .cart-item{
+        background-color: #697F6B;
+    }
 
+    .cart-image{
+        margin-right: 5rem;
+        width: 5rem;
+    }
+
+    .amount-input{
+        margin-right: 5rem;
+    }
+
+    .cart-name-remove{
+        width: 10rem;    
+    }
+}
 
 /* BRANDING */
 
@@ -1319,6 +1365,8 @@ span.price {
 
 .shop-col-flex{
     display: flex;
+    align-items: center;
+    margin-top: -0.75rem;
 }
 
 .shop-col-flex .material{
@@ -1701,9 +1749,168 @@ th {
 
 /* INDIVIDUAL PRODUCT LISTINGS */
 
+.product-details{
+    display: flex;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    padding-bottom: 5%;
+
+    border-bottom: #D9D9D9;
+    border-bottom-style: solid;
+    border-bottom-width: 0.15rem;
+}
+
+.product-individual-photo{
+    width: 30rem;
+    height: 30rem;
+    border: #D9D9D9;
+    border-style: solid;
+    border-width: 0.15rem;
+}
+
+.product-details-info{
+    margin-left: 5%;
+}
+
+.product-details-top{
+    padding-bottom: 5%;
+    border-bottom: #D9D9D9;
+    border-bottom-style: solid;
+    border-bottom-width: 0.15rem;
+}
+
+.product-details-name{
+    /* background-color: #D07E5A; */
+    margin-bottom: 0;
+}
+
+.review-stars{
+    display: flex;
+    align-items: center;
+    /* background-color: #45a049; */
+}
+
+#five-stars, #four-stars, #three-stars{
+    width: 15%;
+    height: 15%;
+}
+
+.num-reviews{
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.num-reviews-ahref{
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.num-reviews-ahref:hover, .num-reviews-ahref:focus{
+    color: #D07E5A;
+    transition: color 0.3s ease;
+}
+
+.product-price-amount-cart{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.product-details-price{
+    font-family: 'PPNeueMontreal-Medium';
+    width: 8%;
+    font-size: 1.3rem;
+    margin-right: 3%;
+}
+
+.product-amounts{
+    height: 2rem;
+    width: 4rem;
+    /* background-color: #8BA895; */
+    margin-right: 5%;
+}
+
+.size-options{
+    display: flex;
+}
+
+.button-size{
+    width: 7%;
+    margin-right: 1%;
+}
+
+.product-size-heading{
+    font-size: 1.2rem;
+}
+
+.product-details-bottom{
+    margin-top: 5%;
+}
+
+.product-description{
+    width: 75%;
+}
+
+.reviews{
+    margin-left: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 5%;
+}
+
+.review-block{
+    padding-bottom: 5%;
+    border-bottom: #D9D9D9;
+    border-bottom-style: solid;
+    border-bottom-width: 0.15rem;
+
+    margin-top: 5%;
+}
+
+.review-heading{
+    font-size: 1.3rem;
+}
+
+/* #review-stars{ */
+.stars-reviews{
+    width: 10%;
+}
+
+.review-info{
+    display: flex;
+    width: 75%;
+}
+
+.review-details{
+    font-family: 'PPNeueMontreal-Medium';
+}
+
+.review-name{
+    width: 25%;
+    /* background-color: #355638; */
+}
+
+.review-size{
+    width: 15%;
+    /* background-color: #B6CDB8; */
+}
+
+.review-date{
+    width: 25%;
+    /* background-color: #0c7415; */
+}
+
+.review-location{
+    width: 30%;
+    /* background-color: #dbffde; */
+}
+
 /* END OF INDIVIDUAL PRODUCT LISTINGS */
 
 /* THANK YOU FORM */
+
+.thank-you{
+    margin: 4rem;
+}
 
 /* END OF THANK YOU FORM */
 
