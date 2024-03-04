@@ -692,10 +692,7 @@ flex: 0.1;
 /* END OF ABOUT PAGE */
 
 
-/* EVENTS PAGE */
 
-
-/* END OF EVENTS PAGE */
 
 
 /* CONTACT PAGE */
@@ -1503,6 +1500,80 @@ span.price {
 
 
 /* EVENTS PAGE */
+
+.calendar {
+    max-width: 20rem;
+    margin: 0 auto;
+    
+        margin-right: 30rem;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 0.1px solid #ddd;
+    text-align: center;
+    padding: 0.6rem;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.today {
+    background-color: #e6e6e6;
+}
+
+.highlight {
+    background-color: #8BA895;
+}
+
+
+
+.events-container {
+   
+  max-width: 50rem;
+  margin: 0 auto;
+     margin-top: 6rem;
+
+  padding: 0rem;
+}
+
+.events-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.event {
+  margin-bottom: 1.25rem; 
+  border: 1px solid #ccc;
+  padding: 1rem; 
+  display: flex;
+}
+
+.event img {
+  width: 10rem;
+  height: 10rem;
+  margin-right: 20px;
+}
+
+.event .event-details {
+  flex: 1;
+}
+
+.event h2 {
+  margin-top: 0;
+}
+
+.event p {
+  margin: 0.625rem 0;
+}
+
+
 
 
 /* END OF EVENTS PAGE */
