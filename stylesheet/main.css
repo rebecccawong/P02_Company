@@ -147,7 +147,7 @@ code {
 
 a img:hover,
 a img:focus {
-    opacity: 0.8;
+    opacity: 60%;
 }
 
 
@@ -449,6 +449,10 @@ nav {
     background-size: cover;
 }
 
+.cart-icon:hover, .cart-icon:focus {
+    opacity: 50%;
+}
+
 @media only screen and (max-width: 768px) {
     nav {
         padding: 0 1rem; /* Adjusted padding for smaller screens */
@@ -544,7 +548,7 @@ nav {
 
 .our-story-img{
     flex:1;
-    width: 35rem
+    width: 26rem
 }
 
 .homeicons {
@@ -564,6 +568,7 @@ nav {
     align-items: center;
     width: 70%; 
     margin-top: 0;
+    line-height: 5vh;
 }
 
 @media (max-width: 800px) {
@@ -599,7 +604,7 @@ nav {
 }
 
 .about-hero .hero-image h2{
-    color: black;
+    color: #697F6B;
     margin: 0;
     padding: 0;
     padding-top: 5rem;
@@ -931,7 +936,7 @@ nav {
     font-family: 'PPNeueMontreal-Medium';
 }
 
-.cart-item-remove{
+.cart-item .in-text-link{
     margin-top: -0.5rem;
 }
 
@@ -1254,10 +1259,8 @@ nav {
 
 .calendar {
     max-width: 20rem;
-    margin: 0 auto;
-    
-        margin-right: 30rem;
-
+    margin: 0 auto;    
+    margin-right: 30rem;
 }
 
 table {
@@ -1291,12 +1294,10 @@ th {
 .events-rsvp{
     margin-top: 2%;
 }
-.events-container {
-   
+.events-container {   
   max-width: 50rem;
   margin: 0 auto;
   margin-top: 6rem;
-
   padding: 0rem;
 }
 
@@ -1306,8 +1307,7 @@ th {
 }
 
 .event {
-  margin-bottom: 1.25rem; 
-  padding: 1rem; 
+  margin-bottom: 6%; 
   display: flex;
 }
 
@@ -1317,12 +1317,16 @@ th {
   margin-right: 5%;
 }
 
+.event-details h3{
+    margin: 0;
+}
+
 .event .event-details {
   flex: 1;
 }
 
 .event p {
-  margin: 0.625rem 0;
+  margin: 0;
 }
 
 @media (max-width: 1200px){
