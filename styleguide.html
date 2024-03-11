@@ -394,8 +394,8 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
       <h3>Payment Form</h3>
       <h4>Sample code:</h4>
       <code>&lt;div class="checkout"&gt;<br>
-  &lt;div class="row"&gt;<br>
-    &lt;div class="col-75"&gt;<br>
+      &lt;div class="row"&gt;<br>
+      &lt;div class="col-75"&gt;<br>
       &lt;div class="container"&gt;<br>
         &lt;form action="/action_page.php"&gt;<br>
 
@@ -504,51 +504,158 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
                       &lt;label for="exp-month"&gt;Expiry Month:&lt;/label&gt;<br>
                       &lt;input type="text" id="exp-month" name</code>
       <h4>Example:</h4>
-      <h2 class="cart-header">Checkout Cart</h2>
+      <h2 class="cart-headers">Shipping</h2>
+      <div class="cart-containers">
+        <div class="payment">
+          <div class="form-module-flex">
+            <div class="payment-module">
+              <div class="form-name">
+                <label for="first-name-cart">First Name</label><br>
+                <input type="text" id="first-name-cart" name="first-name" placeholder="Jane"><br><br>
+              </div>
+            </div>
 
-      <div class="cart-container">
-
-        <div class="cart-item">
-          <a href="#"><img class="cart-image" src="images/item1.png" alt="Grey Sweater"></a>
-          <div class="cart-name-remove">
-            <p class="cart-item-name">Grey Sweater</p>
-            <a href="#">
-              <p class="cart-item-remove">Remove</p>
-            </a>
+            <div class="payment-module">
+              <div class="form-name">
+                <label for="last-name-cart">Last Name</label><br>
+                <input type="text" id="last-name-cart" name="last-name" placeholder="Doe"><br><br>
+              </div>
+            </div>
           </div>
-          <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100"><br><br>
-          <p class="cart-price">$109</p>
-        </div>
 
-        <div class="cart-item">
-          <a href="#"><img class="cart-image" src="images/item2.png" alt="Navy Sweater"></a>
-          <div class="cart-name-remove">
-            <p class="cart-item-name">Navy Sweater</p>
-            <a href="#">
-              <p class="cart-item-remove">Remove</p>
-            </a>
+          <div class="payment-module">
+            <div class="form-full-address">
+              <label for="address-line-1-cart">Address</label><br>
+              <input type="text" id="address-line-1-cart" name="address-line-1" placeholder="123 Bacon Avenue"
+                required><br>
+              <input type="text" id="address-line-2-cart" name="address-line-2" placeholder="#100"><br><br>
+            </div>
+
+            <div class="form-module-flex">
+              <div class="form-city">
+                <label for="city-cart">City</label><br>
+                <input type="text" id="city-cart" name="city" placeholder="Eggs" required><br><br>
+              </div>
+
+              <div class="form-region">
+                <label for="region-cart">Province</label><br>
+                <select id="region-cart" name="region" required>
+                  <option value="">Choose option</option>
+                  <option value="alta">Alberta</option>
+                  <option value="bc">British Columbia</option>
+                  <option value="man">Manitoba</option>
+                  <option value="nb">New Brunswick</option>
+                  <option value="nl">Newfoundland and Labrador</option>
+                  <option value="ns">Nova Scotia</option>
+                  <option value="nl">Nunavut</option>
+                  <option value="ont">Ontario</option>
+                  <option value="pei">Prince Edward Island</option>
+                  <option value="nque">Quebec</option>
+                  <option value="sask">Saskatchewan</option>
+                  <option value="nwt">The Northwest Territories</option>
+                  <option value="yt">The Yukon</option>
+                </select><br><br>
+              </div>
+
+              <div class="form-postal-code">
+                <label for="postal-code-cart">Postal code</label><br>
+                <input type="text" id="postal-code-cart" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
+                  autocapitalize="characters"><br><br>
+              </div>
+            </div>
+
+            <div class="payment-module">
+              <div class="form-phone-number">
+                <label for="phone-number-cart">Phone number</label><br>
+                <input type="tel" id="phone-number-cart" name="phone-number" placeholder="123-123-1234" required
+                  maxlength="12"><br><br>
+              </div>
+            </div>
+
+            <div class="payment-module">
+              <div class="form-email">
+                <label for="email-cart">Email address</label><br>
+                <input type="email" id="email-cart" name="email" placeholder="email@domain.com" required><br><br>
+              </div>
+            </div>
           </div>
-          <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100"><br><br>
-          <p class="cart-price">$120</p>
-        </div>
 
-        <div class="cart-item">
-          <a href="#"><img class="cart-image" src="images/item5.png" alt="Striped Sweater"></a>
-          <div class="cart-name-remove">
-            <p class="cart-item-name">Striped Green and Black Sweater</p>
-            <a href="#">
-              <p class="cart-item-remove">Remove</p>
-            </a>
+        </div>
+      </div>
+
+      <h2 class="cart-headers">Payment</h2>
+      <div class="cart-containers">
+        <div class="col-50">
+
+          <div class="payment">
+
+            <div class="payment-module">
+              <div class="form-name">
+                <label for="full-name-cart">Name On Card:</label><br>
+                <input type="text" id="full-name-cart" name="first-name" placeholder="Jane Doe"><br><br>
+              </div>
+            </div>
+
+            <div class="payment-module">
+              <div class="form-card">
+                <label for="card-number-cart">Credit Card Number:</label><br>
+                <input type="text" id="card-number-cart" name="card-number" placeholder="111-222-333-444"><br><br>
+              </div>
+            </div>
+
+
+            <div class="form-module-flex">
+              <div class="payment-module">
+                <label for="expiry-month-cart">Expiry Month:</label><br>
+                <input type="text" id="expiry-month-cart" name="exp-month" placeholder="02" required>
+              </div>
+
+              <div class="payment-module">
+                <label for="expiry-year-cart">Expiry Year:</label><br>
+                <input type="text" id="expiry-year-cart" name="exp-year" placeholder="2025">
+              </div>
+
+              <div class="payment-module">
+                <label for="cvv-cart">CVV:</label><br>
+                <input type="text" id="cvv-cart" name="cvv" placeholder="123" required><br><br>
+              </div>
+
+            </div>
+
           </div>
-          <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100"><br><br>
-          <p class="cart-price">$150</p>
         </div>
+      </div>
 
-        <div class="cart-item cart-total">
-          <p class="total-price">Total Price</p>
-          <p class="total-price-number">$379</p>
-        </div>
+      <div class="cart-containers">
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label><br><br>
 
+
+        <fieldset class='radio-button'>
+          <legend>Select a shipment method:</legend>
+
+          <div>
+            <input type="radio" id="regular(5-7businessdays)1" name="drone" value="regular(5-7 business days)" checked>
+
+            <label for="regular(5-7businessdays)1">Regular (5-7 business days)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="express(1-2businessdays)1" name="drone" value="express(1-2 business days)">
+            <label for="express(1-2businessdays)1">Express (1-2 business days)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="pick-up1" name="drone" value="pick-up">
+            <label for="pick-up1">Pickup (Free)</label>
+          </div>
+        </fieldset>
+        <p> </p>
+
+        <form action="confirmation.html" method="get">
+          <button class="button-submit" type="submit" value="Submit">Submit</button>
+        </form>
 
       </div>
     </section>
@@ -559,22 +666,22 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
 
       <h4>Sample code:</h4>
       <code>&lt;div class="col-25"&gt;<br>
-  &lt;div class="container"&gt;<br>
-    &lt;h4&gt;Shopping Cart<br>
+      &lt;div class="container"&gt;<br>
+      &lt;h4&gt;Shopping Cart<br>
       &lt;span class="price" style="color:black"&gt;<br>
         &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;<br>
         &lt;b&gt; &lt;/b&gt;<br>
           &lt;h4&gt; &lt;/h4&gt;<br>
       &lt;/span&gt;<br>
-    &lt;/h4&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;Backpack&lt;/a&gt; &lt;span class="price"&gt;$109&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;Wool Sweater&lt;/a&gt; &lt;span class="price"&gt;$51&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;T-Shirt&lt;/a&gt; &lt;span class="price"&gt;$20&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;Sticker&lt;/a&gt; &lt;span class="price"&gt;$2&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;hr&gt;<br>
-    &lt;p&gt;Total &lt;span class="price" style="color:black"&gt;&lt;b&gt;$182&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;<br>
-  &lt;/div&gt;<br>
-&lt;/div&gt;</code>
+      &lt;/h4&gt;<br>
+      &lt;p&gt;&lt;a href="#"&gt;Backpack&lt;/a&gt; &lt;span class="price"&gt;$109&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;p&gt;&lt;a href="#"&gt;Wool Sweater&lt;/a&gt; &lt;span class="price"&gt;$51&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;p&gt;&lt;a href="#"&gt;T-Shirt&lt;/a&gt; &lt;span class="price"&gt;$20&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;p&gt;&lt;a href="#"&gt;Sticker&lt;/a&gt; &lt;span class="price"&gt;$2&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;hr&gt;<br>
+      &lt;p&gt;Total &lt;span class="price" style="color:black"&gt;&lt;b&gt;$182&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;/div&gt;<br>
+      &lt;/div&gt;</code>
       <h4>Example:</h4>
       <div class="cart-container">
 
@@ -650,8 +757,10 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
   <h2>Art Direction</h2>
   <div class="art-direction-images">
     <img class="art-direction-img art-direction-img-1" src="images/afends.png" alt="Afends branding material">
-    <img class="art-direction-img art-direction-img-2" src="images/sustainable-jungle.jpg" alt="Sustainable Jungle branding image. Also the index hero image.">
-    <img class="art-direction-img art-direction-img-3" src="images/sustainably-chic.jpeg" alt="Sustainably Chic branding image. Also the image on the index page's 'Our Story' section.">
+    <img class="art-direction-img art-direction-img-2" src="images/sustainable-jungle.jpg"
+      alt="Sustainable Jungle branding image. Also the index hero image.">
+    <img class="art-direction-img art-direction-img-3" src="images/sustainably-chic.jpeg"
+      alt="Sustainably Chic branding image. Also the image on the index page's 'Our Story' section.">
   </div>
 
   <section id="citations">
