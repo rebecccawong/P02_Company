@@ -19,7 +19,6 @@
 }
 
 body {
-
     background-color: whitesmoke;
 
     font-family: 'PPNeueMontreal-Book', monospace;
@@ -150,6 +149,7 @@ a img:hover,
 a img:focus {
     opacity: 0.8;
 }
+
 
 /* STYLED THE TEXT INPUT 
   
@@ -282,15 +282,17 @@ span.price {
     font-size: 0.7rem;
 }
 
+
 /* Drop down menu product page */
 /* Learned from: https://blog.hubspot.com/website/html-dropdown*/
 .dropdown {
-  position: relative;
-  display: inline-block;
-  float: left;
-   margin-top: 2rem;
-    margin-left: 2rem;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 2rem;
+    margin-left: 5rem;
 }
+
 .dropbtn {
   font-family: PPNeueMontreal-Medium;
   font-size: 14px;
@@ -300,12 +302,12 @@ span.price {
   border-radius: 5px; 
   background-color: whitesmoke;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
   min-width: 160px;
-
   padding: 12px 16px;
 }
 
@@ -871,6 +873,26 @@ nav {
 /* END OF LOGIN / CREATE ACCOUNT */
 
 /* CART */
+.Shopcontainer {
+    max-width: 90%;
+    padding-top: 2rem;
+    margin: 0 auto;
+}
+
+
+.Shop {
+    width: 20%;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    /* margin-right: 2rem; */
+    margin-left: 2rem;
+}
+
+.product_bar {
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
 
 .cart-item{
     display: flex;
@@ -1226,14 +1248,17 @@ nav {
     }
 }
 
+
 /* END OF FOOTER */
 
 /* EVENTS PAGE */
 
 .calendar {
     max-width: 20rem;
-    margin: 0 auto;    
-    margin-right: 30rem;
+    margin: 0 auto;
+    
+        margin-right: 30rem;
+
 }
 
 table {
@@ -1267,7 +1292,6 @@ th {
 .events-rsvp{
     margin-top: 2%;
 }
-
 .events-container {
    
   max-width: 50rem;
@@ -1320,6 +1344,8 @@ th {
         margin: 0;
     }
 }
+
+
 
 /* END OF EVENTS PAGE */
 
