@@ -1693,7 +1693,7 @@ span.price {
     background-image: url(../images/index-hero.png);
     background-size: cover;
     z-index: -1;
-    padding-bottom: 8rem;
+    padding-bottom: 2rem;
     margin: 0;
 }
 
@@ -1954,7 +1954,7 @@ th {
     width: 19.5rem;
 }
 
-#email-signin, #password-signin, #address-line-1-signin, #address-line-2-signin, #phone-number-signin{
+#email-signin, #password-signin, #address-line-1-signin, #address-line-2-signin, #phone-number-signin, #email-signin1, #password-signin1{
     width: 40rem;
 }
 
@@ -1995,7 +1995,7 @@ th {
         margin-right: 0;
     }
 
-    #email-signin, #password-signin, #address-line-1-signin, #address-line-2-signin, #phone-number-signin, #first-name-signin, #last-name-signin, #city-signin, #postal-code-signin{
+    #email-signin, #password-signin, #address-line-1-signin, #address-line-2-signin, #phone-number-signin, #first-name-signin, #last-name-signin, #city-signin, #postal-code-signin, #email-signin1, #password-signin1{
         width: 65vw;
     }
 
@@ -2014,7 +2014,7 @@ th {
         /* background-color: rgb(152, 8, 8); */
     }
 
-    #email-signin, #password-signin, #address-line-1-signin, #address-line-2-signin, #phone-number-signin, #first-name-signin, #last-name-signin, #city-signin, #postal-code-signin{
+    #email-signin, #password-signin, #address-line-1-signin, #address-line-2-signin, #phone-number-signin, #first-name-signin, #last-name-signin, #city-signin, #postal-code-signin, #email-signin1, #password-signin1{
         width: 80vw;
     }
 
