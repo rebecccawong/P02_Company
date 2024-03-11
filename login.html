@@ -29,7 +29,7 @@
 
     <section class="login-hero">
         <div class="hero-image">
-            <img class="hero-text hero-logo" src="images/flufffibre.png">
+            <img class="hero-text hero-logo" src="images/flufffibre.png" alt="Logo">
             <h2 class="hero-text hero-title">Login or<br>Create Account</h2>
         </div>
 
@@ -39,11 +39,11 @@
 
     <div class="sign-in-form">
         <div class="form-name">
-            <label for="first-name">Email</label><br>
+            <label for="email">Email</label><br>
             <input type="text" id="email" name="email"><br><br>
         </div>
         <div class="form-name">
-            <label for="first-name">Password</label><br>
+            <label for="password">Password</label><br>
             <input type="text" id="password" name="password"><br><br>
         </div>
         <label>
@@ -51,7 +51,9 @@
         </label>
 
         <br><br>
-        <a href="products.html" class="redirect-products"><button class="button-submit">Login</button></a>
+        <form action="products.html" method="get" class="redirect-products">
+          <button class="button-submit">Login</button>
+        </form>
     </div>
 
     <h2 class="login-headers">Create Account</h2>
@@ -59,40 +61,40 @@
     <div class="sign-in-form no-divider">
         <div class="signin-flex">
             <div class="form-name first-name-form">
-                <label for="first-name">First Name</label><br>
+                <label for="first-name-signin">First Name</label><br>
                 <input type="text" id="first-name-signin" name="first-name" placeholder="Jane"><br><br>
             </div>
 
             <div class="form-name">
-                <label for="first-name">Last Name</label><br>
+                <label for="last-name-signin">Last Name</label><br>
                 <input type="text" id="last-name-signin" name="last-name" placeholder="Doe"><br><br>
             </div>
         </div>
 
         <div class="form-name">
-            <label for="first-name">Email</label><br>
-            <input type="text" id="email" name="email"><br><br>
+            <label for="email-signin">Email</label><br>
+            <input type="text" id="email-signin" name="email"><br><br>
         </div>
         <div class="form-name">
-            <label for="first-name">Password</label><br>
-            <input type="text" id="password" name="password"><br><br>
+            <label for="password-signin">Password</label><br>
+            <input type="text" id="password-signin" name="password"><br><br>
         </div>
 
         <div class="form-full-address">
-            <label for="address-line-1">Address</label><br>
-            <input type="text" id="address-line-1" name="address-line-1" placeholder="123 Bacon Avenue" required>
-            <br><input type="text" id="address-line-2" name="address-line-2" placeholder="#100"><br><br>
+            <label for="address-line-1-signin">Address</label><br>
+            <input type="text" id="address-line-1-signin" name="address-line-1" placeholder="123 Bacon Avenue" required>
+            <br><input type="text" id="address-line-2-signin" name="address-line-2" placeholder="#100"><br><br>
         </div>
 
         <div class="form-module-flex">
             <div class="form-city">
-                <label for="city">City</label><br>
-                <input type="text" id="city" name="city" placeholder="Eggs" required><br><br>
+                <label for="city-signin">City</label><br>
+                <input type="text" id="city-signin" name="city" placeholder="Eggs" required><br><br>
             </div>
 
             <div class="form-region">
-                <label for="region">Province</label><br>
-                <select id="region" name="region" required>
+                <label for="region-signin">Province</label><br>
+                <select id="region-signin" name="region-signin" required>
                     <option value="">Choose option</option>
                     <option value="alta">Alberta</option>
                     <option value="bc">British Columbia</option>
@@ -111,20 +113,22 @@
             </div>
 
             <div class="form-postal-code">
-                <label for="postal-code">Postal code</label><br>
-                <input type="text" id="postal-code" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
+                <label for="postal-code-signin">Postal code</label><br>
+                <input type="text" id="postal-code-signin" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
                     autocapitalize="characters"><br><br>
             </div>
         </div>
 
         <div class="form-phone-number">
-            <label for="phone-number">Phone number</label><br>
-            <input type="tel" id="phone-number" name="phone-number" placeholder="123-123-1234" required
+            <label for="phone-number-signin">Phone number</label><br>
+            <input type="tel" id="phone-number-signin" name="phone-number" placeholder="123-123-1234" required
                 maxlength="12"><br><br>
         </div>
 
         <br>
-        <a href="products.html" class="redirect-products"><button class="button-submit">Create Account</button></a>
+        <form action="products.html" method="get" class="redirect-products">
+          <button class="button-submit">Create Account</button>
+        </form>
     </div>
 
 
@@ -179,7 +183,9 @@
       <h3>Sign up for our newsletter!</h3>
       <label for="newsletter-email">Email</label><br>
       <input type="text" name="newsletter-email" id="newsletter-email"><br><br>
-      <a href="#"><button class="button-submit">Submit</button></a>
+      <form action="#" method="get">
+        <button class="button-submit">Submit</button>
+      </form>
     </div>
   
     <div class="footer-section footer-section4" id="footer-section4">
