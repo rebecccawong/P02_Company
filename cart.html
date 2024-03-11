@@ -40,37 +40,43 @@
 
   <section class="cartelement">
 
-    <h2 class="cart-headers">Checkout Cart</h2>
+    <h2 class="cart-header">Checkout Cart</h2>
 
     <div class="cart-container">
 
       <div class="cart-item">
-        <a href="#"><img class="cart-image" src="images/item1.png"></a>
+        <a href="#"><img class="cart-image" src="images/item1.png" alt="Grey Sweater"></a>
         <div class="cart-name-remove">
           <p class="cart-item-name">Grey Sweater</p>
-          <a href="#"><p class="cart-item-remove">Remove</p></a>
+          <a href="#">
+            <p class="cart-item-remove">Remove</p>
+          </a>
         </div>
-        <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100" ><br><br>
+        <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100"><br><br>
         <p class="cart-price">$109</p>
       </div>
 
       <div class="cart-item">
-        <a href="#"><img class="cart-image" src="images/item2.png"></a>
+        <a href="#"><img class="cart-image" src="images/item2.png" alt="Navy Sweater"></a>
         <div class="cart-name-remove">
           <p class="cart-item-name">Navy Sweater</p>
-          <a href="#"><p class="cart-item-remove">Remove</p></a>
+          <a href="#">
+            <p class="cart-item-remove">Remove</p>
+          </a>
         </div>
-        <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100" ><br><br>
+        <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100"><br><br>
         <p class="cart-price">$120</p>
       </div>
 
       <div class="cart-item">
-        <a href="#"><img class="cart-image" src="images/item5.png"></a>
+        <a href="#"><img class="cart-image" src="images/item5.png" alt="Striped Sweater"></a>
         <div class="cart-name-remove">
           <p class="cart-item-name">Striped Green and Black Sweater</p>
-          <a href="#"><p class="cart-item-remove">Remove</p></a>
+          <a href="#">
+            <p class="cart-item-remove">Remove</p>
+          </a>
         </div>
-        <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100" ><br><br>
+        <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100"><br><br>
         <p class="cart-price">$150</p>
       </div>
 
@@ -82,23 +88,20 @@
 
     </div>
 
-    <!-- </div> -->
-
-
     <h2 class="cart-headers">Shipping</h2>
-    <div class="cart-container">
+    <div class="cart-containers">
       <div class="payment">
         <div class="form-module-flex">
           <div class="payment-module">
             <div class="form-name">
-              <label for="first-name">First Name</label><br>
+              <label for="first-name-cart">First Name</label><br>
               <input type="text" id="first-name-cart" name="first-name" placeholder="Jane"><br><br>
             </div>
           </div>
 
           <div class="payment-module">
             <div class="form-name">
-              <label for="first-name">Last Name</label><br>
+              <label for="last-name-cart">Last Name</label><br>
               <input type="text" id="last-name-cart" name="last-name" placeholder="Doe"><br><br>
             </div>
           </div>
@@ -106,7 +109,7 @@
 
         <div class="payment-module">
           <div class="form-full-address">
-            <label for="address-line-1">Address</label><br>
+            <label for="address-line-1-cart">Address</label><br>
             <input type="text" id="address-line-1-cart" name="address-line-1" placeholder="123 Bacon Avenue"
               required><br>
             <input type="text" id="address-line-2-cart" name="address-line-2" placeholder="#100"><br><br>
@@ -114,12 +117,12 @@
 
           <div class="form-module-flex">
             <div class="form-city">
-              <label for="city">City</label><br>
+              <label for="city-cart">City</label><br>
               <input type="text" id="city-cart" name="city" placeholder="Eggs" required><br><br>
             </div>
 
             <div class="form-region">
-              <label for="region">Province</label><br>
+              <label for="region-cart">Province</label><br>
               <select id="region-cart" name="region" required>
                 <option value="">Choose option</option>
                 <option value="alta">Alberta</option>
@@ -139,7 +142,7 @@
             </div>
 
             <div class="form-postal-code">
-              <label for="postal-code">Postal code</label><br>
+              <label for="postal-code-cart">Postal code</label><br>
               <input type="text" id="postal-code-cart" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
                 autocapitalize="characters"><br><br>
             </div>
@@ -147,7 +150,7 @@
 
           <div class="payment-module">
             <div class="form-phone-number">
-              <label for="phone-number">Phone number</label><br>
+              <label for="phone-number-cart">Phone number</label><br>
               <input type="tel" id="phone-number-cart" name="phone-number" placeholder="123-123-1234" required
                 maxlength="12"><br><br>
             </div>
@@ -155,7 +158,7 @@
 
           <div class="payment-module">
             <div class="form-email">
-              <label for="email">Email address</label><br>
+              <label for="email-cart">Email address</label><br>
               <input type="email" id="email-cart" name="email" placeholder="email@domain.com" required><br><br>
             </div>
           </div>
@@ -166,61 +169,60 @@
     <!-- end of container -->
 
     <h2 class="cart-headers">Payment</h2>
-    <div class="cart-container">
+    <div class="cart-containers">
       <div class="col-50">
 
         <div class="payment">
 
           <div class="payment-module">
             <div class="form-name">
-              <label for="first-name">Name On Card:</label><br>
+              <label for="full-name-cart">Name On Card:</label><br>
               <input type="text" id="full-name-cart" name="first-name" placeholder="Jane Doe"><br><br>
             </div>
           </div>
 
           <div class="payment-module">
             <div class="form-card">
-              <label for="card-number">Credit Card Number:</label><br>
+              <label for="card-number-cart">Credit Card Number:</label><br>
               <input type="text" id="card-number-cart" name="card-number" placeholder="111-222-333-444"><br><br>
             </div>
           </div>
 
-          
-            <div class="form-module-flex">
-              <div class="payment-module">
-                <label for="exp-month">Expiry Month:</label><br>
+
+          <div class="form-module-flex">
+            <div class="payment-module">
+              <label for="expiry-month-cart">Expiry Month:</label><br>
               <input type="text" id="expiry-month-cart" name="exp-month" placeholder="02" required>
-              </div>
-
-              <div class="payment-module">
-                <label for="exp-year">Expiry Year:</label><br>
-              <input type="text" id="expiry-year-cart" name="exp-year" placeholder="2025">
-              </div>
-
-              <div class="payment-module">
-                <label for="cvv">CVV:</label><br>
-                <input type="text" id="cvv-cart" name="cvv" placeholder="123" required><br><br>
-              </div>
-                
             </div>
+
+            <div class="payment-module">
+              <label for="expiry-year-cart">Expiry Year:</label><br>
+              <input type="text" id="expiry-year-cart" name="exp-year" placeholder="2025">
+            </div>
+
+            <div class="payment-module">
+              <label for="cvv-cart">CVV:</label><br>
+              <input type="text" id="cvv-cart" name="cvv" placeholder="123" required><br><br>
+            </div>
+
+          </div>
 
         </div>
       </div>
     </div>
 
-    <div class="cart-container">
+    <div class="cart-containers">
       <label>
         <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-      </label>
-      <p> </p>
+      </label><br><br>
 
 
-      <fieldset class=radio-button>
+      <fieldset class='radio-button'>
         <legend>Select a shipment method:</legend>
 
         <div>
           <input type="radio" id="regular(5-7businessdays)1" name="drone" value="regular(5-7 business days)" checked>
-          
+
           <label for="regular(5-7businessdays)1">Regular (5-7 business days)</label>
         </div>
 
@@ -236,7 +238,9 @@
       </fieldset>
       <p> </p>
 
-      <a href="confirmation.html"><button class="button-submit" type="submit" value="Submit">Submit</button></a>
+      <form action="confirmation.html" method="get">
+        <button class="button-submit" type="submit" value="Submit">Submit</button>
+      </form>
 
     </div>
   </section>
@@ -245,7 +249,7 @@
 <section class="footer footer-flex">
 
   <div class="footer-section footer-section0" id="footer-section0">
-    <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png"
+    <a href="index.html" class="home-button"><img class="footer-logo" src="images/flufffibre.png"
         alt="Fluff and Fibre logo"></a>
   </div>
 
@@ -283,6 +287,20 @@
     <a href="about.html" class="footer-link-text">
       <p class="footer-links">Privacy Policy</p>
     </a>
+  </div>
+
+  <div class="footer-section footer-section3" id="footer-section3">
+    <h3 class="footer-sign-up">Sign up for our newsletter!</h3>
+    <label for="newsletter-email">Email</label><br>
+    <input type="text" name="newsletter-email" id="newsletter-email"><br><br>
+    <form action="#" method="get">
+      <button class="button-submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="footer-section footer-section4" id="footer-section4">
+    <p class="footer-links">Copyright © 2024 Fluff & Fibre.<br>All rights reserved.</p>
+    <!-- Reference for copyright text: https://termly.io/resources/articles/copyright-examples/#:~:text=There%20are%20only%20four%20simple,from%20the%20year%20of%20creation -->
   </div>
 
 </section>
