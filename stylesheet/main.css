@@ -637,14 +637,6 @@ span.price {
   flex: 1; /* Each column takes up equal space */
 }
 
-.text-column {
-
-
-  
-  padding: 1rem; /* Add padding to the text column */
-flex: 0.1;
-}
-
 .image-column {
 
   padding: 2rem; /* Add padding to the image column */
@@ -1715,13 +1707,19 @@ th {
     background-color: #8BA895;
 }
 
+.about-column .form-module-flex{
+    align-items: center;
+    text-align: center;
+}
 
-
+.events-rsvp{
+    margin-top: 2%;
+}
 .events-container {
    
   max-width: 50rem;
   margin: 0 auto;
-     margin-top: 6rem;
+  margin-top: 6rem;
 
   padding: 0rem;
 }
@@ -1733,29 +1731,42 @@ th {
 
 .event {
   margin-bottom: 1.25rem; 
-  border: 1px solid #ccc;
   padding: 1rem; 
   display: flex;
 }
 
 .event img {
-  width: 10rem;
-  height: 10rem;
-  margin-right: 20px;
+  width: 10vw;
+  height: 10vw;
+  margin-right: 5%;
 }
 
 .event .event-details {
   flex: 1;
 }
 
-.event h2 {
-  margin-top: 0;
-}
-
 .event p {
   margin: 0.625rem 0;
 }
 
+@media (max-width: 1200px){
+    .about-column .text-column{
+        width: 50%;
+    }
+
+    .about-column .form-module-flex{
+        display: inline;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px){
+    .about-column{
+        display: inline;
+        width: 100%;
+        margin: 0;
+    }
+}
 
 
 
