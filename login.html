@@ -3,10 +3,10 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <title>Login</title>
+  <meta charset="utf-8">
+  <title>Login</title>
 
-    <link href="stylesheet/main.css" rel="stylesheet">
+  <link href="stylesheet/main.css" rel="stylesheet">
 
 </head>
 
@@ -14,146 +14,132 @@
 
   <header>
     <div class="header">
-
-
-<nav>
-  <div class="left-nav">
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Events</a>
-  </div>
-  <div class="right-nav">
-    <a href="styleguide.html">Style Guide</a>
-    <a href="login.html">Account</a>
-     <a href="cart.html" class="cart-icon"></a> 
-  </div>
-</nav>
-
-     
-
+      <nav>
+        <div class="left-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div class="right-nav">
+          <a href="styleguide.html">Style Guide</a>
+          <a href="login.html">Account</a>
+          <a href="cart.html" class="cart-icon"></a>
+        </div>
+      </nav>
     </div>
   </header>
-
-     
-    </div>
-  </header>
-    <section class="login-hero">
-        <div class="hero-image">
-            <img class="hero-text hero-logo" src="images/flufffibre.png" alt="Logo">
-            <h2 class="hero-text hero-title">Login or<br>Create Account</h2>
-        </div>
-
-    </section>
-
-    <h2 class="login-headers">Login</h2>
-
-    <div class="sign-in-form">
-        <div class="form-name">
-            <label for="email-signin1">Email</label><br>
-            <input type="text" id="email-signin1" name="email"><br><br>
-        </div>
-        <div class="form-name">
-            <label for="password-signin1">Password</label><br>
-            <input type="text" id="password-signin1" name="password"><br><br>
-        </div>
-        <label>
-            <input type="checkbox" name="remember">Remember this device
-        </label>
-
-        <br><br>
-        <form action="products.html" method="get" class="redirect-products">
-          <button class="button-submit">Login</button>
-        </form>
+  <section class="login-hero">
+    <div class="hero-image">
+      <img class="hero-text hero-logo" src="images/flufffibre.png" alt="Logo">
+      <h2 class="hero-text hero-title">Login or<br>Create Account</h2>
     </div>
 
-    <h2 class="login-headers">Create Account</h2>
+  </section>
 
-    <div class="sign-in-form no-divider">
-        <div class="signin-flex">
-            <div class="form-name first-name-form">
-                <label for="first-name-signin">First Name</label><br>
-                <input type="text" id="first-name-signin" name="first-name" placeholder="Jane"><br><br>
-            </div>
+  <h2 class="login-headers">Login</h2>
 
-            <div class="form-name">
-                <label for="last-name-signin">Last Name</label><br>
-                <input type="text" id="last-name-signin" name="last-name" placeholder="Doe"><br><br>
-            </div>
-        </div>
+  <div class="sign-in-form">
+    <div class="form-name">
+      <label for="email-signin1">Email</label><br>
+      <input type="text" id="email-signin1" name="email"><br><br>
+    </div>
+    <div class="form-name">
+      <label for="password-signin1">Password</label><br>
+      <input type="text" id="password-signin1" name="password"><br><br>
+    </div>
+    <label>
+      <input type="checkbox" name="remember">Remember this device
+    </label>
 
-        <div class="form-name">
-            <label for="email-signin">Email</label><br>
-            <input type="text" id="email-signin" name="email"><br><br>
-        </div>
-        <div class="form-name">
-            <label for="password-signin">Password</label><br>
-            <input type="text" id="password-signin" name="password"><br><br>
-        </div>
+    <br><br>
+    <form action="products.html" method="get" class="redirect-products">
+      <button class="button-submit">Login</button>
+    </form>
+  </div>
 
-        <div class="form-full-address">
-            <label for="address-line-1-signin">Address</label><br>
-            <input type="text" id="address-line-1-signin" name="address-line-1" placeholder="123 Bacon Avenue" required>
-            <br><input type="text" id="address-line-2-signin" name="address-line-2" placeholder="#100"><br><br>
-        </div>
+  <h2 class="login-headers">Create Account</h2>
 
-        <div class="form-module-flex">
-            <div class="form-city">
-                <label for="city-signin">City</label><br>
-                <input type="text" id="city-signin" name="city" placeholder="Eggs" required><br><br>
-            </div>
+  <div class="sign-in-form no-divider">
+    <div class="signin-flex">
+      <div class="form-name first-name-form">
+        <label for="first-name-signin">First Name</label><br>
+        <input type="text" id="first-name-signin" name="first-name" placeholder="Jane"><br><br>
+      </div>
 
-            <div class="form-region">
-                <label for="region-signin">Province</label><br>
-                <select id="region-signin" name="region-signin" required>
-                    <option value="">Choose option</option>
-                    <option value="alta">Alberta</option>
-                    <option value="bc">British Columbia</option>
-                    <option value="man">Manitoba</option>
-                    <option value="nb">New Brunswick</option>
-                    <option value="nl">Newfoundland and Labrador</option>
-                    <option value="ns">Nova Scotia</option>
-                    <option value="nl">Nunavut</option>
-                    <option value="ont">Ontario</option>
-                    <option value="pei">Prince Edward Island</option>
-                    <option value="nque">Quebec</option>
-                    <option value="sask">Saskatchewan</option>
-                    <option value="nwt">The Northwest Territories</option>
-                    <option value="yt">The Yukon</option>
-                </select>
-            </div>
-
-            <div class="form-postal-code">
-                <label for="postal-code-signin">Postal code</label><br>
-                <input type="text" id="postal-code-signin" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
-                    autocapitalize="characters"><br><br>
-            </div>
-        </div>
-
-        <div class="form-phone-number">
-            <label for="phone-number-signin">Phone number</label><br>
-            <input type="tel" id="phone-number-signin" name="phone-number" placeholder="123-123-1234" required
-                maxlength="12"><br><br>
-        </div>
-
-        <br>
-        <form action="products.html" method="get" class="redirect-products">
-          <button class="button-submit">Create Account</button>
-        </form>
+      <div class="form-name">
+        <label for="last-name-signin">Last Name</label><br>
+        <input type="text" id="last-name-signin" name="last-name" placeholder="Doe"><br><br>
+      </div>
     </div>
 
+    <div class="form-name">
+      <label for="email-signin">Email</label><br>
+      <input type="text" id="email-signin" name="email"><br><br>
+    </div>
+    <div class="form-name">
+      <label for="password-signin">Password</label><br>
+      <input type="text" id="password-signin" name="password"><br><br>
+    </div>
 
+    <div class="form-full-address">
+      <label for="address-line-1-signin">Address</label><br>
+      <input type="text" id="address-line-1-signin" name="address-line-1" placeholder="123 Bacon Avenue" required>
+      <br><input type="text" id="address-line-2-signin" name="address-line-2" placeholder="#100"><br><br>
+    </div>
 
+    <div class="form-module-flex">
+      <div class="form-city">
+        <label for="city-signin">City</label><br>
+        <input type="text" id="city-signin" name="city" placeholder="Eggs" required><br><br>
+      </div>
 
-</body>
+      <div class="form-region">
+        <label for="region-signin">Province</label><br>
+        <select id="region-signin" name="region-signin" required>
+          <option value="">Choose option</option>
+          <option value="alta">Alberta</option>
+          <option value="bc">British Columbia</option>
+          <option value="man">Manitoba</option>
+          <option value="nb">New Brunswick</option>
+          <option value="nl">Newfoundland and Labrador</option>
+          <option value="ns">Nova Scotia</option>
+          <option value="nl">Nunavut</option>
+          <option value="ont">Ontario</option>
+          <option value="pei">Prince Edward Island</option>
+          <option value="nque">Quebec</option>
+          <option value="sask">Saskatchewan</option>
+          <option value="nwt">The Northwest Territories</option>
+          <option value="yt">The Yukon</option>
+        </select>
+      </div>
 
-<section class="footer footer-flex">
+      <div class="form-postal-code">
+        <label for="postal-code-signin">Postal code</label><br>
+        <input type="text" id="postal-code-signin" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
+          autocapitalize="characters"><br><br>
+      </div>
+    </div>
+
+    <div class="form-phone-number">
+      <label for="phone-number-signin">Phone number</label><br>
+      <input type="tel" id="phone-number-signin" name="phone-number" placeholder="123-123-1234" required
+        maxlength="12"><br><br>
+    </div>
+
+    <br>
+    <form action="products.html" method="get" class="redirect-products">
+      <button class="button-submit">Create Account</button>
+    </form>
+  </div>
+
+  <section class="footer footer-flex">
 
     <div class="footer-section footer-section0" id="footer-section0">
       <a href="index.html" class="home-button"><img class="footer-logo" src="images/flufffibre.png"
           alt="Fluff and Fibre logo"></a>
     </div>
-  
+
     <div class="footer-section footer-section1" id="footer-section1">
       <a href="products.html" class="footer-link-header">
         <p class="footer-header">Products</p>
@@ -171,7 +157,7 @@
         <p class="footer-links">Accessories</p>
       </a>
     </div>
-  
+
     <div class="footer-section footer-section2" id="footer-section2">
       <a href="about.html" class="footer-link-header">
         <p class="footer-header">About</p>
@@ -189,7 +175,7 @@
         <p class="footer-links">Privacy Policy</p>
       </a>
     </div>
-  
+
     <div class="footer-section footer-section3" id="footer-section3">
       <h3>Sign up for our newsletter!</h3>
       <label for="newsletter-email">Email</label><br>
@@ -198,12 +184,13 @@
         <button class="button-submit">Submit</button>
       </form>
     </div>
-  
+
     <div class="footer-section footer-section4" id="footer-section4">
       <p>Copyright © 2024 Fluff & Fibre.<br>All rights reserved.</p>
       <!-- Reference for copyright text: https://termly.io/resources/articles/copyright-examples/#:~:text=There%20are%20only%20four%20simple,from%20the%20year%20of%20creation -->
     </div>
-  
+
   </section>
+</body>
 
 </html>

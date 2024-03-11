@@ -402,7 +402,6 @@ span.price {
 nav {
     background-color: #FFFAF0;
     height: 4rem;
-    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
