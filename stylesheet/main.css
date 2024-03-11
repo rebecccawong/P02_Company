@@ -341,9 +341,9 @@ span.price {
 .dropdown {
   position: relative;
   display: inline-block;
-  float: right;
+  float: left;
    margin-top: 2rem;
-    margin-right: 2rem;
+    margin-left: 2rem;
 }
 .dropbtn {
   font-family: PPNeueMontreal-Medium;
@@ -361,8 +361,10 @@ span.price {
   min-width: 160px;
 
   padding: 12px 16px;
+/*
   z-index: 1;
   right: 0; 
+*/
 }
 
 .dropdown-content a {
@@ -384,6 +386,8 @@ span.price {
     color: whitesmoke;
   background-color: #697F6B;
 }
+
+/*END of products*/
 
 /*END of products*/
 
@@ -468,6 +472,7 @@ span.price {
     display: flex;
     background-color: #fffaf0;
     width: 100%;
+
     margin: 0;
 }
 
@@ -494,12 +499,84 @@ span.price {
 
 /* NAVIGATION */
 
+/*NEW NAV BAR*/
+nav {
+    background-color: #FFFAF0;
+    height: 4rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.left-nav a:hover {
+    color: #E39371;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav a {
+    color: black;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.right-nav a:hover {
+   color: #E39371;
+}
+
+.cart-icon {
+    width: 26px; /* Set the width and height of the cart icon */
+    height: 24px;
+    background-image: url(../images/bag.png);
+    background-size: cover;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 0 1rem; /* Adjusted padding for smaller screens */
+    }
+
+    .left-nav,
+    .right-nav {
+        margin: 0; /* Reset margin */
+    }
+  
+    .right-nav a:nth-child(1) {
+        white-space: nowrap; /* Ensure "Style Guide" stays on one line */
+    }
+}
+
+
+
+/*OLD NAV BAR*/
 
 .nav-bar {
     background: #FFFAF0;
     display: flex;
     justify-content: center; 
     width: 100%; 
+/*    height: 3rem;*/
     padding: 0.5em; 
 }
 .nav-bar ul {
@@ -605,10 +682,10 @@ span.price {
 }
 
 .about-hero .hero-image{
-    background-image: url(../images/beachgirl.jpg);
+    background-image: url(../images/woolbeach.jpg);
     background-size: cover;
     z-index: -1;
-    padding-bottom: 20em;
+    padding-bottom: 7em;
     margin: 0;
 }
 
