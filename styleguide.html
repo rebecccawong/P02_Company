@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>P01 - Style Guide Template</title>
+  <title>Fluff & Fibre Style Guide</title>
 
   <link href="stylesheet/main.css" rel="stylesheet">
 
@@ -14,22 +14,23 @@
 
   <header>
     <div class="header">
-      <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png"
-          alt="Fluff and Fibre logo"></a>
 
 
-      <div class="nav-bar">
-        <ul>
-          <li> <a class="button-nav" href="products.html">Products</a> </li>
-          <li> <a class="button-nav" href="about.html">About</a> </li>
-          <li> <a class="button-nav" href="events.html">Events</a> </li>
-          <li> <a class="button-nav" href="contact.html">Contact</a> </li>
-          <!-- <li> <a class="button-nav" href="styleguide.html">Style Guide</a> </li> -->
-        </ul>
-      </div>
+      <nav>
+        <div class="left-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div class="right-nav">
+          <a href="styleguide.html">Style Guide</a>
+          <a href="login.html">Account</a>
+          <a href="cart.html" class="cart-icon"></a>
+        </div>
+      </nav>
 
-      <a href="cart.html" class="shopping-cart-href"><img class="shopping-cart-icon"
-          src="../P02_company/images/shopping-cart.png"> </a>
+
 
     </div>
   </header>
@@ -37,7 +38,6 @@
   <!-- INTERACTIVE ELEMENTS SECTION // -->
   <section id="interactive_elements">
     <h2>Interactive Elements</h2>
-
 
     <section class="element">
       <h3>In-text link</h3>
@@ -47,7 +47,6 @@
       <code>&lt;a href="#" class="in-text-link"&gt;In-text link&lt;/a&gt;</code>
       <h4>Example</h4>
       <a class="in-text-link" href="#">In-text link</a>
-      <!-- I found out how to do in text link here: https://www.w3schools.com/html/html_links.asp -->
     </section>
 
 
@@ -75,13 +74,12 @@
       <p>.button</p>
       <h4>Sample Code</h4>
       <code>
-           &lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;%lt; button type="reset" value="Reset" &gt; Reset&lt;/button&gt;
-          </code>
+        &lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;%lt; button type="reset" value="Reset" &gt; Reset&lt;/button&gt;
+      </code>
       <h4>Example</h4>
       <button class="button-submit" type="submit" value="Submit">Submit</button>
       <button class="button-reset" type="reset" value="Reset">Reset</button>
       <!--Learnt here: https://www.w3schools.com/tags/att_button_type.asp -->
-
 
     </section>
 
@@ -93,28 +91,33 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
       <h4>Css selector:</h4>
       <p>.text-input and input-label</p>
       <h4>Sample code:</h4>
-      <code>&lt;label for="fname"&gt;What is your first name:&lt;/label&gt; &lt;input type="text" id="fname" name="fname" placeholder="i.e. John Doe"&gt;</code>
+      <code>&lt;div class="form-name"&gt;<br>
+        &lt;label for="password-signin1"&gt;Password&lt;/label&gt;&lt;br&gt;<br>
+        &lt;input type="text" id="password-signin1" name="password"&gt;&lt;br&gt;&lt;br&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;label&gt;<br>
+        &lt;input type="checkbox" name="remember"&gt;Remember this device<br>
+        &lt;/label&gt;<br>
+        &lt;form action="products.html" method="get" class="redirect-products"&gt;<br>
+        &lt;button class="button-submit"&gt;Login&lt;/button&gt;<br>
+        &lt;/form&gt;
+
+      </code>
+
       <h4>Example</h4>
 
-      <fieldset class="input">
+      <div class="form-name">
+        <label for="password-signin1">Password</label><br>
+        <input type="text" id="password-signin1" name="password"><br><br>
+      </div>
+      <label>
+        <input type="checkbox" name="remember">Remember this device
+      </label>
 
-        <label class=input-label for="fname">What is your first name:</label> <input class=text-input type="text"
-          id="fname" name="fname" placeholder="i.e. John Doe">
-        <div>
-
-          <label>
-            <input type="checkbox" name="remember"> This is my only name
-          </label>
-
-
-        </div>
-        <p> </p>
-        <button class="button-submit" type="submit" value="Submit">Submit</button>
-
-
-      </fieldset>
-
-
+      <br><br>
+      <form action="products.html" method="get" class="redirect-products">
+        <button class="button-submit">Login</button>
+      </form>
 
       <!-- I found out how to do input w label here: https://www.w3schools.com/tags/att_input_type_text.asp -->
     </section>
@@ -140,7 +143,7 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
 
   &lt;div&gt; <br>
     &lt;input type="radio" id="pick-up" name="drone" value="pick-up" /&gt;<br>
-    &lt;label for="pick-up"&gt;Pickup&lt;/label&gt;<br>
+    &lt;label for="pick-up"&gt;Pickup (free)&lt;/label&gt;<br>
   &lt;/div&gt;<br>
 &lt;/fieldset&gt;
           </code>
@@ -161,7 +164,7 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
 
         <div>
           <input type="radio" id="pick-up" name="drone" value="pick-up">
-          <label for="pick-up">Pick-up (ree)</label>
+          <label for="pick-up">Pick-up (Free)</label>
         </div>
       </fieldset>
       <!--Learnt here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
@@ -173,9 +176,9 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
       <h4>Css selector:</h4>
       <p>.image-link</p>
       <h4>Sample code:</h4>
-      <code>&lt;a href="#"&gt;&lt;img src="frame.png" alt="Picture Link" style="width:400px;height:400px;"&gt;&lt;/a&gt;</code>
+      <code>&lt;a href="grey-sweater.html"&gt;&lt;img src="images/item3.png" alt="Blue sweater"&gt;&lt;/a&gt;</code>
       <h4>Example</h4>
-      <a class="image-link" href="#"><img src="images/item1.png" alt="Picture link"></a>
+      <a href="grey-sweater.html"><img src="images/item3.png" alt="Blue sweater"></a>
 
       <!-- I found out how to make a photo link here: https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML-->
     </section>
@@ -208,9 +211,11 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
     <section class="element">
       <h3>Paragraphs</h3>
       <h4>Sample code:</h4>
-      <code> &lt;p&gt;Paragraph&lt;/p&gt;</code>
+      <code> &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc justo leo, elementum at venenatis vitae, auctor eu neque. Sed vulputate hendrerit molestie. Mauris laoreet lorem ac pulvinar consequat. Sed non euismod nisl, sed iaculis tellus. Vestibulum vitae ipsum placerat, finibus ipsum ut, tincidunt tortor.&lt;/p&gt;</code>
       <h4>Example:</h4>
-      <p>Paragraph</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc justo leo, elementum at venenatis vitae, auctor
+        eu neque. Sed vulputate hendrerit molestie. Mauris laoreet lorem ac pulvinar consequat. Sed non euismod nisl,
+        sed iaculis tellus. Vestibulum vitae ipsum placerat, finibus ipsum ut, tincidunt tortor.</p>
 
     </section>
 
@@ -243,37 +248,77 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
       <h3>Main Navigation</h3>
 
       <h4>Sample code:</h4>
-      <code>&lt;a class="button-nav" href="#"&gt;Home&lt;/a&gt;
-&lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;
-&lt;a class="button-nav" href="#"&gt;Account&lt;/a&gt;
-&lt;a class="button-nav" href="#"&gt;Shopping Cart&lt;/a&gt;</code>
+      <code>
+        &lt;header&gt;<br>
+        &lt;div class="header"&gt;<br>
+        &lt;nav&gt;<br>
+        &lt;div class="left-nav"&gt;<br>
+        &lt;a href="index.html"&gt;Home&lt;/a&gt;<br>
+        &lt;a href="products.html"&gt;Products&lt;/a&gt;<br>
+        &lt;a href="about.html"&gt;About&lt;/a&gt;<br>
+        &lt;a href="events.html"&gt;Events&lt;/a&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class="right-nav"&gt;<br>
+        &lt;a href="styleguide.html"&gt;Style Guide&lt;/a&gt;<br>
+        &lt;a href="account.html"&gt;Account&lt;/a&gt;<br>
+        &lt;a href="cart.html" class="cart-icon"&gt;&lt;/a&gt;<br>
+        &lt;/nav&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/header&gt;<br>
+      </code>
       <h4>Example:</h4>
 
-      <section class="nav-bar">
-        <ul>
-          <li> <a class="button-nav" href="#">Home</a> </li>
-          <li> <a class="button-nav" href="#">About</a> </li>
-          <li> <a class="button-nav" href="#">Account</a> </li>
-          <li> <a class="button-nav" href="#">Shopping Cart</a> </li>
-        </ul>
+      <header>
+        <div class="header">
+          <nav>
+            <div class="left-nav">
+              <a href="index.html">Home</a>
+              <a href="products.html">Products</a>
+              <a href="about.html">About</a>
+              <a href="events.html">Events</a>
+            </div>
+            <div class="right-nav">
+              <a href="styleguide.html">Style Guide</a>
+              <a href="login.html">Account</a>
+              <a href="cart.html" class="cart-icon"></a>
+            </div>
+          </nav>
+        </div>
+      </header>
 
-      </section>
+
 
     </section>
 
     <section class="element">
       <h3>Main Footer</h3>
 
-      <h4>Sample code:</h4>
-      <code>&lt;a class="button-nav" href="#"&gt;Home&lt;/a&gt;</code>
+      <h4>Sample code of one column:</h4>
+      <code>
+        &lt;section class="footer footer-flex"&gt;<br>
+        &lt;div class="footer-section footer-section0" id="footer-section0"&gt;<br>
+        &lt;a href="index.html" class="home-button"&gt;&lt;img class="footer-logo" src="images/flufffibre.png"
+        alt="Fluff and Fibre logo"&gt;&lt;/a&gt;&lt;/div&gt;<br>
+        &lt;div class="footer-section footer-section1" id="footer-section1"&gt;<br>
+        &lt;a href="products.html" class="footer-link-header"&gt;<br>
+        &lt;p class="footer-header"&gt;Products&lt;/p&gt;&lt;/a&gt;<br>
+        &lt;a href="products.html" class="footer-link-header"&gt;<br>
+        &lt;p class="footer-header"&gt;Sweaters&lt;/p&gt;&lt;/a&gt;<br>
+        &lt;a href="products.html" class="footer-link-header"&gt;<br>
+        &lt;p class="footer-header"&gt;Pants&lt;/p&gt;&lt;/a&gt;<br>
+        &lt;a href="products.html" class="footer-link-header"&gt;<br>
+        &lt;p class="footer-header"&gt;Shoes&lt;/p&gt;&lt;/a&gt;<br>
+        &lt;a href="products.html" class="footer-link-header"&gt;<br>
+        &lt;p class="footer-header"&gt;Accesories&lt;/p&gt;&lt;/a&gt;<br>
+        &lt;/div&gt;<br>
+      </code>
       <h4>Example:</h4>
 
       <section class="footer footer-flex">
-
         <div class="footer-section footer-section0" id="footer-section0">
-          <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png" alt="Fluff and Fibre logo"></a>
+          <a href="index.html" class="home-button"><img class="footer-logo" src="images/flufffibre.png"
+              alt="Fluff and Fibre logo"></a>
         </div>
-  
         <div class="footer-section footer-section1" id="footer-section1">
           <a href="products.html" class="footer-link-header">
             <p class="footer-header">Products</p>
@@ -291,7 +336,6 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
             <p class="footer-links">Accessories</p>
           </a>
         </div>
-  
         <div class="footer-section footer-section2" id="footer-section2">
           <a href="about.html" class="footer-link-header">
             <p class="footer-header">About</p>
@@ -309,7 +353,17 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
             <p class="footer-links">Privacy Policy</p>
           </a>
         </div>
-  
+        <div class="footer-section footer-section3" id="footer-section3">
+          <h3>Sign up for our newsletter!</h3>
+          <label for="newsletter-email">Email</label><br>
+          <input type="text" name="newsletter-email" id="newsletter-email"><br><br>
+          <form action="#" method="get">
+            <button class="button-submit">Submit</button>
+          </form>
+        </div>
+        <div class="footer-section footer-section4" id="footer-section4">
+          <p>Copyright © 2024 Fluff & Fibre.<br>All rights reserved.</p>
+        </div>
       </section>
 
     </section>
@@ -325,13 +379,13 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
       <h4>Example:</h4>
 
       <div class="Shop">
-        <h4 class="shop-item-names">Grey Sweater</h4>
         <a href="#"><img src="images/item1.png" alt="Grey sweater"></a>
+        <h4 class="shop-item-names">Grey Sweater</h4>
         <h4>$105</h4>
-        <a href="#" class="description-ahref">Description</a>
-        <p>100% Wool</p>
-        <p>Made in Canada</p>
-        <button class="button" type="submit" value="Add to Cart">Add To Cart</button>
+        <div class="shop-col-flex">
+          <p class="material">100% Wool</p>
+          <a href="cart.html"><button class="button-submit" type="submit" value="Add to Cart">Add To Cart</button></a>
+        </div>
       </div>
 
     </section>
@@ -340,8 +394,8 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
       <h3>Payment Form</h3>
       <h4>Sample code:</h4>
       <code>&lt;div class="checkout"&gt;<br>
-  &lt;div class="row"&gt;<br>
-    &lt;div class="col-75"&gt;<br>
+      &lt;div class="row"&gt;<br>
+      &lt;div class="col-75"&gt;<br>
       &lt;div class="container"&gt;<br>
         &lt;form action="/action_page.php"&gt;<br>
 
@@ -450,181 +504,161 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
                       &lt;label for="exp-month"&gt;Expiry Month:&lt;/label&gt;<br>
                       &lt;input type="text" id="exp-month" name</code>
       <h4>Example:</h4>
-      <div class="checkout">
-        <div class="row">
-          <div class="col-75">
-            <div class="container">
-              <form action="/action_page.php">
-
-                <div class="row">
-                  <div class="col-50">
-                    <h3>Shipping</h3>
-                    <div class="payment">
-
-                      <div class="form-module-flex">
-                        <div class="payment-module">
-                          <div class="form-name">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="Jane"><br><br>
-                          </div>
-                        </div>
-
-                        <div class="payment-module">
-                          <div class="form-name">
-                            <label for="first-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Doe"><br><br>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="payment-module">
-                        <div class="form-full-address">
-                          <label for="address-line-1">Address</label>
-                          <input type="text" id="address-line-1" name="address-line-1" placeholder="123 Bacon Avenue"
-                            required>
-                          <input type="text" id="address-line-2" name="address-line-2" placeholder="#100"><br><br>
-                        </div>
-
-                        <div class="form-module-flex">
-                          <div class="form-city">
-                            <label for="city">City</label>
-                            <input type="text" id="city" name="city" placeholder="Eggs" required><br><br>
-                          </div>
-
-                          <div class="form-region">
-                            <label for="region">Province</label>
-                            <select id="region" name="region" required>
-                              <option value="">Choose option</option>
-                              <option value="alta">Alberta</option>
-                              <option value="bc">British Columbia</option>
-                              <option value="man">Manitoba</option>
-                              <option value="nb">New Brunswick</option>
-                              <option value="nl">Newfoundland and Labrador</option>
-                              <option value="ns">Nova Scotia</option>
-                              <option value="nl">Nunavut</option>
-                              <option value="ont">Ontario</option>
-                              <option value="pei">Prince Edward Island</option>
-                              <option value="nque">Quebec</option>
-                              <option value="sask">Saskatchewan</option>
-                              <option value="nwt">The Northwest Territories</option>
-                              <option value="yt">The Yukon</option>
-                            </select><br><br>
-                          </div>
-
-                          <div class="form-postal-code">
-                            <label for="postal-code">Postal code</label>
-                            <input type="text" id="postal-code" name="postal-code" placeholder="1A2 3B4" required
-                              maxlength="7" autocapitalize="characters"><br><br>
-                          </div>
-                        </div>
-
-                        <div class="payment-module">
-                          <div class="form-phone-number">
-                            <label for="phone-number">Phone number</label>
-                            <input type="tel" id="phone-number" name="phone-number" placeholder="123-123-1234" required
-                              maxlength="12"><br><br>
-                          </div>
-                        </div>
-
-                        <div class="payment-module">
-                          <div class="form-email">
-                            <label for="email">Email address</label>
-                            <input type="email" id="email" name="email" placeholder="email@domain.com" required><br><br>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="col-50">
-                    <h3>Payment</h3>
-                    <div class="payment">
-
-                      <div class="form-module-flex">
-                        <div class="payment-module">
-                          <div class="form-name">
-                            <label for="first-name">Name On Card:</label>
-                            <input type="text" id="full-name" name="first-name" placeholder="Jane Doe"><br><br>
-                          </div>
-                        </div>
-
-                        <div class="payment-module">
-                          <div class="form-card">
-                            <label for="card-number">Credit Card Number:</label>
-                            <input type="text" id="card-number" name="card-number"
-                              placeholder="111-222-333-444"><br><br>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="payment-module">
-                        <div class="expiry">
-                          <label for="exp-month">Expiry Month:</label>
-                          <input type="text" id="exp-month" name="exp-month" placeholder="02" required>
-                          <label for="exp-year">Expiry Year:</label>
-                          <input type="text" id="exp-year" name="exp-year" placeholder="2025"><br><br>
-                        </div>
-
-                        <div class="form-module-flex">
-                          <div class="CVV">
-                            <label for="cvv">CVV:</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="123" required><br><br>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-                <p> </p>
-                <button class="button-reset" type="reset" value="Reset">Reset</button>
-
-                <p> </p>
-                <label>
-                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                </label>
-                <p> </p>
-
-
-                <fieldset class=radio-button>
-                  <legend>Select a shipment method:</legend>
-
-                  <div>
-                    <input type="radio" id="regular(5-7businessdays)1" name="drone" value="regular(5-7 business days)"
-                      checked>
-                    <label for="regular(5-7businessdays)">Regular (5-7 business days)</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" id="express(1-2businessdays)1" name="drone" value="express(1-2 business days)">
-                    <label for="express(1-2businessdays)">Express (1-2 business days)</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" id="pick-up1" name="drone" value="pick-up">
-                    <label for="pick-up">Pickup (Free)</label>
-                  </div>
-                </fieldset>
-                <p> </p>
-
-
-
-                <button class="button" type="submit" value="Submit">Submit</button>
-              </form>
+      <h2 class="cart-headers">Shipping</h2>
+      <div class="cart-containers">
+        <div class="payment">
+          <div class="form-module-flex">
+            <div class="payment-module">
+              <div class="form-name">
+                <label for="first-name-cart">First Name</label><br>
+                <input type="text" id="first-name-cart" name="first-name" placeholder="Jane"><br><br>
+              </div>
             </div>
 
+            <div class="payment-module">
+              <div class="form-name">
+                <label for="last-name-cart">Last Name</label><br>
+                <input type="text" id="last-name-cart" name="last-name" placeholder="Doe"><br><br>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-module">
+            <div class="form-full-address">
+              <label for="address-line-1-cart">Address</label><br>
+              <input type="text" id="address-line-1-cart" name="address-line-1" placeholder="123 Bacon Avenue"
+                required><br>
+              <input type="text" id="address-line-2-cart" name="address-line-2" placeholder="#100"><br><br>
+            </div>
+
+            <div class="form-module-flex">
+              <div class="form-city">
+                <label for="city-cart">City</label><br>
+                <input type="text" id="city-cart" name="city" placeholder="Eggs" required><br><br>
+              </div>
+
+              <div class="form-region">
+                <label for="region-cart">Province</label><br>
+                <select id="region-cart" name="region" required>
+                  <option value="">Choose option</option>
+                  <option value="alta">Alberta</option>
+                  <option value="bc">British Columbia</option>
+                  <option value="man">Manitoba</option>
+                  <option value="nb">New Brunswick</option>
+                  <option value="nl">Newfoundland and Labrador</option>
+                  <option value="ns">Nova Scotia</option>
+                  <option value="nl">Nunavut</option>
+                  <option value="ont">Ontario</option>
+                  <option value="pei">Prince Edward Island</option>
+                  <option value="nque">Quebec</option>
+                  <option value="sask">Saskatchewan</option>
+                  <option value="nwt">The Northwest Territories</option>
+                  <option value="yt">The Yukon</option>
+                </select><br><br>
+              </div>
+
+              <div class="form-postal-code">
+                <label for="postal-code-cart">Postal code</label><br>
+                <input type="text" id="postal-code-cart" name="postal-code" placeholder="1A2 3B4" required maxlength="7"
+                  autocapitalize="characters"><br><br>
+              </div>
+            </div>
+
+            <div class="payment-module">
+              <div class="form-phone-number">
+                <label for="phone-number-cart">Phone number</label><br>
+                <input type="tel" id="phone-number-cart" name="phone-number" placeholder="123-123-1234" required
+                  maxlength="12"><br><br>
+              </div>
+            </div>
+
+            <div class="payment-module">
+              <div class="form-email">
+                <label for="email-cart">Email address</label><br>
+                <input type="email" id="email-cart" name="email" placeholder="email@domain.com" required><br><br>
+              </div>
+            </div>
           </div>
 
         </div>
+      </div>
+
+      <h2 class="cart-headers">Payment</h2>
+      <div class="cart-containers">
+        <div class="col-50">
+
+          <div class="payment">
+
+            <div class="payment-module">
+              <div class="form-name">
+                <label for="full-name-cart">Name On Card:</label><br>
+                <input type="text" id="full-name-cart" name="first-name" placeholder="Jane Doe"><br><br>
+              </div>
+            </div>
+
+            <div class="payment-module">
+              <div class="form-card">
+                <label for="card-number-cart">Credit Card Number:</label><br>
+                <input type="text" id="card-number-cart" name="card-number" placeholder="111-222-333-444"><br><br>
+              </div>
+            </div>
+
+
+            <div class="form-module-flex">
+              <div class="payment-module">
+                <label for="expiry-month-cart">Expiry Month:</label><br>
+                <input type="text" id="expiry-month-cart" name="exp-month" placeholder="02" required>
+              </div>
+
+              <div class="payment-module">
+                <label for="expiry-year-cart">Expiry Year:</label><br>
+                <input type="text" id="expiry-year-cart" name="exp-year" placeholder="2025">
+              </div>
+
+              <div class="payment-module">
+                <label for="cvv-cart">CVV:</label><br>
+                <input type="text" id="cvv-cart" name="cvv" placeholder="123" required><br><br>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-containers">
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label><br><br>
+
+
+        <fieldset class='radio-button'>
+          <legend>Select a shipment method:</legend>
+
+          <div>
+            <input type="radio" id="regular(5-7businessdays)1" name="drone" value="regular(5-7 business days)" checked>
+
+            <label for="regular(5-7businessdays)1">Regular (5-7 business days)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="express(1-2businessdays)1" name="drone" value="express(1-2 business days)">
+            <label for="express(1-2businessdays)1">Express (1-2 business days)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="pick-up1" name="drone" value="pick-up">
+            <label for="pick-up1">Pickup (Free)</label>
+          </div>
+        </fieldset>
+        <p> </p>
+
+        <form action="confirmation.html" method="get">
+          <button class="button-submit" type="submit" value="Submit">Submit</button>
+        </form>
 
       </div>
     </section>
-
-    <!--// Learned from: https://www.w3schools.com/howto/howto_css_checkout_form.asp--->
-
-
 
     <section class="element">
 
@@ -632,41 +666,66 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
 
       <h4>Sample code:</h4>
       <code>&lt;div class="col-25"&gt;<br>
-  &lt;div class="container"&gt;<br>
-    &lt;h4&gt;Shopping Cart<br>
+      &lt;div class="container"&gt;<br>
+      &lt;h4&gt;Shopping Cart<br>
       &lt;span class="price" style="color:black"&gt;<br>
         &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;<br>
         &lt;b&gt; &lt;/b&gt;<br>
           &lt;h4&gt; &lt;/h4&gt;<br>
       &lt;/span&gt;<br>
-    &lt;/h4&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;Backpack&lt;/a&gt; &lt;span class="price"&gt;$109&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;Wool Sweater&lt;/a&gt; &lt;span class="price"&gt;$51&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;T-Shirt&lt;/a&gt; &lt;span class="price"&gt;$20&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;p&gt;&lt;a href="#"&gt;Sticker&lt;/a&gt; &lt;span class="price"&gt;$2&lt;/span&gt;&lt;/p&gt;<br>
-    &lt;hr&gt;<br>
-    &lt;p&gt;Total &lt;span class="price" style="color:black"&gt;&lt;b&gt;$182&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;<br>
-  &lt;/div&gt;<br>
-&lt;/div&gt;</code>
+      &lt;/h4&gt;<br>
+      &lt;p&gt;&lt;a href="#"&gt;Backpack&lt;/a&gt; &lt;span class="price"&gt;$109&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;p&gt;&lt;a href="#"&gt;Wool Sweater&lt;/a&gt; &lt;span class="price"&gt;$51&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;p&gt;&lt;a href="#"&gt;T-Shirt&lt;/a&gt; &lt;span class="price"&gt;$20&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;p&gt;&lt;a href="#"&gt;Sticker&lt;/a&gt; &lt;span class="price"&gt;$2&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;hr&gt;<br>
+      &lt;p&gt;Total &lt;span class="price" style="color:black"&gt;&lt;b&gt;$182&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;<br>
+      &lt;/div&gt;<br>
+      &lt;/div&gt;</code>
       <h4>Example:</h4>
-      <div class="col-25">
-        <div class="container">
-          <h4>Shopping Cart
-            <span class="price" style="color:black">
-              <i class="fa fa-shopping-cart"></i>
-              <b> </b>
-            </span>
+      <div class="cart-container">
 
-          </h4>
-          <p> </p>
-          <p><a href="#">Backpack</a> <span class="price">$109</span></p>
-          <p><a href="#">Wool Sweater</a> <span class="price">$51</span></p>
-          <p><a href="#">T-Shirt</a> <span class="price">$20</span></p>
-          <p><a href="#">Sticker</a> <span class="price">$2</span></p>
-          <hr>
-          <p>Total <span class="price" style="color:black"><b>$182</b></span></p>
-          <button class="proceed-button" style="text-align: right;" type="submit" value="Proceed">Proceed</button>
+        <div class="cart-item">
+          <a href="#"><img class="cart-image" src="images/item1.png"></a>
+          <div class="cart-name-remove">
+            <p class="cart-item-name">Grey Sweater</p>
+            <a href="#">
+              <p class="cart-item-remove">Remove</p>
+            </a>
+          </div>
+          <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100"><br><br>
+          <p class="cart-price">$109</p>
         </div>
+
+        <div class="cart-item">
+          <a href="#"><img class="cart-image" src="images/item2.png"></a>
+          <div class="cart-name-remove">
+            <p class="cart-item-name">Navy Sweater</p>
+            <a href="#">
+              <p class="cart-item-remove">Remove</p>
+            </a>
+          </div>
+          <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100"><br><br>
+          <p class="cart-price">$120</p>
+        </div>
+
+        <div class="cart-item">
+          <a href="#"><img class="cart-image" src="images/item5.png"></a>
+          <div class="cart-name-remove">
+            <p class="cart-item-name">Striped Green and Black Sweater</p>
+            <a href="#">
+              <p class="cart-item-remove">Remove</p>
+            </a>
+          </div>
+          <input type="number" class="amount-input" name="amount-input" value="1" min="0" max="100"><br><br>
+          <p class="cart-price">$150</p>
+        </div>
+
+        <div class="cart-item cart-total">
+          <p class="total-price">Total Price</p>
+          <p class="total-price-number">$379</p>
+        </div>
+
 
       </div>
     </section>
@@ -674,38 +733,82 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
   </section>
   <!-- // COMBINED ELEMENTS SECTION -->
 
-  <H2>Brand Components</H2>
-  <H3>Fonts</H3>
+  <h2>Brand Components</h2>
+  <h2>Fonts</h2>
 
+  <br>
   <h4>45 Univers Lt Light</h4>
   <p> </p>
   <h2>ABCDEFGHIJKLMNOPQRSTUVWSYZabcdefghijklmnopqrstuvwxyz</h2>
   <h3>ABCDEFGHIJKLMNOPQRSTUVWSYZabcdefghijklmnopqrstuvwxyz</h3>
+  <br>
   <h4> Montreal Nueue</h4>
   <p> </p>
   <p> ABCDEFGHIJKLMNOPQRSTUVWSYZabcdefghijklmnopqrstuvwxyz</p>
 
-  <h3>Colours</h3>
+  <br>
+  <h2>Colours</h2>
   <p>Primary: <em class="colour-palette-text colour-teal">Teal // #B6CDB8</em></p>
   <p>Secondary: <em class="colour-palette-text colour-olive">Olive // #B6CDB8</em></p>
   <p>Tertiary: <em class="colour-palette-text colour-tan">Tan // #E39371</em></p>
   <p>Off-White: <em class="colour-palette-text colour-off-white">Off-White // #FFF2EC</em></p>
 
-  <h4>Art Direction</h4>
+  <br>
+  <h2>Art Direction</h2>
   <div class="art-direction-images">
-    <img class="art-direction-img art-direction-img-1" src="images/afends.png">
-
-    <img class="art-direction-img art-direction-img-2" src="images/sustainable-jungle.jpg">
-
-    <img class="art-direction-img art-direction-img-3" src="images/sustainably-chic.jpeg">
+    <img class="art-direction-img art-direction-img-1" src="images/afends.png" alt="Afends branding material">
+    <img class="art-direction-img art-direction-img-2" src="images/sustainable-jungle.jpg"
+      alt="Sustainable Jungle branding image. Also the index hero image.">
+    <img class="art-direction-img art-direction-img-3" src="images/sustainably-chic.jpeg"
+      alt="Sustainably Chic branding image. Also the image on the index page's 'Our Story' section.">
   </div>
 
   <section id="citations">
     <h2>Citations</h2>
     <ul>
+      <li>Aran. Online store. n.d.. <strong>Model in white sweater [Image]</strong>. Retrieved from <a
+          href="https://www.aran.com/big-and-tall-mens">https://www.aran.com/big-and-tall-mens</a>.
+      </li>
+
+      <li>Bloesem. Blog. 2015. <strong>People talking [Image]</strong>. Retrieved from <a
+          href="https://bloesem.blogs.com/bloesem/2015/02/class-recap-instafood.html">https://bloesem.blogs.com/bloesem/2015/02/class-recap-instafood.html</a>.
+      </li>
+
+      <li>Conscious Life and Style. Blog. 2023. <strong>Clothing swap [Image]</strong>. Retrieved from <a
+          href="https://www.consciouslifeandstyle.com/clothing-swaps-how-to-host/">https://www.consciouslifeandstyle.com/clothing-swaps-how-to-host/</a>.
+      </li>
+
+      <li>Eco Stylist. Blog. 2023. <strong>Model in white t-shirt [Image]</strong>. Retrieved from <a
+          href="https://www.eco-stylist.com/the-best-ethical-alternatives-for-mens-spring-fashion/">https://www.eco-stylist.com/the-best-ethical-alternatives-for-mens-spring-fashion/</a>.
+      </li>
+
+      <li>Etsy. Online store. n.d.. <strong>Model in grey sweater [Image]</strong>. Retrieved from <a
+          href="https://www.etsy.com/il-en/listing/1274449324/merino-wool-minimalistic-jumper-supreme">https://www.etsy.com/il-en/listing/1274449324/merino-wool-minimalistic-jumper-supreme</a>.
+      </li>
+
+      <li>Etsy. Online store. n.d.. <strong>Model in white sweater [Image]</strong>. Retrieved from <a
+          href="https://www.etsy.com/ca/listing/1076948863/hand-knit-braided-sweater-with">https://www.etsy.com/ca/listing/1076948863/hand-knit-braided-sweater-with</a>.
+      </li>
+
+      <li>Geeks for Geeks. Blog. n.d.. <strong>Design an Event Webpage using HTML and CSS [Code Reference]</strong>.
+        Retrieved from <a
+          href="https://www.geeksforgeeks.org/design-an-event-webpage-using-html-css/">https://www.geeksforgeeks.org/design-an-event-webpage-using-html-css/</a>.
+      </li>
+
+      <li>Onca. Blog. 2023. <strong>Clothing rack [Image]</strong>. Retrieved from <a
+          href="https://onca.org.uk/event/clothes-swap-with-onca/">https://onca.org.uk/event/clothes-swap-with-onca/</a>.
+      </li>
+
       <li>Patagonia. Online store. n.d.. <strong>Navy sweater [Image]</strong>. Retrieved from <a
           href="https://www.patagonia.ca/product/womens-recycled-wool-crewneck-sweater/51025.html">https://www.patagonia.ca/product/womens-recycled-wool-crewneck-sweater/51025.html</a>.
       </li>
+        
+        
+        <li>PNGegg. Online store. n.d.. <strong>Icons [Image]</strong>. Retrieved from <a
+          href=" https://www.pngegg.com/en/png-ngcjg/download"> https://www.pngegg.com/en/png-ngcjg/download</a>.
+      </li>
+        
+        https://www.pngegg.com/en/png-ngcjg/download
 
       <li>Superibosk. Online store. n.d.. <strong>Grey sweater [Image]</strong>. Retrieved from <a
           href="https://superibosk.live/product_details/48360839.html">https://superibosk.live/product_details/48360839.html</a>.
@@ -719,66 +822,95 @@ LEARNT FROM: https://learn.shayhowe.com/html-css/building-forms/-->
           href="https://www.sustainablejungle.com/sustainable-fashion/gender-neutral-clothing/">https://www.sustainablejungle.com/sustainable-fashion/gender-neutral-clothing/</a>.
       </li>
 
+      <li>Sustainably Chic. Blog. 2023. <strong>Clothing rack [Image]</strong>. Retrieved from <a
+          href="https://www.sustainably-chic.com/blog/what-is-sustainable-fashion">https://www.sustainably-chic.com/blog/what-is-sustainable-fashion</a>.
+      </li>
+
       <li>Sustainably Chic. Blog. n.d.. <strong>Model in grey sweater [Image]</strong>. Retrieved from <a
           href="https://www.sustainably-chic.com/blog/climate-neutral-certified-brandss">https://www.sustainably-chic.com/blog/climate-neutral-certified-brandss</a>.
+      </li>
+
+      <li>The Green Hub. Blog. n.d.. <strong>Clothing rack [Image]</strong>. Retrieved from <a
+          href="https://thegreenhubonline.com/how-to-join-the-relove-movement/">https://thegreenhubonline.com/how-to-join-the-relove-movement/</a>.
+      </li>
+
+      <li>Venla. Blog. n.d.. <strong>Clothing rack [Image]</strong>. Retrieved from <a
+          href="https://www.venla.com.au/">https://www.venla.com.au/</a>.
+      </li>
+
+      <li>W3 Schools. Blog. n.d.. <strong>HOW TO - CSS Calender [Code Reference]</strong>. Retrieved from <a
+          href="https://www.w3schools.com/howto/howto_css_calendar.asp">https://www.w3schools.com/howto/howto_css_calendar.asp</a>.
       </li>
 
       <li>Zara. Online store. n.d.. <strong>Blue sweater [Image]</strong>. Retrieved from <a
           href="https://www.zara.com/ca/en/extrasoft-100-wool-knit-sweater-p09598146.html">https://www.zara.com/ca/en/extrasoft-100-wool-knit-sweater-p09598146.html</a>.
       </li>
+
+      <li>Termly. Online privacy service. 2023. <strong>Copyright Examples [Text reference]</strong>. Retrieved from <a
+          href="https://termly.io/resources/articles/copyright-examples/#:~:text=There%20are%20only%20four%20simple,from%20the%20year%20of%20creation">https://termly.io/resources/articles/copyright-examples/#:~:text=There%20are%20only%20four%20simple,from%20the%20year%20of%20creation</a>.
+      </li>
+
+
     </ul>
   </section>
-
-
-
 
 </body>
 
 <footer>
-  <section class="footer">
-    <section class="footer footer-flex">
+  <section class="footer footer-flex">
+    <div class="footer-section footer-section0" id="footer-section0">
+      <a href="index.html" class="home-button"><img class="footer-logo" src="images/flufffibre.png"
+          alt="Fluff and Fibre logo"></a>
+    </div>
 
-      <div class="footer-section footer-section0" id="footer-section0">
-        <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png" alt="Fluff and Fibre logo"></a>
-      </div>
+    <div class="footer-section footer-section1" id="footer-section1">
+      <a href="products.html" class="footer-link-header">
+        <p class="footer-header">Products</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Sweaters</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Pants</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Shoes</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Accessories</p>
+      </a>
+    </div>
 
-      <div class="footer-section footer-section1" id="footer-section1">
-        <a href="products.html" class="footer-link-header">
-          <p class="footer-header">Products</p>
-        </a>
-        <a href="products.html" class="footer-link-text">
-          <p class="footer-links">Sweaters</p>
-        </a>
-        <a href="products.html" class="footer-link-text">
-          <p class="footer-links">Pants</p>
-        </a>
-        <a href="products.html" class="footer-link-text">
-          <p class="footer-links">Shoes</p>
-        </a>
-        <a href="products.html" class="footer-link-text">
-          <p class="footer-links">Accessories</p>
-        </a>
-      </div>
+    <div class="footer-section footer-section2" id="footer-section2">
+      <a href="about.html" class="footer-link-header">
+        <p class="footer-header">About</p>
+      </a>
+      <a href="about.html" class="footer-link-text">
+        <p class="footer-links">Our Story</p>
+      </a>
+      <a href="about.html" class="footer-link-text">
+        <p class="footer-links">Shipping Policy</p>
+      </a>
+      <a href="contact.html" class="footer-link-text">
+        <p class="footer-links">Contact Us</p>
+      </a>
+      <a href="about.html" class="footer-link-text">
+        <p class="footer-links">Privacy Policy</p>
+      </a>
+    </div>
 
-      <div class="footer-section footer-section2" id="footer-section2">
-        <a href="about.html" class="footer-link-header">
-          <p class="footer-header">About</p>
-        </a>
-        <a href="about.html" class="footer-link-text">
-          <p class="footer-links">Our Story</p>
-        </a>
-        <a href="about.html" class="footer-link-text">
-          <p class="footer-links">Shipping Policy</p>
-        </a>
-        <a href="contact.html" class="footer-link-text">
-          <p class="footer-links">Contact Us</p>
-        </a>
-        <a href="about.html" class="footer-link-text">
-          <p class="footer-links">Privacy Policy</p>
-        </a>
-      </div>
+    <div class="footer-section footer-section3" id="footer-section3">
+      <h3>Sign up for our newsletter!</h3>
+      <label for="newsletter-email">Email</label><br>
+      <input type="text" name="newsletter-email" id="newsletter-email"><br><br>
+      <a href="#"><button class="button-submit">Submit</button></a>
+    </div>
 
-    </section>
+    <div class="footer-section footer-section4" id="footer-section4">
+      <p>Copyright © 2024 Fluff & Fibre.<br>All rights reserved.</p>
+      <!-- Reference for copyright text: https://termly.io/resources/articles/copyright-examples/#:~:text=There%20are%20only%20four%20simple,from%20the%20year%20of%20creation -->
+    </div>
+
   </section>
 </footer>
 

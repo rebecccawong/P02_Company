@@ -14,33 +14,27 @@
 
   <header>
     <div class="header">
-      <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png"
-          alt="Fluff and Fibre logo"></a>
-
-
-      <div class="nav-bar">
-        <ul>
-          <li> <a class="button-nav" href="products.html">Products</a> </li>
-          <li> <a class="button-nav" href="about.html">About</a> </li>
-          <li> <a class="button-nav" href="events.html">Events</a> </li>
-          <li> <a class="button-nav" href="contact.html">Contact</a> </li>
-          <!-- <li> <a class="button-nav" href="styleguide.html">Style Guide</a> </li> -->
-        </ul>
-      </div>
-
-      <a href="cart.html" class="shopping-cart-href"><img class="shopping-cart-icon"
-          src="../P02_company/images/shopping-cart.png"> </a>
-
+      <nav>
+        <div class="left-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div class="right-nav">
+          <a href="styleguide.html">Style Guide</a>
+          <a href="login.html">Account</a>
+          <a href="cart.html" class="cart-icon"></a>
+        </div>
+      </nav>
     </div>
   </header>
 
   <section class="index-hero">
-    <!-- <img class="hero-image" src="../P02_company/images/index-hero.png"> -->
     <div class="hero-image">
+      <img class="hero-text hero-logo" src="images/flufffibre.png">
       <a href="products.html" class="hero-link">
-        <img class="hero-text hero-logo" src="images/flufffibre.png">
-        <h2 class="hero-text hero-title">New Arrivals</h2>
-        <h3 class="hero-text hero-cta">See more ></h3>
+        <h2 class="hero-text hero-title">New Arrivals<br><em class="hero-cta">See more ></em></h2>
       </a>
     </div>
 
@@ -50,13 +44,10 @@
 
   <div class="Shopcontainer">
 
-    <!-- New pictures from Marni.com Ourlegacy.com and  -->
-
     <div class="Shop">
-      <a href="#"><img src="images/item1.png" alt="Grey sweater"></a>
-      <h4 class="shop-item-names">Grey Sweater</h4>
+      <a href="grey-sweater.html"><img src="images/item1.png" alt="Grey sweater" class="product-grid-img"></a>
+      <h2 class="shop-item-names">Grey Sweater</h2>
       <h4>$105</h4>
-      <a href="#" class="description-ahref">Description</a>
       <div class="shop-col-flex">
         <p class="material">100% Wool</p>
         <a href="cart.html"><button class="button-submit" type="submit" value="Add to Cart">Add To Cart</button></a>
@@ -64,10 +55,9 @@
     </div>
 
     <div class="Shop">
-      <a href="#"><img src="images/item2.png" alt="Navy sweater"></a>
-      <h4 class="shop-item-names">Navy Sweater</h4>
+      <a href="navy-sweater.html"><img src="images/item2.png" alt="Navy sweater" class="product-grid-img"></a>
+      <h2 class="shop-item-names">Navy Sweater</h2>
       <h4>$190</h4>
-      <a href="#" class="description-ahref">Description</a>
       <div class="shop-col-flex">
         <p class="material">100% Wool</p>
         <a href="cart.html"><button class="button-submit" type="submit" value="Add to Cart">Add To Cart</button></a>
@@ -75,10 +65,9 @@
     </div>
 
     <div class="Shop">
-      <a href="#"><img src="images/item3.png" alt="Blue sweater"></a>
-      <h4 class="shop-item-names">Blue sweater</h4>
+      <a href="grey-sweater.html"><img src="images/item3.png" alt="Blue sweater" class="product-grid-img"></a>
+      <h2 class="shop-item-names">Blue sweater</h2>
       <h4>$140</h4>
-      <a href="#" class="description-ahref">Description</a>
       <div class="shop-col-flex">
         <p class="material">100% Wool</p>
         <a href="cart.html"><button class="button-submit" type="submit" value="Add to Cart">Add To Cart</button></a>
@@ -86,10 +75,9 @@
     </div>
 
     <div class="Shop">
-      <a href="#"><img src="images/item4.png" alt="Light grey sweater"></a>
-      <h4>Light Grey Gardigan</h4>
+      <a href="navy-sweater.html"><img src="images/item4.png" alt="Light grey sweater" class="product-grid-img"></a>
+      <h2 class="shop-item-names">Light Grey Cardigan</h2>
       <h4>$200</h4>
-      <a href="#" class="description-ahref">Description</a>
       <div class="shop-col-flex">
         <p class="material">100% Wool</p>
         <a href="cart.html"><button class="button-submit" type="submit" value="Add to Cart">Add To Cart</button></a>
@@ -109,66 +97,85 @@
   <div class="index-our-story">
     <div class="our-story">
       <div class="our-story-div">
+
+          <a href="about.html" >
         <img class="our-story-img" src="images/sustainably-chic-index.jpeg">
+               </a>
       </div>
       <div class="our-story-div">
-        <p class="our-story-p">Welcome to Fluff & Fibre, where we craft everyday wardrobe essentials using exclusively
+        <p class="our-story-p">
+          Welcome to Fluff & Fibre, where we craft everyday wardrobe essentials using exclusively
           organic fibers. Our commitment to sustainability is unwavering, and we proudly steer clear of synthetic
-          materials. Embracing a greener future, we incorporate 60% recycled fibers into our products, with a dedicated
-          goal to reach 100%. Additionally, we use 100% recyclable packaging materials. Join us on our journey towards a
-          more sustainable and eco-friendly lifestyle!</p>
+          materials. Embracing a greener future, we incorporate 60% recycled fibers into our products, with a dedicated goal to reach 100%. Additionally, we use 100% recyclable packaging materials. Join us on our journey towards a more sustainable and eco-friendly lifestyle!
+        </p>
         <a href="about.html" class="in-text-link">
-          <p>Learn more</p>
+          <p class="our-story-p">Learn more</p>
+             </a>
+               <a href="about.html" >
+          <img class="homeicons" src="images/ICONS.png" alt="Icons">
         </a>
       </div>
     </div>
   </div>
 
+  <section class="footer footer-flex">
+
+    <div class="footer-section footer-section0" id="footer-section0">
+      <a href="index.html" class="home-button"><img class="footer-logo" src="images/flufffibre.png"
+          alt="Fluff and Fibre logo"></a>
+    </div>
+
+    <div class="footer-section footer-section1" id="footer-section1">
+      <a href="products.html" class="footer-link-header">
+        <p class="footer-header">Products</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Sweaters</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Pants</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Shoes</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Accessories</p>
+      </a>
+    </div>
+
+    <div class="footer-section footer-section2" id="footer-section2">
+      <a href="about.html" class="footer-link-header">
+        <p class="footer-header">About</p>
+      </a>
+      <a href="about.html" class="footer-link-text">
+        <p class="footer-links">Our Story</p>
+      </a>
+      <a href="about.html" class="footer-link-text">
+        <p class="footer-links">Shipping Policy</p>
+      </a>
+      <a href="contact.html" class="footer-link-text">
+        <p class="footer-links">Contact Us</p>
+      </a>
+      <a href="about.html" class="footer-link-text">
+        <p class="footer-links">Privacy Policy</p>
+      </a>
+    </div>
+
+    <div class="footer-section footer-section3" id="footer-section3">
+      <h3>Sign up for our newsletter!</h3>
+      <label for="newsletter-email">Email</label><br>
+      <input type="text" name="newsletter-email" id="newsletter-email"><br><br>
+      <form action="#" method="get">
+        <button class="button-submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="footer-section footer-section4" id="footer-section4">
+      <p>Copyright © 2024 Fluff & Fibre.<br>All rights reserved.</p>
+      <!-- Reference for copyright text: https://termly.io/resources/articles/copyright-examples/#:~:text=There%20are%20only%20four%20simple,from%20the%20year%20of%20creation -->
+    </div>
+
+  </section>
 </body>
-
-<section class="footer footer-flex">
-
-  <div class="footer-section footer-section0" id="footer-section0">
-    <a href="index.html" class="home-button"><img class="logo" src="images/flufffibre.png"
-        alt="Fluff and Fibre logo"></a>
-  </div>
-
-  <div class="footer-section footer-section1" id="footer-section1">
-    <a href="products.html" class="footer-link-header">
-      <p class="footer-header">Products</p>
-    </a>
-    <a href="products.html" class="footer-link-text">
-      <p class="footer-links">Sweaters</p>
-    </a>
-    <a href="products.html" class="footer-link-text">
-      <p class="footer-links">Pants</p>
-    </a>
-    <a href="products.html" class="footer-link-text">
-      <p class="footer-links">Shoes</p>
-    </a>
-    <a href="products.html" class="footer-link-text">
-      <p class="footer-links">Accessories</p>
-    </a>
-  </div>
-
-  <div class="footer-section footer-section2" id="footer-section2">
-    <a href="about.html" class="footer-link-header">
-      <p class="footer-header">About</p>
-    </a>
-    <a href="about.html" class="footer-link-text">
-      <p class="footer-links">Our Story</p>
-    </a>
-    <a href="about.html" class="footer-link-text">
-      <p class="footer-links">Shipping Policy</p>
-    </a>
-    <a href="contact.html" class="footer-link-text">
-      <p class="footer-links">Contact Us</p>
-    </a>
-    <a href="about.html" class="footer-link-text">
-      <p class="footer-links">Privacy Policy</p>
-    </a>
-  </div>
-
-</section>
 
 </html>

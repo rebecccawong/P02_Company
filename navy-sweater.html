@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Navy Sweater</title>
+
+  <link href="stylesheet/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <nav>
+        <div class="left-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div class="right-nav">
+          <a href="styleguide.html">Style Guide</a>
+          <a href="login.html">Account</a>
+          <a href="cart.html" class="cart-icon"></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="product-details">
+    <div class="product-details-photo">
+      <img class="product-individual-photo" src="images/item2.png" alt="Navy sweater">
+    </div>
+
+    <div class="product-details-info">
+
+      <div class="product-details-top">
+        <h1 class="product-details-name">Navy Sweater</h1>
+        <div class="review-stars">
+          <img class="five-stars" src="images/4-stars.png" alt="4 star review" id="four-stars">
+          <a href="#reviews" class="num-reviews-ahref">
+            <p class="num-reviews">4 reviews</p>
+          </a>
+        </div>
+
+        <div class="product-price-amount-cart">
+          <p class="product-details-price">$190</p>
+          <input type="number" class="product-amounts" name="amount-input" value="1" min="0" max="50">
+          <form action="cart.html" method="get">
+            <button class="button-submit">Add To Cart</button>
+          </form>
+        </div>
+
+        <p class="product-size-heading">Size</p>
+
+        <div class="size-options">
+          <button class="button-submit button-size" type="submit" value="Add to Cart">XS</button>
+          <button class="button-submit button-size" type="submit" value="Add to Cart">S</button>
+          <button class="button-submit button-size" type="submit" value="Add to Cart">M</button>
+          <button class="button-submit button-size" type="submit" value="Add to Cart">L</button>
+          <button class="button-submit button-size" type="submit" value="Add to Cart">XL</button>
+        </div>
+      </div>
+
+      <div class="product-details-bottom">
+        <h2>Description</h2>
+        <p class="product-description">This sweater can be worn out during cold days or for keeping warm at home! This
+          versatile piece can be dressed up for a night out, or dressed down for a casual day at the store.</p>
+
+        <h2>Specifications & Care</h2>
+        <p class="product-description">100% wool. Hand wash only.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <h3>Write a Review</h3>
+    <div class="review-block">
+      <div class="review-flex">
+        <div class="review-flexbox">
+          <label for="review-name">Name</label><br>
+          <input type="text" name="name" id="review-name" placeholder="Jane Doe" required><br><br>
+        </div>
+
+        <div class="review-flexbox">
+          <label for="review-size">Size</label><br>
+          <select name="elect-size" required id="review-size">
+            <option value="">Choose size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="M">M</option>
+            <option value="XL">XL</option>
+          </select><br><br>
+        </div>
+
+      </div>
+
+      <label for="review-city-region">City and Region</label><br>
+      <input type="text" name="location" id="review-city-region" placeholder="City, Region" required><br><br>
+
+      <label for="review-text">Review</label><br>
+      <input type="text" name="review" id="review-text" placeholder="Type review here" required><br><br>
+
+      <form action="#" method="get">
+        <button class="button-submit">Submit</button>
+      </form>
+
+    </div>
+
+    <h2>Reviews</h2>
+
+    <div class="review-block">
+      <img class="stars-reviews" src="images/3-stars.png" alt="3 star review">
+      <h3 class="review-heading">Package came damaged</h3>
+      <p>Although the paper-covered package was wrapped several times over in shipping, the package was still damaged,
+        also leaving a small tear on the sleeve. It's a shame, as I have purchased from Fluff & Fibre before and have
+        had no issues with the delivery. Regardless, the sweater felt great quality as always, and customer service was
+        easy to work with.</p>
+      <div class="review-info">
+        <p class="review-details review-name">bertha57</p>
+        <p class="review-details review-size">Size: XL</p>
+        <p class="review-details review-date">Posted: Nov. 8, 2023</p>
+        <p class="review-details review-location">Toronto, ON</p>
+      </div>
+    </div>
+
+    <div class="review-block">
+      <img class="stars-reviews" src="images/5-stars.png" alt="5 star review">
+      <h3 class="review-heading">like super cute</h3>
+      <p>OMG its so cute. i found this brand from instagram and have been obsessed ever since. ive been saving up for
+        something from this brand, and finally after getting my paycheck, i was ready to try it! so i ordered it, and it
+        arrived super fast, like in 2 weeks. and then i tried it on and it was soooooo soft and cozy. i wore it to work
+        the next day and got tons of compliments from customers lol. will prob buy from here again when i save up again
+        for like 5 months hahaha</p>
+      <div class="review-info">
+        <p class="review-details review-name">c0quett3qu33n</p>
+        <p class="review-details review-size">Size: XS</p>
+        <p class="review-details review-date">Posted: Mar. 1, 2024</p>
+        <p class="review-details review-location">Burnaby, BC</p>
+      </div>
+    </div>
+
+    <div class="review-block">
+      <img class="stars-reviews" src="images/4-stars.png" alt="4 star review">
+      <h3 class="review-heading">Very Nice</h3>
+      <p>Pretty great, was soft and warm and hasn't pilled too much for the 2 month's I've owned it. Not entirely sure
+        if it's worth the high price point, as I have some cheaper sweaters and perform basically the same, but I
+        suppose I'm also paying for the ethical labour and environmental friendliness.</p>
+      <div class="review-info">
+        <p class="review-details review-name">olinyl</p>
+        <p class="review-details review-size">Size: M</p>
+        <p class="review-details review-date">Posted: Mar. 2, 2024</p>
+        <p class="review-details review-location">Ottawa, ON</p>
+      </div>
+    </div>
+
+    <div class="review-block">
+      <img class="stars-reviews" src="images/4-stars.png" alt="4 star review">
+      <h3 class="review-heading">Great.</h3>
+      <p>Daughter bought this for me, as she said I needed to "up my fashion game", ha ha ha. I was pleasantly surprised
+        to feel the great quality material of the wool, and it keeps me warm during these cold Alberta nights. I did
+        find a small stain on the underside of the right sleeve, but it is barely noticable at all. Thumbs up from this
+        dad!
+      </p>
+      <div class="review-info">
+        <p class="review-details review-name">steviemartini3003</p>
+        <p class="review-details review-size">Size: L</p>
+        <p class="review-details review-date">Posted: Feb. 18, 2024</p>
+        <p class="review-details review-location">Calgary, AB</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="footer footer-flex">
+
+    <div class="footer-section footer-section0" id="footer-section0">
+      <a href="index.html" class="home-button"><img class="footer-logo" src="images/flufffibre.png"
+          alt="Fluff and Fibre logo"></a>
+    </div>
+
+    <div class="footer-section footer-section1" id="footer-section1">
+      <a href="products.html" class="footer-link-header">
+        <p class="footer-header">Products</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Sweaters</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Pants</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Shoes</p>
+      </a>
+      <a href="products.html" class="footer-link-text">
+        <p class="footer-links">Accessories</p>
+      </a>
+    </div>
+
+    <div class="footer-section footer-section2" id="footer-section2">
+      <a href="about.html" class="footer-link-header">
+        <p class="footer-header">About</p>
+      </a>
+      <a href="about.html" class="footer-link-text">
+        <p class="footer-links">Our Story</p>
+      </a>
+      <a href="about.html" class="footer-link-text">
+        <p class="footer-links">Shipping Policy</p>
+      </a>
+      <a href="contact.html" class="footer-link-text">
+        <p class="footer-links">Contact Us</p>
+      </a>
+      <a href="about.html" class="footer-link-text">
+        <p class="footer-links">Privacy Policy</p>
+      </a>
+    </div>
+
+    <div class="footer-section footer-section3" id="footer-section3">
+      <h3>Sign up for our newsletter!</h3>
+      <label for="newsletter-email">Email</label><br>
+      <input type="text" name="newsletter-email" id="newsletter-email"><br><br>
+      <form action="#" method="get">
+        <button class="button-submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="footer-section footer-section4" id="footer-section4">
+      <p>Copyright © 2024 Fluff & Fibre.<br>All rights reserved.</p>
+      <!-- Reference for copyright text: https://termly.io/resources/articles/copyright-examples/#:~:text=There%20are%20only%20four%20simple,from%20the%20year%20of%20creation -->
+    </div>
+
+  </section>
+</body>
+
+</html>
