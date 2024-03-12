@@ -415,6 +415,7 @@ nav {
 
 .left-nav a {
     color: black;
+ opacity: 90%;
     text-decoration: none;
     margin-right: 1.5rem;
     font-size: 1rem;
@@ -432,6 +433,7 @@ nav {
 
 .right-nav a {
     color: black;
+ opacity: 90%;
     text-decoration: none;
     margin-left: 1.5rem;
     font-size: 1rem;
@@ -557,6 +559,7 @@ nav {
     flex:3;
     width: 70%; 
     align-content: right;
+        opacity: 90%;
 }
 
 .our-story-div{
@@ -705,6 +708,7 @@ nav {
 .icons {
     width: 100%; /* Adjust the width as needed */
     height: auto; /* Automatically adjust height to maintain aspect ratio */
+            opacity: 90%;
 }
 
 .aboutlogo {
