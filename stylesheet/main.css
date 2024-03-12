@@ -38,6 +38,7 @@ h2 {
     color: black;
     font-size: 1.5em;
     font-family: 'Univers', serif;
+    
 }
 
 h3 {
@@ -472,7 +473,7 @@ nav {
 
 /* INDEX / LANDING PAGE */
 .index-headers, .login-headers, .contact-headers{
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     margin-top: 4rem;
 }
 
@@ -563,16 +564,19 @@ nav {
 }
 
 .our-story-div{
-    margin-left: 1em;    
+    margin-left: 2.5em;    
 }
 
+
 .our-story .our-story-p{
-    margin-left: 2rem;
+    margin-left: 4rem;
     align-items: center;
     width: 70%; 
-    margin-top: 0;
+    margin-top: 1rem;
     line-height: 5vh;
 }
+
+
 
 @media (max-width: 800px) {
 
@@ -589,7 +593,9 @@ nav {
     .index-our-story .our-story{
         display: inline;
         margin-left: 2em;
+   
     }
+  
 
     .our-story-img{
         width: 50%;
@@ -699,7 +705,7 @@ nav {
 }
 
 .text-column p {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     margin-bottom: 2.5rem;
     line-height: 2.5; /* Increase line spacing (adjust as needed) */
     font-size: 1rem; /* Adjust the font size of the text (adjust as needed) */
